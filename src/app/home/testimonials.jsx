@@ -21,16 +21,6 @@ const Testimonials = (props) => {
     };
 
 
-    useEffect(() => {
-        if (!emblaApi) return;
-        const onSelect = () => {
-            const current = emblaApi.selectedScrollSnap();
-            setActiveIndex(current);
-        };
-        emblaApi.on('select', onSelect);
-    }, [emblaApi]);
-
-
 
     const prevButtonHandler = () => {
         if (emblaApi) emblaApi.scrollPrev();
