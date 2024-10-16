@@ -1,242 +1,94 @@
-// 'use client'
-// import styles from "@/styles/portfolio/portfolioTabs.module.scss"
-// import { Container, Row, Col } from "react-bootstrap";
-// import Image from "next/image";
-
-// import image1 from "media/portfolio/1.webp";
-// import image2 from "media/portfolio/2.webp";
-// import image3 from "media/portfolio/3.webp";
-// import image4 from "media/portfolio/4.webp";
-// import image5 from "media/portfolio/5.webp";
-// import image6 from "media/portfolio/6.webp";
-// import image7 from "media/portfolio/7.webp";
-// import image8 from "media/portfolio/8.webp";
-// import image9 from "media/portfolio/9.webp";
-
-
-
-// const PortfolioTabs = () => {
-//     return (
-//         <>
-
-//             <section className={`${styles.portfolioSection} p-150`}>
-//                 <Container>
-//                     <Row>
-//                         <Col>
-//                             <ul className={styles.tabHeaders}>
-//                                 <li>Filter By</li>
-//                                 <li className={styles.active}>3D Animation</li>
-//                                 <li>2D Animation</li>
-//                                 <li>Hybrid & Cel</li>
-//                                 <li>Motion Graphics</li>
-//                                 <li>CGI-VFX</li>
-//                             </ul>
-//                         </Col>
-//                     </Row>
-//                 </Container>
-//                 <Container fluid>
-//                     <Row>
-//                         <Col className="p-0">
-//                             <div className={styles.tabContent}>
-//                                 <div className={`${styles.portfolio}`}>
-//                                     <div className={`${styles.gridContainer}`}>
-//                                         <div className={`${styles.item1}`}>
-//                                             <Image src={image1} width={960} height={480} />
-//                                         </div>
-//                                         <div className={`${styles.item2}`}><Image src={image2} width={960} height={480} /></div>
-//                                         <div className={`${styles.item3}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item4}`}><Image src={image4} width={640} height={350} /></div>
-//                                         <div className={`${styles.item5}`}><Image src={image5} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item6}`}><Image src={image6} width={960} height={480} /></div>
-//                                         <div className={`${styles.item7}`}><Image src={image7} width={960} height={480} /></div>
-//                                         <div className={`${styles.item8}`}><Image src={image8} width={1920} height={610} /></div>
-//                                         <div className={`${styles.item9}`}><Image src={image9} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item10}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item11}`} ><Image src={image4} width={640} height={350} /></div>
-//                                     </div>
-
-//                                 </div>
-//                             </div>
-//                             <div className={styles.tabContent}>
-//                                 <div className={`${styles.portfolio}`}>
-//                                     <div className={`${styles.gridContainer}`}>
-//                                         <div className={`${styles.item1}`}>
-//                                             <Image src={image1} width={960} height={480} />
-//                                         </div>
-//                                         <div className={`${styles.item2}`}><Image src={image2} width={960} height={480} /></div>
-//                                         <div className={`${styles.item3}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item4}`}><Image src={image4} width={640} height={350} /></div>
-//                                         <div className={`${styles.item5}`}><Image src={image5} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item6}`}><Image src={image6} width={960} height={480} /></div>
-//                                         <div className={`${styles.item7}`}><Image src={image7} width={960} height={480} /></div>
-//                                         <div className={`${styles.item8}`}><Image src={image8} width={1920} height={610} /></div>
-//                                         <div className={`${styles.item9}`}><Image src={image9} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item10}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item11}`} ><Image src={image4} width={640} height={350} /></div>
-//                                     </div>
-
-//                                 </div>
-//                             </div>
-//                             <div className={styles.tabContent}>
-//                                 <div className={`${styles.portfolio}`}>
-//                                     <div className={`${styles.gridContainer}`}>
-//                                         <div className={`${styles.item1}`}>
-//                                             <Image src={image1} width={960} height={480} />
-//                                         </div>
-//                                         <div className={`${styles.item2}`}><Image src={image2} width={960} height={480} /></div>
-//                                         <div className={`${styles.item3}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item4}`}><Image src={image4} width={640} height={350} /></div>
-//                                         <div className={`${styles.item5}`}><Image src={image5} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item6}`}><Image src={image6} width={960} height={480} /></div>
-//                                         <div className={`${styles.item7}`}><Image src={image7} width={960} height={480} /></div>
-//                                         <div className={`${styles.item8}`}><Image src={image8} width={1920} height={610} /></div>
-//                                         <div className={`${styles.item9}`}><Image src={image9} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item10}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item11}`} ><Image src={image4} width={640} height={350} /></div>
-//                                     </div>
-
-//                                 </div>
-//                             </div>
-//                             <div className={styles.tabContent}>
-//                                 <div className={`${styles.portfolio}`}>
-//                                     <div className={`${styles.gridContainer}`}>
-//                                         <div className={`${styles.item1}`}>
-//                                             <Image src={image1} width={960} height={480} />
-//                                         </div>
-//                                         <div className={`${styles.item2}`}><Image src={image2} width={960} height={480} /></div>
-//                                         <div className={`${styles.item3}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item4}`}><Image src={image4} width={640} height={350} /></div>
-//                                         <div className={`${styles.item5}`}><Image src={image5} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item6}`}><Image src={image6} width={960} height={480} /></div>
-//                                         <div className={`${styles.item7}`}><Image src={image7} width={960} height={480} /></div>
-//                                         <div className={`${styles.item8}`}><Image src={image8} width={1920} height={610} /></div>
-//                                         <div className={`${styles.item9}`}><Image src={image9} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item10}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item11}`} ><Image src={image4} width={640} height={350} /></div>
-//                                     </div>
-
-//                                 </div>
-//                             </div>
-//                             <div className={styles.tabContent}>
-//                                 <div className={`${styles.portfolio}`}>
-//                                     <div className={`${styles.gridContainer}`}>
-//                                         <div className={`${styles.item1}`}>
-//                                             <Image src={image1} width={960} height={480} />
-//                                         </div>
-//                                         <div className={`${styles.item2}`}><Image src={image2} width={960} height={480} /></div>
-//                                         <div className={`${styles.item3}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item4}`}><Image src={image4} width={640} height={350} /></div>
-//                                         <div className={`${styles.item5}`}><Image src={image5} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item6}`}><Image src={image6} width={960} height={480} /></div>
-//                                         <div className={`${styles.item7}`}><Image src={image7} width={960} height={480} /></div>
-//                                         <div className={`${styles.item8}`}><Image src={image8} width={1920} height={610} /></div>
-//                                         <div className={`${styles.item9}`}><Image src={image9} width={1280} height={700} /></div>
-//                                         <div className={`${styles.item10}`}><Image src={image3} width={640} height={350} /></div>
-//                                         <div className={`${styles.item11}`} ><Image src={image4} width={640} height={350} /></div>
-//                                     </div>
-
-//                                 </div>
-//                             </div>
-//                         </Col>
-//                     </Row>
-//                 </Container>
-//             </section>
-
-//         </>
-//     )
-// }
-// export default PortfolioTabs;
-
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "@/styles/portfolio/portfolioTabs.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import { FavIcon } from "@/src/app/app-constants";
+import VideoModal from '@/src/app/home/components/videomodal';
+import axios from "axios";
 
-import image1 from "media/portfolio/1.webp";
-import image2 from "media/portfolio/2.webp";
-import image3 from "media/portfolio/3.webp";
-import image4 from "media/portfolio/4.webp";
-import image5 from "media/portfolio/5.webp";
-import image6 from "media/portfolio/6.webp";
-import image7 from "media/portfolio/7.webp";
-import image8 from "media/portfolio/8.webp";
-import image9 from "media/portfolio/9.webp";
-import image10 from "media/portfolio/10.webp";
-import image11 from "media/portfolio/11.webp";
-import { ArrowBtn, FavIcon } from "@/src/app/app-constants";
-import Link from "next/link";
+
+const tabs = [
+    { label: "2D Animation", tag: 'videoAnimation2D' },
+    { label: "3D Animation", tag: 'videoAnimation3D' },
+    { label: "Hybrid Animation", tag: 'videoAnimationHB' },
+    { label: "Motion Graphics", tag: 'videoAnimationMG' },
+    { label: "Whiteboard Animation", tag: 'videoAnimationWB' },
+    { label: "Cel Animation", tag: 'videoAnimationCEL' }
+];
+
+const VIMEO_ACCESS_TOKEN = 'edbc480300bb3d020a232b2666a656a1';
+
+// Function to limit words in a description
+function limitWords(text, wordLimit) {
+    const words = text.split(' ');
+    if (words.length > wordLimit) {
+        return words.slice(0, wordLimit).join(' ') + '...';
+    }
+    return text;
+}
 
 const PortfolioTabs = () => {
-    const [activeTab, setActiveTab] = useState('3D Animation');
+    const [activeTab, setActiveTab] = useState(0);
+    const [modalShow, setModalShow] = useState(false);
+    const [videos, setVideos] = useState([]);
+    const [videoID, setVideoID] = useState("");
+    const [loading, setLoading] = useState(false);
 
-    const tabs = [
-        {
-            label: '3D Animation',
-            images: [
-                { src: image1 },
-                { src: image2 },
-                { src: image3 },
-                { src: image4 },
-                { src: image5 },
-                { src: image6 },
-                { src: image7 },
-                { src: image8 },
-                { src: image9 },
-                { src: image10 },
-                { src: image11 },
-            ],
-        },
-        {
-            label: '2D Animation',
-            images: [
-                { src: image2, width: 960, height: 480, className: styles.item1 },
-                { src: image1, width: 960, height: 480, className: styles.item2 },
-                { src: image3, width: 320, height: 180, className: styles.item3 },
-                { src: image4, width: 320, height: 180, className: styles.item4 },
-                { src: image5, width: 1280, height: 700, className: styles.item5 },
-                { src: image6, width: 960, height: 480, className: styles.item6 },
-                { src: image7, width: 960, height: 480, className: styles.item7 },
-                { src: image8, width: 1920, height: 610, className: styles.item8 },
-                { src: image9, width: 1280, height: 700, className: styles.item9 },
-                { src: image10, width: 960, height: 480, className: styles.item10 },
-                { src: image11, width: 960, height: 480, className: styles.item11 },
-            ],
-        },
-        {
-            label: 'Hybrid & Cel',
-            images: [
-                { src: image7, width: 1920, height: 1080 },
-                { src: image8, width: 1280, height: 720 },
-            ],
-        },
-        {
-            label: 'Motion Graphics',
-            images: [
-                { src: image9, width: 640, height: 360 },
-            ],
-        },
-        {
-            label: 'CGI-VFX',
-            images: [
-                { src: image1, width: 960, height: 540 },
-                { src: image2, width: 640, height: 480 },
-            ],
-        },
-    ];
+
+
+    // Fetch Vimeo videos based on the selected tab
+    const fetchVimeoVideos = async (tag) => {
+        setLoading(true);
+        setVideos([]);
+        try {
+            const response = await axios.get(`https://api.vimeo.com/videos`, {
+                params: {
+                    query: tag,
+                    per_page: 10
+                },
+                headers: {
+                    Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`
+                }
+            });
+
+            setVideos(response.data.data);
+        } catch (error) {
+            console.error("Error fetching videos: ", error);
+            console.log(error)
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    // Fetch videos when active tab changes
+    useEffect(() => {
+        const selectedTag = tabs[activeTab].tag;
+        fetchVimeoVideos(selectedTag);
+    }, [activeTab]);
+
+    // Handle tab switching
+    const handleTabChange = (index) => {
+        setActiveTab(index);
+    };
+
+    const handlePlayClick = (id) => {
+        setModalShow(true);
+        setVideoID(id);
+    };
 
     return (
-        <section className={`${styles.portfolioSection} pt-100`}>
+        <section className={`${styles.portfolioSection} pt-100 `}>
             <Container>
                 <Row>
                     <Col>
                         <ul className={styles.tabHeaders}>
-                            <li>Filter By</li>
-                            {tabs.map(tab => (
+                            {/* <li>Filter By</li> */}
+                            {tabs.map((tab, index) => (
                                 <li
-                                    key={tab.label}
-                                    className={activeTab === tab.label ? styles.active : ''}
-                                    onClick={() => setActiveTab(tab.label)}
+                                    key={index}
+                                    className={activeTab === index ? styles.active : ''}
+                                    onClick={() => handleTabChange(index)}
                                 >
                                     {tab.label}
                                 </li>
@@ -247,38 +99,57 @@ const PortfolioTabs = () => {
             </Container>
             <Container fluid>
                 <Row>
-                    <Col className="p-0">
-                        <div className={styles.tabContent}>
-                            <div className={`${styles.portfolio}`}>
-                                <div className={`${styles.gridContainer}`}>
-                                    {tabs.find(tab => tab.label === activeTab)?.images.map((image, index) => (
-                                        <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]}`}>
-                                            <Image src={image.src} fill alt="Image" />
+                    <Col className="p-0 ">
+                        {loading ? (
+                            <div className={styles.videoLoader}>
+                                <div className="buttonCommon loaderCommon">
+                                    <div className="loading">
+                                        <FavIcon />
+                                    </div>
+                                </div>
+                            </div>
 
-                                            <div className={styles.bannerContentBox}>
-                                                <div className={styles.bannerHeading}>
-                                                    <div className={styles.title}>Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <p>Creative direction , Animation, 3D character</p>
-                                                </div>
-                                                <div className={styles.bannerButton}>
-                                                    <div className={`${styles.buttonSmall} buttonCommon`}>
-                                                        <Link href="">
-                                                            <FavIcon />
-                                                        </Link>
+                        ) : (
+                            <div className={styles.tabContent}>
+                                <div className={`${styles.portfolio}`}>
+                                    <div className={`${styles.gridContainer}`}>
+
+
+                                        {videos.map((video, index) => (
+                                            <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]} `}
+                                                >
+
+                                                <Image
+                                                    src={video.pictures.sizes[3].link}
+                                                    fill
+                                                    alt={video.name}
+                                                />
+                                                <div className={styles.bannerContentBox}>
+                                                    <div className={styles.bannerHeading}>
+                                                        <div className={styles.title}>{video.name}</div>
+                                                        <p>{limitWords(video.description, 15)}</p>
+                                                    </div>
+                                                    <div className={styles.bannerButton} onClick={() => handlePlayClick(video.uri.split('/').pop())}>
+                                                        <div className={`${styles.buttonSmall} buttonCommon`}>
+                                                            <div>
+                                                                <FavIcon />
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        ))}
 
 
 
-                                        </div>
-                                    ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
                     </Col>
                 </Row>
             </Container>
+            <VideoModal show={modalShow} iframeUrl={videoID} onHide={() => setModalShow(false)} />
         </section>
     );
 };
