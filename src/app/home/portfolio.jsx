@@ -7,6 +7,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Link from 'next/link';
 import { FavIcon } from '@/src/app/app-constants';
 import axios from 'axios';
+import VideoModal from '@/src/app/home/components/videomodal';
 
 const OPTIONS = { align: 'center', loop: true };
 
@@ -25,9 +26,12 @@ const Portfolio = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const [activeTab, setActiveTab] = useState(0);
     const [videos, setVideos] = useState([]);
+    const [videoID, setVideoID] = useState("");
     const [loading, setLoading] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState([]);
+    const [modalShow, setModalShow] = useState(false);
+
 
     useEffect(() => {
         if (emblaApi) {
@@ -66,6 +70,11 @@ const Portfolio = () => {
 
     const handleTabChange = (index) => {
         setActiveTab(index);
+    };
+
+    const handlePlayClick = (id) => {
+        setModalShow(true);
+        setVideoID(id);
     };
 
     return (
@@ -118,11 +127,11 @@ const Portfolio = () => {
                                                                 alt={`Video Thumbnail ${index + 1}`}
                                                                 fill
                                                             />
-                                                            <div className={styles.videoButton}>
+                                                            <div className={styles.videoButton} onClick={() => handlePlayClick(video.uri.split('/').pop())}>
                                                                 <div className="buttonCommon">
-                                                                    <Link href={video.link} target="_blank">
+                                                                    <div>
                                                                         <FavIcon />
-                                                                    </Link>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -156,6 +165,7 @@ const Portfolio = () => {
                     </Col>
                 </Row>
             </Container>
+            <VideoModal show={modalShow} iframeUrl={videoID} onHide={() => setModalShow(false)} />
         </section>
     );
 };
