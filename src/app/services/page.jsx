@@ -8,10 +8,7 @@ import Testimonials from "@/src/app/home/testimonials";
 import Industries from "@/src/app/home/industries";
 import Faqs from "@/src/app/home/faq";
 import Process from "@/src/app/services/process";
-// Portfolio Image
-import portfolioImg1 from "media/home/portfolio/portfolio-img-1.webp"
-import portfolioImg2 from "media/home/portfolio/portfolio-img-2.webp"
-import portfolioImg3 from "media/home/portfolio/portfolio-img-3.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
