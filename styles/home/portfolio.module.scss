@@ -1,10 +1,20 @@
 .portfolioSection {
   background: #f7f8f9;
 
+
   h2 {
     text-align: center;
     letter-spacing: 0.4em;
     text-transform: uppercase;
+  }
+
+  .videoLoader,
+  .messageLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 640px;
   }
 
   .tabsBox {
@@ -61,10 +71,23 @@
             border-radius: 20px;
             position: relative;
 
+            &::before {
+              content: '';
+              background: rgb(0, 0, 0, .50);
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              height: 100%;
+              width: 100%;
+              border-radius: 20px;
+              z-index: 1;
+            }
+
             img {
               border-radius: 20px;
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
 
             .videoButton {
@@ -72,6 +95,8 @@
               justify-content: center;
               align-items: center;
               height: 100%;
+              z-index: 2;
+              position: relative;
             }
           }
         }

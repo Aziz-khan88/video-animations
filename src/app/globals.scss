@@ -145,7 +145,8 @@ body {
         border-radius: 100%;
         position: relative;
 
-        a {
+        a,
+        div {
             height: 110px;
             width: 110px;
             display: block;
@@ -175,6 +176,25 @@ body {
             text-align: center;
         }
 
+        &.loaderCommon {
+            background: linear-gradient(106.24deg, #ED1919 25.96%, #FFE100 140.6%);
+
+            .loading {
+                animation: swing 2s linear infinite;
+                transform-origin: center;
+            }
+
+            @keyframes swing {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
         &:hover {
             background: linear-gradient(106.24deg, #ED1919 25.96%, #FFE100 140.6%);
 
@@ -185,6 +205,7 @@ body {
 
         }
     }
+
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -256,7 +277,8 @@ body {
             width: 100px;
             height: 100px;
 
-            a {
+            a,
+            div {
                 height: 100px;
                 width: 100px;
             }
@@ -338,7 +360,8 @@ body {
             width: 90px;
             height: 90px;
 
-            a {
+            a,
+            div {
                 height: 90px;
                 width: 90px;
             }
@@ -420,7 +443,8 @@ body {
             width: 80px;
             height: 80px;
 
-            a {
+            a,
+            div {
                 height: 80px;
                 width: 80px;
             }
@@ -502,7 +526,8 @@ body {
             width: 70px;
             height: 70px;
 
-            a {
+            a,
+            div {
                 height: 70px;
                 width: 70px;
             }
@@ -586,7 +611,8 @@ body {
             width: 65px;
             height: 65px;
 
-            a {
+            a,
+            div {
                 height: 65px;
                 width: 65px;
             }
@@ -670,7 +696,8 @@ body {
             width: 50px;
             height: 50px;
 
-            a {
+            a,
+            div {
                 height: 50px;
                 width: 50px;
             }

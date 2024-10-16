@@ -152,7 +152,7 @@ export default function Services() {
     <>
       <Banner video={true} />
       <BannerClients />
-      <Portfolio slides={caseStudiesList} options={OPTIONS} caseStudies={caseStudiesList} />
+      <Portfolio />
       <KeyPoints />
       <Process />
       <Packages />
