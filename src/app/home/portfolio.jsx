@@ -56,6 +56,7 @@ const Portfolio = () => {
             setLoading(false);
             if (emblaApi) emblaApi.reInit();
         }
+
     };
 
     useEffect(() => {
@@ -109,10 +110,11 @@ const Portfolio = () => {
                                         <div className={styles.embla__viewport} ref={emblaRef}>
                                             <div className={styles.embla__container}>
                                                 {videos.map((video, index) => (
+
                                                     <div className={styles.embla__slide} key={video.uri}>
                                                         <div className={styles.slideBox}>
                                                             <Image
-                                                                src={video.pictures.sizes[3].link} // Use a suitable size from the array
+                                                                src={video.pictures.sizes[3].link}
                                                                 alt={`Video Thumbnail ${index + 1}`}
                                                                 fill
                                                             />
