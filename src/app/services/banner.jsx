@@ -18,7 +18,9 @@ const Banner = ({ video }) => {
                 <Row className="h-100">
                     <Col md={7} className='my-auto'>
                         <div className={styles.bannerContent}>
-                            <h1>2D Animation</h1>
+                            <h1>Find endless engaging
+                                2D animations here that
+                                suit your taste.</h1>
                             <p>Video Animation is your go-to 2D animation studio for cost-effective, full-cycle video production. Our 2D animation services and minimal resource requirements can bring your creative vision to life faster.</p>
                             <p>We create original and compelling 2D animations that boosts your brand’s awareness. Our engaging content helps you connect with your audience on an emotional level.</p>
                             <p>We don’t just provide 2D animation services; we build universal experiences. From intricate product demonstrations to memorable brand identities, we transform your vision into stunning visuals that leave a lasting impact.</p>

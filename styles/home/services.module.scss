@@ -74,6 +74,15 @@
                     }
                 }
 
+                p {
+                    height: 50px;
+                    overflow-y: auto;
+
+                    &::-webkit-scrollbar {
+                        width: 0;
+                    }
+                }
+
                 p,
                 a {
                     display: none;
@@ -170,6 +179,10 @@
                         line-height: 30px;
                     }
 
+                    p {
+                        height: 48px;
+                    }
+
                     &.active {
                         height: 160px;
 
@@ -229,6 +242,10 @@
                     h4 {
                         font-size: 20px;
                         line-height: 30px;
+                    }
+
+                    p {
+                        height: 45px;
                     }
 
                     &.active {
@@ -364,6 +381,10 @@
                         }
                     }
 
+                    p {
+                        height: 40px;
+                    }
+
                     &.active {
                         height: 130px;
                         padding-right: 20px;
@@ -427,6 +448,10 @@
                             left: -12px;
                         }
 
+                    }
+
+                    p {
+                        height: 45px;
                     }
 
                     &.active {

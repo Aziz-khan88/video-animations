@@ -16,7 +16,7 @@ const Banner = () => {
                         <Col md={12} className="mt-auto">
                             <div className={styles.bannerContentBox}>
                                 <div className={styles.bannerHeading}>
-                                    <h1>Experience Animation Like Never Before</h1>
+                                    <h1>Video Animation Agency To Help You Drive Results With Passion</h1>
                                     <Link href="" className="readMoreBtn">Dive in now <ArrowBtn /></Link>
                                 </div>
                                 <div className={styles.bannerButton}>
