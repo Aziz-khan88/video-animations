@@ -21,66 +21,6 @@ import why04 from "media/home/whychoose/why04.webp"
 import ImageCta from "@/src/app/services/imagecta";
 
 
-
-const OPTIONS = { align: 'center', loop: true }
-
-const caseStudiesList = [
-  {
-    title: "2D Animation",
-    slides: [
-      { image: portfolioImg1 },
-      { image: portfolioImg2 },
-      { image: portfolioImg3 },
-      { image: portfolioImg2 },
-    ]
-  },
-  {
-    title: "3D Animation",
-    slides: [
-      { image: portfolioImg3 },
-      { image: portfolioImg1 },
-      { image: portfolioImg3 },
-      { image: portfolioImg1 },
-    ]
-  },
-  {
-    title: "Hybrid & Cel",
-    slides: [
-      { image: portfolioImg2 },
-      { image: portfolioImg3 },
-      { image: portfolioImg2 },
-      { image: portfolioImg3 },
-    ]
-  },
-  {
-    title: "Motion Graphics",
-    slides: [
-      { image: portfolioImg1 },
-      { image: portfolioImg2 },
-      { image: portfolioImg1 },
-      { image: portfolioImg2 },
-    ]
-  },
-  {
-    title: "Whiteboard Animation",
-    slides: [
-      { image: portfolioImg3 },
-      { image: portfolioImg1 },
-      { image: portfolioImg3 },
-      { image: portfolioImg1 },
-    ]
-  },
-  {
-    title: "CGI-VFX",
-    slides: [
-      { image: portfolioImg2 },
-      { image: portfolioImg3 },
-      { image: portfolioImg2 },
-      { image: portfolioImg3 },
-    ]
-  }
-];
-
 const ClientsReview = [
   {
     img: Test01.src,
