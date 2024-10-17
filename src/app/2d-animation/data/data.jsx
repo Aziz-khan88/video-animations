@@ -104,7 +104,7 @@ export const FaqList = [
         title: "Why is 2d animation service good?",
         txt: (
             <p>
-                2D animation offers unmatched efficiency, affordability and versatility. It's the ideal choice for businesses who are looking for impactful video content that delivers results.
+                2D animation offers unmatched efficiency, affordability and versatility. Its the ideal choice for businesses who are looking for impactful video content that delivers results.
             </p>
         ),
     },

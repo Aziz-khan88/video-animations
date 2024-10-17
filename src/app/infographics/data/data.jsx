@@ -81,7 +81,7 @@ export const FaqList = [
         title: "What are infographic design services?",
         txt: (
             <p>
-                When information and graphics are combined together, it becomes visually appealing and is called infographic design. It is a widely used marketing tool that helps in simplifying huge amounts of data into a single image for viewers' understanding.
+                When information and graphics are combined together, it becomes visually appealing and is called infographic design. It is a widely used marketing tool that helps in simplifying huge amounts of data into a single image for viewers understanding.
             </p>
 
         ),
@@ -125,7 +125,7 @@ export const FaqList = [
         ),
     },
     {
-        title: "What's included in your infographics design services?",
+        title: "What’s included in your infographics design services?",
         txt: (
             <p>
                 Our infographic asset include, interactive infographics strategy, niche-specific research, assignment to dedicated project manager, wireframe and prototype development, providing source file for changes and marketing, web page customizations, and promotion across social media platforms.
