@@ -1,7 +1,80 @@
+// Testimonial Image
+import Test01 from "media/home/testimonial/test01.webp"
+import Test02 from "media/home/testimonial/test02.webp"
+import Test03 from "media/home/testimonial/test03.webp"
+// Why Choose Image
+import why01 from "media/home/whychoose/why01.webp"
+import why02 from "media/home/whychoose/why02.webp"
+import why03 from "media/home/whychoose/why03.webp"
+import why04 from "media/home/whychoose/why04.webp"
+
+
 export const BannerData = {
     title: "Interactive Infographics Designs for Your Website",
     desc: "Are you looking for infographics designs that tell an exciting story about your product and get your audience’s attention instantly?Then don’t look further, we’ve got the most magnificent and interactive infographics design ideas for you!"
 }
+
+export const ClientsReview = [
+    {
+        img: Test01.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test02.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test03.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test01.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+]
+
+export const WhyOption = { align: 'center', loop: true }
+export const WhyItems = [
+    {
+        Img: why01.src,
+        title: "Tailored Animation Solution",
+        txt: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor lectus mauris ut velit sit Quis dolor lectus.",
+        link: "#"
+    },
+    {
+        Img: why02.src,
+        title: "Tailored Animation Solution",
+        txt: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor lectus mauris ut velit sit Quis dolor lectus.",
+        link: "#"
+    },
+    {
+        Img: why03.src,
+        title: "Tailored Animation Solution",
+        txt: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor lectus mauris ut velit sit Quis dolor lectus.",
+        link: "#"
+    },
+    {
+        Img: why04.src,
+        title: "Tailored Animation Solution",
+        txt: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor lectus mauris ut velit sit Quis dolor lectus.",
+        link: "#"
+    },
+    {
+        Img: why02.src,
+        title: "Tailored Animation Solution",
+        txt: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor lectus mauris ut velit sit Quis dolor lectus.",
+        link: "#"
+    },
+
+]
 
 export const FaqList = [
     {
