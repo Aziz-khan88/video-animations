@@ -5,31 +5,32 @@ import styles from "@/styles/layout/header.module.scss"
 import { ArrowBtn, ClosedIcon, DefaultLogo, NavIcon, VariantLogo } from "@/src/app/app-constants"
 import { useState, useEffect } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "@/src/app/app-constants"
+import { usePathname } from "next/navigation";
 
-
+// Social media links
 const SocailLinks = [
-    {
-        icon: <Instagram />,
-        url: "#"
-    },
-    {
-        icon: <Facebook />,
-        url: "#"
-    },
-    {
-        icon: <Twitter />,
-        url: "#"
-    },
-    {
-        icon: <Linkedin />,
-        url: "#"
-    },
-    {
-        icon: <Youtube />,
-        url: "#"
-    },
-]
+    { icon: <Instagram />, url: "#" },
+    { icon: <Facebook />, url: "#" },
+    { icon: <Twitter />, url: "#" },
+    { icon: <Linkedin />, url: "#" },
+    { icon: <Youtube />, url: "#" }
+];
+
+// Dynamic submenu items
+const subMenuItems = [
+    { label: "2D Animation", path: "/2d-animation" },
+    { label: "3D Animation", path: "/3d-animation" },
+    { label: "Whiteboard Animation", path: "/whiteboard-animation" },
+    { label: "Motion Graphics", path: "/motion-graphics" },
+    { label: "Video Editing", path: "/video-editing" },
+    { label: "Logo Animation", path: "/logo-animation" },
+    { label: "Architectural Visualization", path: "/architectural-visualization" },
+    { label: "CGI-VFX", path: "/cgi-and-vfx" },
+    { label: "Infographics", path: "/infographics" },
+    { label: "Hybrid & Cel", path: "/hybrid-&-cel-animations" }
+];
 const Header = () => {
+    const pathname = usePathname();
     const [showDefault, setShowDefault] = useState(true);
     const [isActive, setIsActive] = useState(false);
     const [isSubMenuActive, setIsSubMenuActive] = useState(false);
@@ -58,6 +59,22 @@ const Header = () => {
         setIsSubMenuActive((prev) => !prev);
     };
 
+    const isSubmenuActive = () => {
+        const submenuPaths = [
+            "/2d-animation",
+            "/3d-animation",
+            "/whiteboard-animation",
+            "/motion-graphics",
+            "/video-editing",
+            "/logo-animation",
+            "/architectural-visualization",
+            "/cgi-and-vfx",
+            "/infographics",
+            "/hybrid-&-cel-animations",
+        ];
+        return submenuPaths.includes(pathname);
+    }
+
     return (
         <section className={styles.headerSection}>
             <Container className="h-100">
@@ -84,27 +101,24 @@ const Header = () => {
                                 <Row>
                                     <Col>
                                         <ul className={styles.mainMainItems}>
-                                            <li onClick={toggleMenu}><Link href="/">Home <ArrowBtn /></Link></li>
-                                            <li onClick={toggleMenu}><Link href="/portfolio">Portfolio <ArrowBtn /></Link></li>
-                                            <li onClick={toggleSubMenu}>
+                                            <li onClick={toggleMenu} className={pathname === "/" ? styles.active : ""}><Link href="/">Home <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/portfolio" ? styles.active : ""}><Link href="/portfolio">Portfolio <ArrowBtn /></Link></li>
+                                            <li onClick={toggleSubMenu} className={isSubmenuActive() ? styles.active : ""}>
                                                 <Link href="#">Services <ArrowBtn /></Link>
                                                 <ul className={`${styles.haschildMenu} ${isSubMenuActive ? styles.active : ''}`}>
-                                                    <li onClick={toggleMenu}><Link href="/2d-animation" >2D Animation</Link></li>
-                                                    <li><Link href="/3d-animation">3D Animation</Link></li>
-                                                    <li><Link href="/whiteboard-animation">Whiteboard Animation</Link></li>
-                                                    <li><Link href="/motion-graphics">Motion Graphics</Link></li>
-                                                    <li><Link href="/video-editing">Video Editing</Link></li>
-                                                    <li><Link href="/logo-animation">Logo Animation</Link></li>
-                                                    <li><Link href="/architectural-visualization">Architectural Visualization</Link></li>
-                                                    <li><Link href="/cgi-and-vfx">CGI-VFX</Link></li>
-                                                    <li><Link href="/infographics">Infographics</Link></li>
-                                                    <li><Link href="/hybrid-&-cel-animations">Hybrid & Cel</Link></li>
+                                                    {subMenuItems.map((item, index) => (
+                                                        <li key={index} onClick={toggleMenu}>
+                                                            <Link href={item.path} className={pathname === item.path ? styles.active : ""}>
+                                                                {item.label}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
                                                 </ul>
 
                                             </li>
-                                            <li onClick={toggleMenu}><Link href="/pricing">Pricing <ArrowBtn /></Link></li>
-                                            <li onClick={toggleMenu}><Link href="/about">About Us <ArrowBtn /></Link></li>
-                                            <li onClick={toggleMenu}><Link href="/contact">Contact Us <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/pricing" ? styles.active : ""}><Link href="/pricing">Pricing <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/about" ? styles.active : ""}><Link href="/about">About Us <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/contact" ? styles.active : ""}><Link href="/contact">Contact Us <ArrowBtn /></Link></li>
                                         </ul>
                                     </Col>
                                 </Row>
