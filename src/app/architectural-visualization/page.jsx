@@ -1,5 +1,5 @@
 
-import { BannerData, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/architectural-visualization/data";
+import { BannerData, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/architectural-visualization/data/data";
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";
