@@ -12,9 +12,11 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(106.24deg,
-        #ed1919 25.96%,
-        #ffe100 140.6%);
+    background-image: linear-gradient(
+      106.24deg,
+      #ed1919 25.96%,
+      #ffe100 140.6%
+    );
     outline: 0px solid slategrey;
   }
 
@@ -61,7 +63,6 @@ body {
   }
 
   h1 {
-
     font-style: normal;
     font-weight: 800;
     font-size: 66px;
@@ -79,7 +80,6 @@ body {
   }
 
   h2 {
-
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -88,7 +88,6 @@ body {
   }
 
   h3 {
-
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -98,17 +97,16 @@ body {
   }
 
   p {
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.165px;
     color: #7c7c7c;
+    margin-bottom: 20px;
   }
 
   .tagTitle {
-
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -120,7 +118,6 @@ body {
 
   // Read More Button
   .readMoreBtn {
-
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -171,7 +168,6 @@ body {
     }
 
     span {
-
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -758,5 +754,4 @@ body {
       }
     }
   }
-
 }
