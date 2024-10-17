@@ -89,16 +89,16 @@ const Header = () => {
                                             <li onClick={toggleSubMenu}>
                                                 <Link href="#">Services <ArrowBtn /></Link>
                                                 <ul className={`${styles.haschildMenu} ${isSubMenuActive ? styles.active : ''}`}>
-                                                    <li onClick={toggleMenu}><Link href="/services" >2D Animation</Link></li>
-                                                    <li><Link href="#">3D Animation</Link></li>
-                                                    <li><Link href="#">Whiteboard Animation</Link></li>
-                                                    <li><Link href="#">Motion Graphics</Link></li>
-                                                    <li><Link href="#">Video Editing</Link></li>
-                                                    <li><Link href="#">Logo Animation</Link></li>
-                                                    <li><Link href="#">Architectural Visualization</Link></li>
-                                                    <li><Link href="#">CGI-VFX</Link></li>
-                                                    <li><Link href="#">Infographics</Link></li>
-                                                    <li><Link href="#">Hybrid & Cel</Link></li>
+                                                    <li onClick={toggleMenu}><Link href="/2d-animation" >2D Animation</Link></li>
+                                                    <li><Link href="/3d-animation">3D Animation</Link></li>
+                                                    <li><Link href="/whiteboard-animation">Whiteboard Animation</Link></li>
+                                                    <li><Link href="/motion-graphics">Motion Graphics</Link></li>
+                                                    <li><Link href="/video-editing">Video Editing</Link></li>
+                                                    <li><Link href="/logo-animation">Logo Animation</Link></li>
+                                                    <li><Link href="/architectural-visualization">Architectural Visualization</Link></li>
+                                                    <li><Link href="/cgi-and-vfx">CGI-VFX</Link></li>
+                                                    <li><Link href="/infographics">Infographics</Link></li>
+                                                    <li><Link href="/hybrid-&-cel-animations">Hybrid & Cel</Link></li>
                                                 </ul>
 
                                             </li>
