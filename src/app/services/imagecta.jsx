@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import styles from "@/styles/services/imagecta.module.scss"
 import Link from 'next/link'
 import { ArrowBtn } from '@/src/app/app-constants'
-import bannerImg from "media/services/imagecta/bannerImg.webp" 
+import bannerImg from "media/services/imagecta/bannerImg.webp"
 import Image from 'next/image'
 
 
@@ -19,7 +19,7 @@ const ImageCta = () => {
                     </Col>
                 </Row>
             </Container>
-            <Image src={bannerImg} className={styles.bannerimage} />
+            <Image src={bannerImg} className={styles.bannerimage} alt='bg image' />
             {/* <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerimage}>
                 <source src='/videos/makeAnimation.mp4' type="video/mp4" />
                 Your browser does not support the video tag.
