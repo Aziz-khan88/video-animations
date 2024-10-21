@@ -16,6 +16,11 @@ const poppins = Poppins({
 export const metadata = {
   title: "Professional Video Animation Company",
   description: "Transform your ideas into stunning animations with our video animation company. We deliver high-quality, engaging content tailored to your needs.",
+  //===== No-Index =====
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }) {

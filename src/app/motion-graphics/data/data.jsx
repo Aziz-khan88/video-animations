@@ -1,3 +1,6 @@
+ // CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -10,8 +13,41 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Smooth & Highly Engaging Motion Graphics Design!",
-    desc: "Are you looking for exquisite motion graphics animation for your website, promotional videos and social media content? We are specialists at creating the most eye-catching, smooth and informative animated motion graphics.With the help of our experts, you can transform your ideas into attractive animated motion graphics."
+    title: "Smooth & Highly Engaging Motion Graphics Design",
+    desc: "Are you looking for exquisite motion graphics animation for your website, promotional videos, and social media content? We specialize in creating the most eye-catching, smooth, and informative animated motion graphics. With the help of our experts, you can transform your ideas into attractive animated motion graphics."
+}
+
+ 
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Our motion graphics process transforms your ideas into dynamic, stunning animations, ensuring a seamless and creative journey from concept to completion.",
+}
+
+export const ProcessList = [
+    {
+        title: "Ideation",
+        text: "We start by brainstorming ideas and concepts that align with your brand’s identity. Our team works closely with you to understand your vision and create a compelling narrative that shapes the direction of your motion graphics project."
+    },
+    {
+        title: "Development",
+        text: "Once the concept is finalized, we move into the development phase, where we create detailed scripts and visual storyboards. Each scene is meticulously planned, ensuring smooth transitions and effective communication of your brand’s message."
+    },
+    {
+        title: "Animation Production",
+        text: "In this phase, our animators bring your project to life by combining motion, typography, and effects. Using cutting-edge techniques, we animate each element with precision to create motion graphics that captivate and engage your audience."
+    },
+    {
+        title: "Finalization",
+        text: "In the final stage, we fine-tune the animation, ensuring it meets the highest quality standards. After thorough reviews and final tweaks, we deliver a polished, captivating 2D animation ready to engage your audience."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Explore Our Animation<br /> Services Today!</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
 }
 
 export const ClientsReview = [
@@ -81,7 +117,7 @@ export const FaqList = [
         title: "How much does motion graphics animation cost?",
         txt: (
             <p>
-                The price of motion graphics depends on its sophistication. A short 1-minute video can range from $100 to $5,000, but it could increase more due to special effects.
+                The price of motion graphics depends on complexity. A short 1-minute video can range from $100 to $5,000, and special effects can increase the price further.
             </p>
         ),
     },
@@ -89,7 +125,7 @@ export const FaqList = [
         title: "How is motion graphics different from animation?",
         txt: (
             <p>
-                Motion graphics are text logo images which use movement to create better visuals while animation is a series of moving images. You can compare both styles by viewing them side-by-side.
+               Motion graphics animate text, logos, or images for better visuals, while animation involves a series of moving images.
             </p>
         ),
     },
@@ -98,7 +134,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                    Motion graphics offer a low-cost solution to businesses due to their easy production designs. Animation requires more time because each project requires different techniques like CGI, Hand-drawn art and more technical resources.
+                Yes, motion graphics are generally more affordable due to easier production, while animation requires more time and technical resources like CGI or hand-drawn art.
                 </p>
             </>
         ),
@@ -107,7 +143,7 @@ export const FaqList = [
         title: "What is the difference between graphic design and motion graphics",
         txt: (
             <p>
-                Motion graphics is said to be an upgrade to static designs. Graphic design uses static visuals like posters to showcase information while the later adds movement to existing visuals like text and logos, it brings them to life.
+                MGraphic design uses static visuals, while motion graphics bring visuals like text and logos to life through movement.
             </p>
         ),
     },
@@ -115,7 +151,7 @@ export const FaqList = [
         title: "Can motion graphics increase my sales?",
         txt: (
             <p>
-                These days motion graphics is essential for branding and marketing. By capturing attention and effectively conveying messages, motion graphics can lead to increased customer engagement and profits.
+                Motion graphics are essential for branding and marketing, capturing attention and delivering messages effectively to increase customer engagement and profits.
             </p>
         ),
     },

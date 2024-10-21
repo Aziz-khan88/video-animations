@@ -1,3 +1,7 @@
+
+// CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -13,6 +17,8 @@ export const BannerData = {
     title: "3D Animation Agency Transforming Vision Into Reality",
     desc: "Video Animation is a well-recognized 3D animation company with a team consisting of expert animators that are experienced in crafting remarkable 3D visuals. Our areas of expertise include the entertainment industry, gaming, E- learning, Hi-tech businesses and more. No matter how complex your desired 3D animation is, our team of certified animators is highly skilled at transforming your vision into a stunning reality."
 }
+
+
 
 export const ClientsReview = [
     {
@@ -40,6 +46,37 @@ export const ClientsReview = [
         video: "/videos/test.mp4"
     },
 ]
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Our 3D video animation process transforms ideas into immersive, lifelike animations. We take care of each stage with precision, ensuring a smooth journey from concept to completion.",
+}
+
+export const ProcessList = [
+    {
+        title: "Concept Development",
+        text: "We begin by discussing your vision and ideas, developing a clear concept that aligns with your project goals. Our creative team works with you to shape the narrative and structure, ensuring your 3D animation captures the essence of your brand or message."
+    },
+    {
+        title: "Modeling and Storyboarding",
+        text: "Once the concept is defined, we move into the development phase. Our team creates detailed 3D models, mapping out each scene through storyboards. This phase ensures every aspect of the animation is carefully planned, from character design to environment setup."
+    },
+    {
+        title: "Animation Production",
+        text: "During production, we bring the 3D models to life. Our animators work with advanced software to create realistic movements, lighting, and effects. Every detail is meticulously crafted to ensure that your 3D animation is engaging, fluid, and visually stunning."
+    },
+    {
+        title: "Finalization",
+        text: "After production, we enter the final stage, where we fine-tune the animation and make any necessary adjustments. The final product is polished and delivered, ensuring your 3D video animation is ready to captivate and impress your audience."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Captivate Audiences with <br /> Dynamic 3D Animations</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
+}
 
 export const WhyOption = { align: 'center', loop: true }
 export const WhyItems = [
@@ -117,4 +154,5 @@ export const FaqList = [
             </p>
         ),
     },
+
 ]
