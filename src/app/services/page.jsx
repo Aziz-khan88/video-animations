@@ -8,6 +8,9 @@ import Testimonials from "@/src/app/home/testimonials";
 import Industries from "@/src/app/home/industries";
 import Faqs from "@/src/app/home/faq";
 import Process from "@/src/app/services/process";
+import { ImageCtaContent } from "@/src/app/architectural-visualization/data/data";
+
+import { slides, options, } from "@/src/app/home/data/data";
 
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
@@ -20,27 +23,6 @@ import why03 from "media/home/whychoose/why03.webp"
 import why04 from "media/home/whychoose/why04.webp"
 import ImageCta from "@/src/app/services/imagecta";
 
-const ClientsLogos = [
-  { logo: Logo1.src },
-  { logo: Logo2.src },
-  { logo: Logo3.src },
-  { logo: Logo4.src },
-  { logo: Logo5.src },
-  { logo: Logo6.src },
-  { logo: Logo7.src },
-  { logo: Logo8.src },
-];
-
-const FrameworkLogos = [
-  { logo: FMLogo1.src },
-  { logo: FMLogo2.src },
-  { logo: FMLogo3.src },
-  { logo: FMLogo4.src },
-  { logo: FMLogo5.src },
-  { logo: FMLogo6.src },
-  { logo: FMLogo7.src },
-  { logo: FMLogo8.src },
-];
 
 const ProcessContent = {
   title: "Process",
@@ -142,7 +124,7 @@ export default function Services() {
       <ImageCta data={ImageCtaContent} />
       <WhyChooes slides={WhyItems} options={WhyOption} />
       <Testimonials slides={ClientsReview} />
-      <Industries />
+      <Industries slides={slides} options={options} />
       <Faqs />
 
     </>

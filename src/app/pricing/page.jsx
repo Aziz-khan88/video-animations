@@ -1,5 +1,5 @@
 import { ClientsReview } from "@/src/app/home/data/data";
-import { BannerData, list } from "@/src/app/Pricing/data/data";
+import { BannerData, list } from "@/src/app/pricing/data/data";
 
 import Banner from "@/src/app/pricing/banner";
 import Clients from "@/src/app/home/clients";

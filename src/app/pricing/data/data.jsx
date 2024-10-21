@@ -12,12 +12,12 @@ export const list = [
     },
     {
         title: "How much does an animated video cost?",
-        txt: (<p>The price ranges from $5000-$10000, if you are looking for an exceptionally good animated video you should take into account the price might increase due to the video's time duration and complexity, the shorter and less complex the video the less the amount spent.</p>)
+        txt: (<p>The price ranges from $5000-$10000, if you are looking for an exceptionally good animated video you should take into account the price might increase due to the video’s time duration and complexity, the shorter and less complex the video the less the amount spent.</p>)
     },
     {
         title: "How long should my video be?",
         txt: (<>
-            <p>People nowadays are into short videos, because there's an unlimited amount of content available on social networks and other platforms. To gain maximum reach and audience attention, your video should be only 60 seconds long with a clear message that aligns with your ideas.
+            <p>People nowadays are into short videos, because there’s an unlimited amount of content available on social networks and other platforms. To gain maximum reach and audience attention, your video should be only 60 seconds long with a clear message that aligns with your ideas.
             </p>
         </>)
     },

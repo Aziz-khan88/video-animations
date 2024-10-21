@@ -1,5 +1,6 @@
 
 import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/3d-animation/data/data";
+import { slides, options, } from "@/src/app/home/data/data";
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";
@@ -18,15 +19,15 @@ export default function Page() {
     return (
         <>
             <Banner video={true} BannerData={BannerData} />
-             <BannerClients  />
+            <BannerClients />
             <Portfolio />
             <KeyPoints />
-            <Process data={ProcessContent} list={ProcessList}/>
+            <Process data={ProcessContent} list={ProcessList} />
             <Packages />
-            <ImageCta data={ImageCtaContent}/>
+            <ImageCta data={ImageCtaContent} />
             <WhyChooes slides={WhyItems} options={WhyOption} />
             <Testimonials slides={ClientsReview} />
-            <Industries />
+            <Industries slides={slides} options={options} />
             <Faq faqList={FaqList} />
 
         </>

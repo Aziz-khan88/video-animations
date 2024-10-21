@@ -35,7 +35,7 @@ const Testimonials = (props) => {
                 <Row>
                     <Col lg={5} className='my-auto'>
                         <div className="tagTitle">Testimonials</div>
-                        <h3>Let's Hear What Our Clients Are Saying</h3>
+                        <h3>Let’s Hear What Our Clients Are Saying</h3>
                         <p>Our clients include some of the world’s most renowned brands, entrusting us with their animation needs to elevate their messages.</p>
                     </Col>
                     <Col lg={7} className={`${styles.ratingImg} my-auto`}>
