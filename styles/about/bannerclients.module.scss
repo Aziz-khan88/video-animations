@@ -19,14 +19,22 @@
                     flex: 0 0 auto;
                     min-width: 0;
                     padding-left: 20px;
-                    height: 165px;
+                    height: 150px;
+
 
                     .imgBox {
                         position: relative;
                         border-radius: 20px;
+                        background: #F7F8F9;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
 
                         img {
-                            height: 160px;
+                            height: 150px;
                             width: auto;
                         }
                     }
@@ -58,13 +66,13 @@
                     .embla__slide {
                         flex: 0 0 auto;
                         padding-left: 20px;
-                        height: 140px;
+                        height: 130px;
 
                         .imgBox {
                             border-radius: 20px;
 
                             img {
-                                height: 140px;
+                                height: 130px;
                                 width: auto;
                             }
 
@@ -99,10 +107,10 @@
                         height: 120px;
 
                         .imgBox {
-                            border-radius: 20px;
+                            border-radius: 15px;
 
                             img {
-                                height: 120px;
+                                height: 110px;
                                 width: auto;
                             }
 
@@ -134,13 +142,13 @@
                     .embla__slide {
                         flex: 0 0 auto;
                         padding-left: 20px;
-                        height: 110px;
+                        height: 105px;
 
                         .imgBox {
-                            border-radius: 20px;
+                            border-radius: 12px;
 
                             img {
-                                height: 110px;
+                                height: 100px;
                                 width: auto;
                             }
 
@@ -172,16 +180,15 @@
                     .embla__slide {
                         flex: 0 0 auto;
                         padding-left: 20px;
-                        height: 105px;
+                        height: 100px;
 
                         .imgBox {
-                            border-radius: 15px;
+                            border-radius: 12px;
 
                             img {
-                                height: 105px;
+                                height: 90px;
                                 width: auto;
                             }
-
                         }
                     }
                 }
@@ -210,13 +217,14 @@
                     .embla__slide {
                         flex: 0 0 auto;
                         padding-left: 20px;
-                        height: 100px;
+                        height: 90px;
 
                         .imgBox {
-                            border-radius: 15px;
+                            border-radius: 10px;
+                            padding: 10px;
 
                             img {
-                                height: 100px;
+                                height: 85px;
                                 width: auto;
                             }
 
@@ -248,16 +256,16 @@
                     .embla__slide {
                         flex: 0 0 auto;
                         padding-left: 20px;
-                        height: 90px;
+                        height: 110px;
 
                         .imgBox {
-                            border-radius: 12px;
+                            border-radius: 15px;
+                            padding: 10px;
 
                             img {
-                                height: 90px;
+                                height: 100px;
                                 width: auto;
                             }
-
                         }
                     }
                 }
