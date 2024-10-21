@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ArrowBtn, FavIcon } from '@/src/app/app-constants'
 
 
-const Banner = () => {
+const Banner = ({ BannerData }) => {
     return (
         <section className={styles.bannerSection}>
             <Container className="h-100">
@@ -12,8 +12,8 @@ const Banner = () => {
                     <Col md={12} className="mt-auto">
                         <div className={styles.bannerContentBox}>
                             <div className={styles.bannerHeading}>
-                                <h1>Want to Jump Straight in & Get the Video Made?</h1>
-                                <p>A company that is passionate in crafting excellent animations that serve as a means of purpose and identity for our clients.</p>
+                                <h1>{BannerData?.title}</h1>
+                                {BannerData?.desc}
                                 <Link href="" className="readMoreBtn">Dive in now <ArrowBtn /></Link>
                             </div>
                             <div className={styles.bannerButton}>

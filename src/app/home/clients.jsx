@@ -73,7 +73,7 @@ const Clients = () => {
                 <Row>
                     <Col md={6}>
                         <h2>Clients</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.</p>
+                        <p>Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide. </p>
                     </Col>
                 </Row>
                 <Row>

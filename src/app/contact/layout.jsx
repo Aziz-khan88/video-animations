@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Feel Free to Contact Us",
+  description: "Get in touch with us to learn more about our offers or ask any questions. We're here for you!",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Feel Free to Contact Us",
+    description: "Get in touch with us to learn more about our offers or ask any questions. We're here for you!",
     url: '/about-us',
     siteName: 'Video Animations',
     locale: 'en_US',

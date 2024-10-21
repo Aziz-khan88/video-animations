@@ -4,20 +4,20 @@ const ByNumber = () => {
     return (
         <div className={styles.byNumberBox}>
             <div className={styles.byNumberItem}>
-                <div className={styles.byNumberPoints}>1000<span>+</span></div>
+                <div className={styles.byNumberPoints}>2,000<span>+</span></div>
                 <h6>Projects <br />Completed</h6>
             </div>
             <div className={styles.byNumberItem}>
-                <div className={styles.byNumberPoints}>1M<span>+</span></div>
+                <div className={styles.byNumberPoints}>500M<span>+</span></div>
                 <h6>Views on our <br />Clients Videos</h6>
             </div>
             <div className={styles.byNumberItem}>
-                <div className={styles.byNumberPoints}>500<span>+</span></div>
-                <h6>Number Of <br />Clients</h6>
+                <div className={styles.byNumberPoints}>$11M<span>+</span></div>
+                <h6>Revenue Generated<br />for Clients</h6>
             </div>
             <div className={styles.byNumberItem}>
-                <div className={styles.byNumberPoints}>2000<span>+</span></div>
-                <h6>Leads Won By <br />Our Videos</h6>
+                <div className={styles.byNumberPoints}>22<span>+</span></div>
+                <h6>International <br />Awards</h6>
             </div>
         </div>
     )
