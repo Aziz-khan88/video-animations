@@ -1,5 +1,6 @@
 "use client";
 import { Col, Container, Row } from "react-bootstrap";
+
 import Logo1 from "media/home/clientslogo/logo1.webp";
 import Logo2 from "media/home/clientslogo/logo2.webp";
 import Logo3 from "media/home/clientslogo/logo3.webp";
@@ -8,14 +9,13 @@ import Logo5 from "media/home/clientslogo/logo5.webp";
 import Logo6 from "media/home/clientslogo/logo6.webp";
 import Logo7 from "media/home/clientslogo/logo7.webp";
 import Logo8 from "media/home/clientslogo/logo8.webp";
-import FMLogo1 from "media/home/frameworklogo/logo1.webp";
-import FMLogo2 from "media/home/frameworklogo/logo2.webp";
-import FMLogo3 from "media/home/frameworklogo/logo3.webp";
-import FMLogo4 from "media/home/frameworklogo/logo4.webp";
-import FMLogo5 from "media/home/frameworklogo/logo5.webp";
-import FMLogo6 from "media/home/frameworklogo/logo6.webp";
-import FMLogo7 from "media/home/frameworklogo/logo7.webp";
-import FMLogo8 from "media/home/frameworklogo/logo8.webp";
+import Logo9 from "media/home/clientslogo/logo9.webp";
+import Logo10 from "media/home/clientslogo/logo10.webp";
+import Logo11 from "media/home/clientslogo/logo11.webp";
+import Logo12 from "media/home/clientslogo/logo12.webp";
+import Logo13 from "media/home/clientslogo/logo13.webp";
+import Logo14 from "media/home/clientslogo/logo14.webp";
+import Logo15 from "media/home/clientslogo/logo15.webp";
 
 import Image from "next/image";
 import styles from "@/styles/about/bannerclients.module.scss";
@@ -31,17 +31,13 @@ const ClientsLogos = [
     { logo: Logo6.src },
     { logo: Logo7.src },
     { logo: Logo8.src },
-];
-
-const FrameworkLogos = [
-    { logo: FMLogo1.src },
-    { logo: FMLogo2.src },
-    { logo: FMLogo3.src },
-    { logo: FMLogo4.src },
-    { logo: FMLogo5.src },
-    { logo: FMLogo6.src },
-    { logo: FMLogo7.src },
-    { logo: FMLogo8.src },
+    { logo: Logo9.src },
+    { logo: Logo10.src },
+    { logo: Logo11.src },
+    { logo: Logo12.src },
+    { logo: Logo13.src },
+    { logo: Logo14.src },
+    { logo: Logo15.src },
 ];
 
 const BannerClients = () => {
@@ -50,7 +46,7 @@ const BannerClients = () => {
         [
             AutoScroll({
                 delay: 3000,
-                speed: 3,
+                speed: 1,
                 playOnInit: true,
             })
         ]
@@ -61,7 +57,7 @@ const BannerClients = () => {
         [
             AutoScroll({
                 delay: 3000,
-                speed: 3,
+                speed: 1,
                 playOnInit: true,
             })
         ]
@@ -88,7 +84,7 @@ const BannerClients = () => {
                         <div className={styles.embla} dir="rtl">
                             <div className={styles.embla__viewport} ref={emblaRefFramework}>
                                 <div className={styles.embla__container}>
-                                    {FrameworkLogos.map((item, index) => (
+                                    {ClientsLogos.map((item, index) => (
                                         <div className={styles.embla__slide} key={`framework-${index}`}>
                                             <div className={styles.imgBox}>
                                                 <Image src={item.logo} alt={`Framework Logo ${index + 1}`} width={316} height={165} />
