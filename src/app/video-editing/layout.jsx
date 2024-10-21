@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Professional Video Editing Services | Expert Editors",
+  description: "Get high-quality video editing services tailored to your needs. We create polished, engaging videos that bring your story to life. Start your project today!",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Professional Video Editing Services | Expert Editors",
+    description: "Get high-quality video editing services tailored to your needs. We create polished, engaging videos that bring your story to life. Start your project today!",
     url: '/video-editing',
     siteName: 'Video Animations',
     locale: 'en_US',

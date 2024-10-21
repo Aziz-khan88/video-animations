@@ -123,7 +123,7 @@ const Portfolio = () => {
                                                     <div className={styles.embla__slide} key={video.uri}>
                                                         <div className={styles.slideBox}>
                                                             <Image
-                                                                src={video.pictures.sizes[3].link}
+                                                                src={video.pictures.sizes[6].link}
                                                                 alt={`Video Thumbnail ${index + 1}`}
                                                                 fill
                                                             />

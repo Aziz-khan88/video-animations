@@ -1,5 +1,6 @@
 
-import { BannerData, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/2d-animation/data/data";
+import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/2d-animation/data/data";
+
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";
@@ -17,12 +18,12 @@ export default function Page() {
     return (
         <>
             <Banner video={true} BannerData={BannerData} />
-            <BannerClients />
+             <BannerClients  />
             <Portfolio />
             <KeyPoints />
-            <Process />
+            <Process data={ProcessContent} list={ProcessList} />
             <Packages />
-            <ImageCta />
+            <ImageCta data={ImageCtaContent}/>
             <WhyChooes slides={WhyItems} options={WhyOption} />
             <Testimonials slides={ClientsReview} />
             <Industries />

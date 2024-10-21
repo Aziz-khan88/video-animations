@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "About Us",
+  description: "Our mission, vision, and the team behind our innovative animation Company. Discover our story and values on our About Us page",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
-    url: '/contact-us',
+    title: "About Us",
+    description: "Our mission, vision, and the team behind our innovative animation Company. Discover our story and values on our About Us page",
+    url: '/about-us',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/contact-us' },
+  alternates: { canonical: '/about-us' },
 }
 
 

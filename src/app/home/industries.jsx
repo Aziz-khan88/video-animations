@@ -5,61 +5,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Link from "next/link"
 import { ArrowBtn } from "@/src/app/app-constants"
 
-const options = { loop: true, align: 'start' }
 
-const slides = [
-    {
-        title: (<>Medical<br />& Healthcare</>),
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Engineering",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Education",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: (<>Medical
-            <br />
-            & Healthcare</>),
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Engineering",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Education",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: (<>Medical
-            <br />
-            & Healthcare</>),
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Engineering",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-    {
-        title: "Education",
-        txt: "Lorem ipsum dolor sit amet consectetur. Fames quam blandit morbi feugiat sed amet etiam. Fermentum iaculis ut a mauris. Consectetur eget eget sollicitudin dui sociis sit vulputate. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse. Hendrerit interdum commodo fames ac arcu. Hendrerit libero vitae tellus diam cum suspendisse."
-        , url: "#"
-    },
-]
 
-const Industries = () => {
+const Industries = ({ slides, options }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
     return (
@@ -68,7 +16,7 @@ const Industries = () => {
                 <Row className="headingROw">
                     <Col lg={7} md={7}>
                         <h2>Industries</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.</p>
+                        <p>By combining creativity with purpose, we help brands communicate their message effectively and connect with their audience in a memorable way.</p>
                     </Col>
                 </Row>
             </Container>
