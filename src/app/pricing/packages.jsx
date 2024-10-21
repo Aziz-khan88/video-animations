@@ -21,7 +21,7 @@ export default function Packages() {
                             <p>{data?.content}</p>
                         </div>
                     </Col>
-                    <Col xl={6} lg={6} md={6} >
+                    {/* <Col xl={6} lg={6} md={6} >
                         <div className={styles.PrincingContentRight}>
                             <span>Select Service</span>
                             <select name="menu" id="meun-items" className={styles.PrincingSelect}>
@@ -37,7 +37,7 @@ export default function Packages() {
                                 <option value="Hybrid & Cel">Hybrid & Cel</option>
                             </select>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
 
                 <div className={styles.pricing}>

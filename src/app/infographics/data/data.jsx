@@ -1,3 +1,6 @@
+ // CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -10,8 +13,41 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Interactive Infographics Designs for Your Website",
-    desc: "Are you looking for infographics designs that tell an exciting story about your product and get your audience’s attention instantly?Then don’t look further, we’ve got the most magnificent and interactive infographics design ideas for you!"
+    title: "Interactive Infographic Designs for Your Website",
+    desc: "Are you looking for infographic designs that tell an exciting story about your product and get your audience’s attention instantly? Then don’t look further, we’ve got the most magnificent and interactive infographic design ideas for you!"
+}
+
+ 
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Our infographic process turns complex data into visually appealing, easy-to-understand graphics, guiding you through each stage for clear and effective results. ",
+}
+
+export const ProcessList = [
+    {
+        title: "Research and Content Planning",
+        text: "We start by gathering all the necessary information and data you want to communicate. Our team works closely with you to understand the key messages and plan how to organize and present the content in a visually compelling way."
+    },
+    {
+        title: "Design and Layout",
+        text: "Once the content is finalized, we move into designing the layout. Our designers carefully select colors, fonts, and graphics that enhance the clarity of the information. Each element is arranged strategically to guide the viewer's eye and make the data easy to digest."
+    },
+    {
+        title: "Visual Enhancement",
+        text: "In this phase, we focus on adding visual elements that make the infographic more engaging. Charts, icons, and illustrations are integrated to highlight important data points, ensuring the design is both informative and visually attractive."
+    },
+    {
+        title: "Finalization and Delivery",
+        text: "After completing the design, we fine-tune the infographic based on your feedback. We ensure the final product is polished and ready for publication, providing you with a high-quality infographic that effectively communicates your message."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Partner with the Experts <br /> Of Infographics Design</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
 }
 
 export const ClientsReview = [
@@ -40,6 +76,7 @@ export const ClientsReview = [
         video: "/videos/test.mp4"
     },
 ]
+
 
 export const WhyOption = { align: 'center', loop: true }
 export const WhyItems = [
@@ -81,7 +118,7 @@ export const FaqList = [
         title: "What are infographic design services?",
         txt: (
             <p>
-                When information and graphics are combined together, it becomes visually appealing and is called infographic design. It is a widely used marketing tool that helps in simplifying huge amounts of data into a single image for viewers understanding.
+                Infographic design services combine information and visuals to create eye-catching content. This marketing tool simplifies large amounts of data into a single, easy-to-understand image, making complex information more accessible and engaging for viewers.
             </p>
 
         ),
@@ -111,7 +148,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                    It would cost you around $100 to $2000, depending on your project’s complexity and customized requirements.
+                Infographic design costs range from $100 to $2000, depending on the complexity of the project and any specific customization requirements.
                 </p>
             </>
         ),
@@ -120,15 +157,15 @@ export const FaqList = [
         title: "How many hours does it take to make an infographic?",
         txt: (
             <p>
-                Due to its technical nature and detailed characteristics, it can take from 3 to 4 weeks to create an infographic
+                Creating an infographic typically takes around 3 to 4 weeks, due to the detailed design process and technical nature of the work involved.
             </p>
         ),
     },
     {
-        title: "What’s included in your infographics design services?",
+        title: "What's included in your infographic design services?",
         txt: (
             <p>
-                Our infographic asset include, interactive infographics strategy, niche-specific research, assignment to dedicated project manager, wireframe and prototype development, providing source file for changes and marketing, web page customizations, and promotion across social media platforms.
+                Our infographic design services include strategy development, niche-specific research, project management, wireframe creation, source files for customization, webpage integration, and promotion across social media platforms.
             </p>
         ),
     }

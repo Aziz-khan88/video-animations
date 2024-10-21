@@ -1,3 +1,6 @@
+ // CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -10,8 +13,41 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "The Finest Video Editing Services",
-    desc: "Are you struggling with video editing for your content? Let us help you! We’re a video editing service provider, with experience of helping thousands of Content Creators in achieving millions of views on their videos. Partner with the best video editing team!"
+    title: "The Finest Video Editing Services ",
+    desc: "Are you struggling with video editing for your content? Let us help you! We’re a video editing service provider, with experience in helping thousands of Content Creators in achieving millions of views on their videos. Partner with the best video editing team!"
+}
+
+ 
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Our video editing process transforms raw footage into polished, professional videos that captivate your audience. We guide each step to ensure a seamless and creative journey from start to finish.",
+}
+
+export const ProcessList = [
+    {
+        title: "Concept and Planning",
+        text: "We begin by understanding your vision and objectives. Our team collaborates with you to outline the structure, tone, and style of your video, ensuring the final product aligns with your brand and communicates your message effectively."
+    },
+    {
+        title: "Footage Review and Organization",
+        text: "Once the concept is set, we review and organize all raw footage. Our editors carefully sort through the material, selecting the best clips and arranging them in a way that ensures smooth transitions and coherent storytelling."
+    },
+    {
+        title: "Editing and Enhancements",
+        text: "In the production phase, our editors bring the footage to life by cutting, trimming, and adding transitions. We enhance the video with effects, color correction, audio syncing, and motion graphics to ensure a visually compelling and high-quality final product."
+    },
+    {
+        title: "Finalization and Delivery",
+        text: "In the final stage, we refine the video, making any necessary adjustments based on your feedback. Once the video meets your expectations, we deliver a polished, ready-to-publish video that resonates with your audience."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Empower Your Brand With Expert<br /> Video Editing Company</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
 }
 
 export const ClientsReview = [
@@ -82,16 +118,8 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                    Following stages are implemented in video editing
+                Video editing services typically involve selecting the best clips, cutting and trimming footage, arranging clips in the right sequence, applying color correction, adding transitions and motion effects, and incorporating client feedback to create a polished and engaging final video.
                 </p>
-                <ol>
-                    <li>Selection of footage or clips</li>
-                    <li>Cutting and trimming of clips</li>
-                    <li>Placement of clips with right sequence</li>
-                    <li>Color effects and mixing</li>
-                    <li>Motion movements, transitions etc.</li>
-                    <li>Responding to client’s requests and feedback</li>
-                </ol>
             </>
 
         ),
@@ -100,7 +128,7 @@ export const FaqList = [
         title: "How much does video editing cost?",
         txt: (
             <p>
-                It starts at a reasonable price of $1.25 per minute and could go to $10 or more. If your content is lengthy, the hourly rate for video is around $75, with best editing footage and clips.
+                The cost of video editing typically starts at $1.25 per minute and can go up to $10 or more, depending on the complexity. For longer projects, an hourly rate of around $75 is standard for quality editing.
             </p>
         ),
     },
@@ -109,7 +137,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                    It would cost you $75 to $150 per hour, which is quite reasonable for hiring a highly skilled video editing professional for your project.
+                Hiring a skilled video editor generally costs between $75 and $150 per hour. This rate ensures that you get professional-level editing that enhances your video content and meets your project needs.
                 </p>
             </>
         ),
@@ -118,7 +146,7 @@ export const FaqList = [
         title: "How long does video editing take?",
         txt: (
             <p>
-                For best and high-end results, it takes up to 30 minutes to 1.5 hours to professionally edit a minute of a video.
+                Editing a minute of video can take anywhere from 30 minutes to 1.5 hours, depending on the level of detail and complexity required. This ensures the best possible quality for professional video projects.
             </p>
         ),
     }

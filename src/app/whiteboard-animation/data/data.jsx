@@ -1,3 +1,6 @@
+ // CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -12,6 +15,39 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Whiteboard Animation A Canvas Of Unlimited Ideas",
     desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company."
+}
+
+ 
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.",
+}
+
+export const ProcessList = [
+    {
+        title: "Ideation",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Development",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Animation Production",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Finalization",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Explore Our Animation<br /> Services Today!</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
 }
 
 export const ClientsReview = [

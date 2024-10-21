@@ -1,3 +1,6 @@
+ // CtaImage Images
+import bannerImg from "media/services/imagecta/bannerImg.webp"
+
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
@@ -12,6 +15,39 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Animate Your Logo With The Best Animation Agency",
     desc: "Your company logo is something that enhances your brand's personality, a visually appealing logo creates a lasting impression on the audience and helps in showcasing the right identity of your business. With the help of our logo animation services your business gets a new makeover that would create an unforgettable image of your brand."
+}
+
+ 
+
+export const ProcessContent = {
+    title: "Process",
+    text: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.",
+}
+
+export const ProcessList = [
+    {
+        title: "Ideation",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Development",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Animation Production",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+    {
+        title: "Finalization",
+        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+    },
+]
+
+export const ImageCtaContent = {
+    title: (<>Explore Our Animation<br /> Services Today!</>),
+    ctaLink: "#",
+    ctaText: "Let’s Discuss",
+    bannerImg: bannerImg
 }
 
 export const ClientsReview = [
