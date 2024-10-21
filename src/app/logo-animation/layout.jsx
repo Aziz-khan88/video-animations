@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Custom Logo Animation Services | Get Your Animated Logo",
+  description: " Need professional logo animation services? We offer top-notch animations for your company with unlimited revisions to ensure your complete satisfaction.",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Custom Logo Animation Services | Get Your Animated Logo",
+    description: " Need professional logo animation services? We offer top-notch animations for your company with unlimited revisions to ensure your complete satisfaction.",
     url: '/logo-animation',
     siteName: 'Video Animations',
     locale: 'en_US',

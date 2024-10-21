@@ -16,6 +16,11 @@ const poppins = Poppins({
 export const metadata = {
   title: "Home | Video Animations",
   description: "",
+  //===== No-Index =====
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }) {

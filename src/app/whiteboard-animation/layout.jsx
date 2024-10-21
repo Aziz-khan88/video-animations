@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "",
-  description: "",
+  title: "Whiteboard Animation Services | Creative Storytelling",
+  description: "Elevate your message with our whiteboard animation services. We create captivating visuals that simplify complex ideas into engaging and memorable stories.",
   //===== OG Tags =====
   openGraph: {
-    title: "",
-    description: "",
+    title: "Whiteboard Animation Services | Creative Storytelling",
+    description: "Elevate your message with our whiteboard animation services. We create captivating visuals that simplify complex ideas into engaging and memorable stories.",
     url: '/whiteboard-animation',
     siteName: 'Video Animations',
     locale: 'en_US',

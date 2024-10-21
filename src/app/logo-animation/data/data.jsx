@@ -13,38 +13,38 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Animate Your Logo With The Best Animation Agency",
-    desc: "Your company logo is something that enhances your brand's personality, a visually appealing logo creates a lasting impression on the audience and helps in showcasing the right identity of your business. With the help of our logo animation services your business gets a new makeover that would create an unforgettable image of your brand."
+    title: "Animate Your Logo with The Best Animation Agency",
+    desc: "mYour company logo is something that enhances your brand's personality, a visually appealing logo creates a lasting impression on the audience and helps in showcasing the right identity of your business. With the help of our logo animation services, your business gets a new makeover that would create an unforgettable image of your brand."
 }
 
  
 
 export const ProcessContent = {
     title: "Process",
-    text: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.",
+    text: "Our logo animation process transforms static logos into dynamic, eye-catching visuals that leave a lasting impression. We handle each step with precision to ensure your brand comes to life through animation.",
 }
 
 export const ProcessList = [
     {
-        title: "Ideation",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        title: "Concept and Design",
+        text: "We begin by understanding your brand identity and logo requirements. Our creative team collaborates with you to conceptualize how the logo will animate, ensuring it reflects your brand's personality and purpose while staying aligned with your vision."
     },
     {
-        title: "Development",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        title: "Storyboarding and Visualization",
+        text: "Once the concept is established, we move into the storyboarding phase. Here, we sketch out the animation flow, detailing how each movement and transition will unfold. This helps ensure a smooth, visually appealing animation that engages viewers from the first frame."
     },
     {
         title: "Animation Production",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        text: "In this stage, our animators bring the logo to life using motion graphics and dynamic effects. Every detail, from movement to transitions, is carefully crafted to create a polished, professional logo animation that enhances your brand’s visual identity."
     },
     {
-        title: "Finalization",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        title: "Finalization and Delivery",
+        text: "After production, we fine-tune the animation based on your feedback. We ensure the final logo animation is refined and ready to make an impact, delivering a high-quality video that represents your brand in a unique and engaging way."
     },
 ]
 
 export const ImageCtaContent = {
-    title: (<>Explore Our Animation<br /> Services Today!</>),
+    title: (<>Our Logo Animation Services<br /> Make Your Brand Memorable</>),
     ctaLink: "#",
     ctaText: "Let’s Discuss",
     bannerImg: bannerImg

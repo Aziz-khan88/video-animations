@@ -1,4 +1,4 @@
- // CtaImage Images
+// CtaImage Images
 import bannerImg from "media/services/imagecta/bannerImg.webp"
 
 // Testimonial Image
@@ -13,38 +13,38 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Whiteboard Animation A Canvas Of Unlimited Ideas",
-    desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company."
+    title: "Transform Ideas into Simple Stories with Whiteboard Animation Services",
+    desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company. "
 }
 
- 
+
 
 export const ProcessContent = {
     title: "Process",
-    text: "Lorem ipsum dolor sit amet consectetur. Fringilla orci vitae vel cursus. Quis dolor arcu lectus mauris ut velit sit.",
+    text: "Our whiteboard animation process brings your ideas to life through engaging, hand-drawn visuals. We carefully guide each phase to ensure a seamless journey from concept to final delivery.",
 }
 
 export const ProcessList = [
     {
-        title: "Ideation",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        title: "Concept and Scripting",
+        text: "We start by understanding your ideas and creating a script that communicates your message clearly. Our creative team works closely with you to ensure that the script is both engaging and informative, setting the foundation for your whiteboard animation."
     },
     {
-        title: "Development",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        title: "Storyboarding",
+        text: "Once the script is finalized, we move on to storyboarding. Each scene is sketched out by hand, planning out the visual flow and key points of the animation. This step ensures that the animation is cohesive and visually captivating."
     },
     {
         title: "Animation Production",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        text: "Our talented animators bring the storyboard to life by drawing each element. We incorporate smooth transitions, motion graphics, and voiceover, ensuring the animation keeps viewers engaged while delivering your message in a clear and entertaining way."
     },
     {
         title: "Finalization",
-        text: "Lorem ipsum dolor sit amet consectetur. Et sed justo felis donec lacus vel. Fringilla et lectus congue tristique leo quis. Aliquam facilisis porttitor facilisis id enim. Et dui ut orci cursus lacus nulla cursus urna lectus."
+        text: "In the final stage, we fine-tune the animation based on your feedback. After any necessary adjustments, we deliver a polished whiteboard animation ready to engage your audience and effectively convey your message."
     },
 ]
 
 export const ImageCtaContent = {
-    title: (<>Explore Our Animation<br /> Services Today!</>),
+    title: (<>Partner With the Top-rated Whiteboard<br /> Animation Company </>),
     ctaLink: "#",
     ctaText: "Let’s Discuss",
     bannerImg: bannerImg
