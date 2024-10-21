@@ -31,7 +31,7 @@ export const list = [
         txt: (
             <>
                 <p>The top mostly used video formats are AVI, MP4, MOV and WMV.
-                    Whether you want to upload social media or your website, each platform might require a different format, so it's better to get a copy of your video in all formats.
+                    Whether you want to upload social media or your website, each platform might require a different format, so it’s better to get a copy of your video in all formats.
                 </p>
             </>
         )
