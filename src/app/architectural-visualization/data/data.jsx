@@ -47,7 +47,7 @@ export const ImageCtaContent = {
     title: (<>Explore Our Animation<br /> Services Today!</>),
     ctaLink: "#",
     ctaText: "Let’s Discuss",
-    bannerImg: bannerImg
+    bannerImg: bannerImg.src
 }
 
 

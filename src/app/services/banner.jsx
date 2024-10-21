@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Img1 from "@/public/services/banner/portrait.webp"
 
 const data = {
-    title: (<>Want to Jump <br className='d-none d-md-block' /> Straight in & Get the Video Made?</>),
+    title: (<>Want to Jump <br /> Straight in & Get the Video Made?</>),
     content: "Want to get the right kind of video made? One that ensures that your brand objectives are met? One that spurs the customer into taking action? If yes, then you’re just a few steps away from getting a video like this. So, let’s get Video Animation, shall we?",
 }
 

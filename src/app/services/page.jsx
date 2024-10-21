@@ -8,6 +8,9 @@ import Testimonials from "@/src/app/home/testimonials";
 import Industries from "@/src/app/home/industries";
 import Faqs from "@/src/app/home/faq";
 import Process from "@/src/app/services/process";
+import { ImageCtaContent } from "@/src/app/architectural-visualization/data/data";
+
+import { slides, options, } from "@/src/app/home/data/data";
 
 // Testimonial Image
 import Test01 from "media/home/testimonial/test01.webp"
@@ -19,6 +22,7 @@ import why02 from "media/home/whychoose/why02.webp"
 import why03 from "media/home/whychoose/why03.webp"
 import why04 from "media/home/whychoose/why04.webp"
 import ImageCta from "@/src/app/services/imagecta";
+
 
 const ProcessContent = {
   title: "Process",
@@ -120,7 +124,7 @@ export default function Services() {
       <ImageCta data={ImageCtaContent} />
       <WhyChooes slides={WhyItems} options={WhyOption} />
       <Testimonials slides={ClientsReview} />
-      <Industries />
+      <Industries slides={slides} options={options} />
       <Faqs />
 
     </>

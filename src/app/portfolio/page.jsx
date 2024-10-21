@@ -1,3 +1,4 @@
+import { list, slides, options } from "@/src/app/home/data/data";
 import Clients from "@/src/app/home/clients";
 import Faqs from "@/src/app/home/faq";
 import Industries from "@/src/app/home/industries";
@@ -8,6 +9,7 @@ import PortfolioTabs from "@/src/app/portfolio/components/PortfolioTabs";
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
 import Test03 from "media/home/testimonial/test03.webp"
+
 
 const ClientsReview = [
     {
@@ -43,8 +45,8 @@ export default function page() {
             <PortfolioTabs />
             <Clients />
             <Testimonials slides={ClientsReview} />
-            <Industries />
-            <Faqs />
+            <Industries slides={slides} options={options} />
+            <Faqs data={list} />
         </div>
     )
 }
