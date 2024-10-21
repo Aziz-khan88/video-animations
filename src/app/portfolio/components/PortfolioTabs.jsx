@@ -117,10 +117,10 @@ const PortfolioTabs = () => {
 
                                         {videos.map((video, index) => (
                                             <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]} `}
-                                                >
+                                            >
 
                                                 <Image
-                                                    src={video.pictures.sizes[3].link}
+                                                    src={video.pictures.sizes[6].link}
                                                     fill
                                                     alt={video.name}
                                                 />
