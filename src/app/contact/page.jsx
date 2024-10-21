@@ -6,6 +6,7 @@ import Faqs from "@/src/app/home/faq";
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
 import Test03 from "media/home/testimonial/test03.webp"
+import { list } from "../home/data/data";
 
 
 const ClientsReview = [
@@ -42,7 +43,7 @@ export default function Page() {
       <Banner contact={true} />
       <ContactForm />
       <Testimonials slides={ClientsReview} />
-      <Faqs />
+      <Faqs data={list} />
     </>
   );
 }

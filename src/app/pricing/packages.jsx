@@ -43,11 +43,27 @@ export default function Packages() {
                 <div className={styles.pricing}>
                     <div className={styles.pricingBox}>
                         <div className={styles.box}>
-                            <div className={styles.packageName}>Basic Package</div>
-                            <h4>$500.00</h4>
+                            <h4 className='textGradient'>Silver<span> Packages</span></h4>
                             <p>We have something in store for everyone, and that something is affordable services</p>
                             <div className={styles.buttonCta}>Get Started</div>
                         </div>
+                        <ul className={styles.pricingList}>
+                            <li><PackageTick /> 30 Seconds Duration</li>
+                            <li><PackageTick /> Script Writing</li>
+                            <li><PackageTick /> Custom Artwork</li>
+                            <li><PackageTick /> Background Music</li>
+                            <li><PackageTick /> HD Format Video</li>
+                            <li><PackageTick /> Dedicated Support</li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.pricingBox}>
+                        <div className={styles.box}>
+                            <h4 className='textGradient'>Gold<span> Packages</span></h4>
+                            <p>We have something in store for everyone, and that something is affordable services</p>
+                            <div className={styles.buttonCta}>Get Started</div>
+                        </div>
+
                         <ul className={styles.pricingList}>
                             <li><PackageTick /> 30 Seconds Duration</li>
                             <li><PackageTick /> Script Writing</li>
@@ -61,8 +77,7 @@ export default function Packages() {
 
                     <div className={styles.pricingBox}>
                         <div className={styles.box}>
-                            <div className={styles.packageName}>Basic Package</div>
-                            <h4>$500.00</h4>
+                            <h4 className='textGradient'>Platinum<span> Packages</span></h4>
                             <p>We have something in store for everyone, and that something is affordable services</p>
                             <div className={styles.buttonCta}>Get Started</div>
                         </div>
@@ -71,26 +86,7 @@ export default function Packages() {
                             <li><PackageTick /> 30 Seconds Duration</li>
                             <li><PackageTick /> Script Writing</li>
                             <li><PackageTick /> Professional Voice-over & SFX</li>
-                            <li><PackageTick /> Hand-drawn Illustrations</li>
-                            <li><PackageTick /> Unlimited Revisions</li>
-                            <li><PackageTick /> HD Format Video</li>
-                            <li><PackageTick /> Dedicated Support</li>
-                        </ul>
-                    </div>
-
-                    <div className={styles.pricingBox}>
-                        <div className={styles.box}>
-                            <div className={styles.packageName}>Basic Package</div>
-                            <h4>$500.00</h4>
-                            <p>We have something in store for everyone, and that something is affordable services</p>
-                            <div className={styles.buttonCta}>Get Started</div>
-                        </div>
-
-                        <ul className={styles.pricingList}>
-                            <li><PackageTick /> 30 Seconds Duration</li>
-                            <li><PackageTick /> Script Writing</li>
-                            <li><PackageTick /> Professional Voice-over & SFX</li>
-                            <li><PackageTick /> Hand-drawn Illustrations</li>
+                            <li><PackageTick /> Custom 2D Character Illustration</li>
                             <li><PackageTick /> Unlimited Revisions</li>
                             <li><PackageTick /> HD Format Video</li>
                             <li><PackageTick /> Dedicated Support</li>

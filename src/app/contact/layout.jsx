@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Feel Free to Contact Us",
     description: "Get in touch with us to learn more about our offers or ask any questions. We're here for you!",
-    url: '/about-us',
+    url: '/contact-us',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/about-us' },
+  alternates: { canonical: '/contact-us' },
 }
 
 
