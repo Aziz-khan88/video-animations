@@ -2,7 +2,7 @@
     background: #F9F9F9;
 
     p {
-      
+
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -59,6 +59,10 @@
                             border-radius: 23px;
                         }
 
+                        img {
+                            border-radius: 23px;
+                        }
+
                         .testimonialContent {
                             display: flex;
                             justify-content: space-between;
@@ -71,7 +75,7 @@
 
                             .testimonialHeading {
                                 .testimonialName {
-                                  
+
                                     font-style: normal;
                                     font-weight: 600;
                                     font-size: 20px;
@@ -81,7 +85,7 @@
                                 }
 
                                 .testimonialJob {
-                                  
+
                                     font-style: normal;
                                     font-weight: 300;
                                     font-size: 18px;
