@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ArrowBtn, FavIcon } from "@/src/app/app-constants"
 import Head from "next/head"
 
-const Banner = () => {
+const Banner = ({ BannerData }) => {
     return (
         <>
             <Head>
@@ -16,7 +16,7 @@ const Banner = () => {
                         <Col md={12} className="mt-auto">
                             <div className={styles.bannerContentBox}>
                                 <div className={styles.bannerHeading}>
-                                    <h1>Video Animation Agency To Help You Drive Results With Passion</h1>
+                                    <h1>{BannerData?.title}</h1>
                                     <Link href="" className="readMoreBtn">Dive in now <ArrowBtn /></Link>
                                 </div>
                                 <div className={styles.bannerButton}>
@@ -40,7 +40,7 @@ const Banner = () => {
                     className={styles.bannerVideo}
                     loading="eager"
                 >
-                    <source src='/videos/bannerVideo.mp4' type="video/mp4" />
+                    <source src={BannerData.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </section>

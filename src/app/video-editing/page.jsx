@@ -20,7 +20,7 @@ import { slides, options, } from "@/src/app/home/data/data";
 export default function Page() {
     return (
         <>
-            <Banner video={true} BannerData={BannerData} />
+            <Banner BannerData={BannerData} />
             <BannerClients />
             <Portfolio />
             <KeyPoints />

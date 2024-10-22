@@ -1,3 +1,41 @@
+import Test01 from "media/home/testimonial/test01.webp"
+import Test02 from "media/home/testimonial/test02.webp"
+import Test03 from "media/home/testimonial/test03.webp"
+
+export const BannerData = {
+    title: (<>
+        <span>Let’s</span> Create Something Beyond Ordinary, Our Team Would Love To Hear Your Idea
+    </>),
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023709/rendition/1080p/file.mp4?loc=external&signature=e74f629343c38e1bf336ff6f0aee96311fa23e92c78df4d635707ab9a3a36a25"
+}
+
+export const ClientsReview = [
+    {
+        img: Test01.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test02.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test03.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+    {
+        img: Test01.src,
+        name: "Daniel Gonzalez",
+        job: "CTO / Pronftdesign.com",
+        video: "/videos/test.mp4"
+    },
+]
+
 export const list = [
     {
         title: "How is Video Animation different?",

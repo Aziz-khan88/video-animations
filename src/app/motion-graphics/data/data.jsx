@@ -1,4 +1,4 @@
- // CtaImage Images
+// CtaImage Images
 import bannerImg from "media/services/imagecta/bannerImg.webp"
 
 // Testimonial Image
@@ -14,10 +14,11 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "Smooth & Highly Engaging Motion Graphics Design",
-    desc: "Are you looking for exquisite motion graphics animation for your website, promotional videos, and social media content? We specialize in creating the most eye-catching, smooth, and informative animated motion graphics. With the help of our experts, you can transform your ideas into attractive animated motion graphics."
+    desc: "Are you looking for exquisite motion graphics animation for your website, promotional videos, and social media content? We specialize in creating the most eye-catching, smooth, and informative animated motion graphics. With the help of our experts, you can transform your ideas into attractive animated motion graphics.",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023844/rendition/1080p/file.mp4?loc=external&signature=9821f9f3f5425bb7db6f2b6b89e9ccc8ba0d51ff39d016b6ec3e4444d4d8c626"
 }
 
- 
+
 
 export const ProcessContent = {
     title: "Process",
@@ -125,7 +126,7 @@ export const FaqList = [
         title: "How is motion graphics different from animation?",
         txt: (
             <p>
-               Motion graphics animate text, logos, or images for better visuals, while animation involves a series of moving images.
+                Motion graphics animate text, logos, or images for better visuals, while animation involves a series of moving images.
             </p>
         ),
     },
@@ -134,7 +135,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                Yes, motion graphics are generally more affordable due to easier production, while animation requires more time and technical resources like CGI or hand-drawn art.
+                    Yes, motion graphics are generally more affordable due to easier production, while animation requires more time and technical resources like CGI or hand-drawn art.
                 </p>
             </>
         ),

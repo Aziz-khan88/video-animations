@@ -21,7 +21,7 @@ import ImageCta from "../services/imagecta";
 export default function Page() {
     return (
         <>
-            <Banner video={true} BannerData={BannerData} />
+            <Banner BannerData={BannerData} />
             <BannerClients />
             <Portfolio />
             <KeyPoints />

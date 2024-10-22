@@ -4,7 +4,7 @@ import ContactPageFrom from '@/src/app/contact/compoments/contactfrom'
 
 const ContactForm = () => {
     return (
-        <section className={styles.contactFormSection}>
+        <section className={`${styles.contactFormSection} p-100`}>
             <Container>
                 <Row>
                     <Col xl={10} lg={12} md={12} className='m-auto'>

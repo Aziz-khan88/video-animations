@@ -18,11 +18,8 @@ const ImageCta = ({ data }) => {
                     </Col>
                 </Row>
             </Container>
-            <Image src={data.bannerImg} className={styles.bannerimage} alt='bg image' />
-            {/* <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerimage}>
-                <source src='/videos/makeAnimation.mp4' type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
+            <Image src={data.bannerImg} fill alt='bg image' />
+
         </section>
     )
 }

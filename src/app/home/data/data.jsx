@@ -8,6 +8,11 @@ import why02 from "media/home/whychoose/why02.webp"
 import why03 from "media/home/whychoose/why03.webp"
 import why04 from "media/home/whychoose/why04.webp"
 
+export const BannerData = {
+    title: "Video Animation Agency To Help You Drive Results With Passion",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022063281/rendition/1080p/file.mp4?loc=external&signature=50d67cebafebe3b086a9c953e561b209e339856cae392d3fea3a2bbf44b43d3a"
+}
+
 export const WhyOption = { align: 'center', loop: true }
 export const WhyItems = [
     {

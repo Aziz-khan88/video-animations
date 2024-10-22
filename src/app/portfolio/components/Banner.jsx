@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/banner.module.scss"
 import Link from "next/link"
 import { ArrowBtn, FavIcon } from "@/src/app/app-constants"
+import { BannerData, list } from "@/src/app/portfolio/data/data"
 
 const Banner = () => {
     return (
@@ -11,8 +12,8 @@ const Banner = () => {
                     <Col md={12} className="mt-auto">
                         <div className={styles.bannerContentBox}>
                             <div className={styles.bannerHeading}>
-                                <h1>Portfolio</h1>
-                                <p>Lorem ipsum dolor sit amet,adipiscing Lorem ipsum dolor sit dolor Ipsum. Lorem ipsum dolor sit amet,adipiscing Lorem ipsum dolor sit dolor Ipsum.</p>
+                                <h1>{BannerData?.title}</h1>
+                                {BannerData?.desc}
                                 <Link href="" className="readMoreBtn">Let’s Discuss <ArrowBtn /></Link>
                             </div>
                             <div className={styles.bannerButton}>

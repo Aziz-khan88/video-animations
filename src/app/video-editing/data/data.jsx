@@ -1,4 +1,4 @@
- // CtaImage Images
+// CtaImage Images
 import bannerImg from "media/services/imagecta/bannerImg.webp"
 
 // Testimonial Image
@@ -14,10 +14,11 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "The Finest Video Editing Services ",
-    desc: "Are you struggling with video editing for your content? Let us help you! We’re a video editing service provider, with experience in helping thousands of Content Creators in achieving millions of views on their videos. Partner with the best video editing team!"
+    desc: "Are you struggling with video editing for your content? Let us help you! We’re a video editing service provider, with experience in helping thousands of Content Creators in achieving millions of views on their videos. Partner with the best video editing team!",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023974/rendition/1080p/file.mp4?loc=external&signature=fd79d00291cc088733f3993c034cb3847b6830a7e8ab3d03e6daf3e92bbbf29b"
 }
 
- 
+
 
 export const ProcessContent = {
     title: "Process",
@@ -118,7 +119,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                Video editing services typically involve selecting the best clips, cutting and trimming footage, arranging clips in the right sequence, applying color correction, adding transitions and motion effects, and incorporating client feedback to create a polished and engaging final video.
+                    Video editing services typically involve selecting the best clips, cutting and trimming footage, arranging clips in the right sequence, applying color correction, adding transitions and motion effects, and incorporating client feedback to create a polished and engaging final video.
                 </p>
             </>
 
@@ -137,7 +138,7 @@ export const FaqList = [
         txt: (
             <>
                 <p>
-                Hiring a skilled video editor generally costs between $75 and $150 per hour. This rate ensures that you get professional-level editing that enhances your video content and meets your project needs.
+                    Hiring a skilled video editor generally costs between $75 and $150 per hour. This rate ensures that you get professional-level editing that enhances your video content and meets your project needs.
                 </p>
             </>
         ),

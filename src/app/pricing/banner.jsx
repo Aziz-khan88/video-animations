@@ -29,7 +29,7 @@ const Banner = ({ BannerData }) => {
                 </Row>
             </Container>
             <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerVideo}>
-                <source src='/videos/pricingVideo.mp4' type="video/mp4" />
+                <source src={BannerData.video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </section>

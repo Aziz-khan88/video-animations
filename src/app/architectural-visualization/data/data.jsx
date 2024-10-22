@@ -14,7 +14,8 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "Transforming Ideas with Architectural Visualization",
-    desc: "We create perfect exterior and interior visualizations and renderings. Even if you have little input ideas and data, we can deliver original exterior designs, realistic 3D floor plans and models for your company.  Our architectural visualization company also provides best solutions for real estate."
+    desc: "We create perfect exterior and interior visualizations and renderings. Even if you have little input ideas and data, we can deliver original exterior designs, realistic 3D floor plans and models for your company.  Our architectural visualization company also provides best solutions for real estate.",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023568/rendition/1080p/file.mp4?loc=external&signature=96ce5e04e0deb393c76ecb9c8ba0dcd7fb3dc51b7a975ff4be971585d05631f2"
 }
 
 

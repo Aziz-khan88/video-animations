@@ -14,7 +14,8 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "Transform Ideas into Simple Stories with Whiteboard Animation Services",
-    desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company. "
+    desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company. ",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022024033/rendition/1080p/file.mp4?loc=external&signature=3941c10b9a4cba87801ae0d4fa97710743fcb098bd244177e3ba6a1912a22da8"
 }
 
 

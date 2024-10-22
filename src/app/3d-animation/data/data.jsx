@@ -15,7 +15,8 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "3D Animation Agency Transforming Vision Into Reality",
-    desc: "Video Animation is a well-recognized 3D animation company with a team consisting of expert animators that are experienced in crafting remarkable 3D visuals. Our areas of expertise include the entertainment industry, gaming, E- learning, Hi-tech businesses and more. No matter how complex your desired 3D animation is, our team of certified animators is highly skilled at transforming your vision into a stunning reality."
+    desc: "Video Animation is a well-recognized 3D animation company with a team consisting of expert animators that are experienced in crafting remarkable 3D visuals. Our areas of expertise include the entertainment industry, gaming, E- learning, Hi-tech businesses and more. No matter how complex your desired 3D animation is, our team of certified animators is highly skilled at transforming your vision into a stunning reality.",
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023406/rendition/1080p/file.mp4?loc=external&signature=01ab571dd3266c76e65141c995e11cea92b2d77db4a5bfb6d3d6daf6544ec385"
 }
 
 
