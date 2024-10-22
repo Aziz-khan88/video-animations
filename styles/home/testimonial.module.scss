@@ -37,6 +37,7 @@
                         border-radius: 23px;
                         width: 100%;
                         position: relative;
+                        background: #000;
 
                         &::after {
                             content: '';
@@ -45,7 +46,7 @@
                             position: absolute;
                             left: 0px;
                             top: 0px;
-                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 32.7%, rgba(0, 0, 0, 0.5) 81.25%);
+                            background: linear-gradient(180deg, rgba(255, 225, 0, 0) 60%, #ED1919 108%);
                             border-radius: 23px;
                         }
 
@@ -114,6 +115,18 @@
                                         transition: transform 0.4s ease-in-out;
                                     }
 
+                                }
+                            }
+                        }
+
+                        &.active {
+                            &::after {
+                                display: none;
+                            }
+
+                            .testimonialContent {
+                                .testimonialHeading {
+                                    opacity: 0;
                                 }
                             }
                         }

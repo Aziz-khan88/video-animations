@@ -50,12 +50,13 @@ const Testimonials = (props) => {
                                 <div className={styles.embla__container}>
                                     {slides.map((item, index) => (
                                         <div className={styles.embla__slide} key={index}>
-                                            <div className={styles.testimonialBox}>
+                                            <div className={`${styles.testimonialBox} ${activeIndex === index ? styles.active : ""}`}>
                                                 <div className={styles.testimonialContent}>
                                                     <div className={styles.testimonialHeading}>
                                                         <div className={styles.testimonialName}>{item.name}</div>
                                                         <div className={styles.testimonialJob}>{item.job}</div>
                                                     </div>
+
                                                     <div className={styles.testimonialButton} onClick={() => handleToggleVideo(index)}>
                                                         {activeIndex === index ? <Pause /> : <Play />}
                                                     </div>
