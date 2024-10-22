@@ -34,7 +34,7 @@
 
                     .testimonialBox {
                         height: 344px;
-                        border-radius: 23px;
+                        border-radius: 20px;
                         width: 100%;
                         position: relative;
                         background: #000;
@@ -47,7 +47,7 @@
                             left: 0px;
                             top: 0px;
                             background: linear-gradient(180deg, rgba(255, 225, 0, 0) 60%, #ED1919 108%);
-                            border-radius: 23px;
+                            border-radius: 20px;
                         }
 
                         .testVideo {
@@ -57,11 +57,11 @@
                             object-fit: cover;
                             top: 0px;
                             left: 0px;
-                            border-radius: 23px;
+                            border-radius: 20px;
                         }
 
                         img {
-                            border-radius: 23px;
+                            border-radius: 20px;
                         }
 
                         .testimonialContent {
@@ -281,15 +281,6 @@
 
                         .testimonialBox {
                             height: 300px;
-                            border-radius: 18px;
-
-                            &::after {
-                                border-radius: 18px;
-                            }
-
-                            .testVideo {
-                                border-radius: 18px;
-                            }
 
                             .testimonialContent {
                                 padding: 15px;
@@ -360,14 +351,18 @@
 
                         .testimonialBox {
                             height: 250px;
-                            border-radius: 15px;
+                            border-radius: 18px;
 
                             &::after {
-                                border-radius: 15px;
+                                border-radius: 18px;
                             }
 
                             .testVideo {
-                                border-radius: 15px;
+                                border-radius: 18px;
+                            }
+
+                            img {
+                                border-radius: 18px;
                             }
 
                             .testimonialContent {
@@ -439,14 +434,18 @@
 
                         .testimonialBox {
                             height: 220px;
-                            border-radius: 10px;
+                            border-radius: 15px;
 
                             &::after {
-                                border-radius: 10px;
+                                border-radius: 15px;
                             }
 
                             .testVideo {
-                                border-radius: 10px;
+                                border-radius: 15px;
+                            }
+
+                            img {
+                                border-radius: 15px;
                             }
 
                             .testimonialContent {
@@ -528,15 +527,6 @@
 
                         .testimonialBox {
                             height: 250px;
-                            border-radius: 10px;
-
-                            &::after {
-                                border-radius: 10px;
-                            }
-
-                            .testVideo {
-                                border-radius: 10px;
-                            }
 
                             .testimonialContent {
                                 padding: 15px;
@@ -618,15 +608,6 @@
 
                         .testimonialBox {
                             height: 250px;
-                            border-radius: 10px;
-
-                            &::after {
-                                border-radius: 10px;
-                            }
-
-                            .testVideo {
-                                border-radius: 10px;
-                            }
 
                             .testimonialContent {
                                 padding: 15px;
