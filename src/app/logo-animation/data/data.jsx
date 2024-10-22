@@ -1,10 +1,7 @@
 // CtaImage Images
 import bannerImg from "media/services/imagecta/bannerImg.webp"
 
-// Testimonial Image
-import Test01 from "media/home/testimonial/test01.webp"
-import Test02 from "media/home/testimonial/test02.webp"
-import Test03 from "media/home/testimonial/test03.webp"
+
 // Why Choose Image
 import why01 from "media/home/whychoose/why01.webp"
 import why02 from "media/home/whychoose/why02.webp"
