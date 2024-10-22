@@ -3,7 +3,9 @@ import ContactForm from "@/src/app/contact/compoments/contactform";
 import Testimonials from "@/src/app/home/testimonials";
 import Faqs from "@/src/app/home/faq";
 
-import { list, ClientsReview, BannerData } from "@/src/app/contact/data/data";
+import { list, BannerData } from "@/src/app/contact/data/data";
+
+import { ClientsReview } from "@/src/app/home/data/data";
 
 export default function Page() {
   return (

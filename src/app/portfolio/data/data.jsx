@@ -2,7 +2,8 @@ export const BannerData = {
     title: "Video Animation Portfolio",
     desc: (<>
         <p>Every project in our portfolio was once just an idea that has now become our partner brand’s successful reality.</p>
-    </>)
+    </>),
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022063281/rendition/1080p/file.mp4?loc=external&signature=50d67cebafebe3b086a9c953e561b209e339856cae392d3fea3a2bbf44b43d3a"
 }
 
 export const list = [

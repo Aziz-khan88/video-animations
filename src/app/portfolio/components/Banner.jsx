@@ -2,9 +2,8 @@ import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/banner.module.scss"
 import Link from "next/link"
 import { ArrowBtn, FavIcon } from "@/src/app/app-constants"
-import { BannerData, list } from "@/src/app/portfolio/data/data"
 
-const Banner = () => {
+const Banner = ({ BannerData }) => {
     return (
         <section className={styles.bannerSection}>
             <Container className="h-100">
@@ -29,7 +28,7 @@ const Banner = () => {
                 </Row>
             </Container>
             <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerVideo}>
-                <source src='/videos/bannerVideo.mp4' type="video/mp4" />
+                <source src={BannerData.video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </section>

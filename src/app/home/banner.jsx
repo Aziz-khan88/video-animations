@@ -8,7 +8,7 @@ const Banner = ({ BannerData }) => {
     return (
         <>
             <Head>
-                <link rel="preload" href="/videos/bannerVideo.mp4" as="video" type="video/mp4" />
+                <link rel="preload" href={BannerData.video} as="video" type="video/mp4" />
             </Head>
             <section className={styles.bannerSection}>
                 <Container className="h-100">

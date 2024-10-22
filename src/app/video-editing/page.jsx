@@ -1,5 +1,6 @@
 
-import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/video-editing/data/data";
+import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/video-editing/data/data";
+import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";
@@ -12,10 +13,6 @@ import Industries from "@/src/app/home/industries";
 import Faq from "@/src/app/services/faq";
 import Process from "@/src/app/services/process";
 import ImageCta from "../services/imagecta";
-
-import { slides, options, } from "@/src/app/home/data/data";
-
-
 
 export default function Page() {
     return (

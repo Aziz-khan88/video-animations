@@ -1,6 +1,6 @@
 
-import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList, ClientsReview, WhyItems, WhyOption } from "@/src/app/architectural-visualization/data/data";
-import { slides, options, } from "@/src/app/home/data/data";
+import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/architectural-visualization/data/data";
+import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";

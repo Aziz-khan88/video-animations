@@ -1,6 +1,8 @@
 .bannerSection {
     height: 1000px;
     position: relative;
+    background: #000;
+    z-index: -1;
 
     // &::before {
     //     content: '';

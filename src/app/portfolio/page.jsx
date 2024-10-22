@@ -1,4 +1,4 @@
-import { list, slides, options } from "@/src/app/home/data/data";
+import { slides, options } from "@/src/app/home/data/data";
 import Clients from "@/src/app/home/clients";
 import Faqs from "@/src/app/home/faq";
 import Industries from "@/src/app/home/industries";
@@ -9,6 +9,7 @@ import PortfolioTabs from "@/src/app/portfolio/components/PortfolioTabs";
 import Test01 from "media/home/testimonial/test01.webp"
 import Test02 from "media/home/testimonial/test02.webp"
 import Test03 from "media/home/testimonial/test03.webp"
+import { BannerData, list } from "@/src/app/portfolio/data/data"
 
 
 const ClientsReview = [
@@ -41,7 +42,7 @@ const ClientsReview = [
 export default function page() {
     return (
         <div>
-            <Banner />
+            <Banner BannerData={BannerData} />
             <PortfolioTabs />
             <Clients />
             <Testimonials slides={ClientsReview} />
