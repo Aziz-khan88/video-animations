@@ -2,7 +2,7 @@
     height: 100vh;
     position: relative;
     background-color: #000;
-    z-index: -1;
+    z-index: 0;
 
     &::before {
         content: '';
