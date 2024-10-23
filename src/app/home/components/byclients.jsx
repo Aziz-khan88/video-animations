@@ -13,22 +13,22 @@ const ByClients = () => {
     return (
         <div className={styles.byClientsBox}>
             <div className={styles.byClientsItem}>
-                <Image src={Clients01.src} width={236} height={80} alt="Clients 01" />
+                <Image src={Clients01.src} width={250} height={32} alt="Clients 01" />
             </div>
             <div className={styles.byClientsItem}>
-                <Image src={Clients02.src} width={317} height={80} alt="Clients 02" />
+                <Image src={Clients02.src} width={186} height={35} alt="Clients 02" />
             </div>
             <div className={styles.byClientsItem}>
-                <Image src={Clients03.src} width={414} height={80} alt="Clients 03" />
+                <Image src={Clients03.src} width={190} height={61} alt="Clients 03" />
             </div>
             <div className={styles.byClientsItem}>
-                <Image src={Clients04.src} width={322} height={80} alt="Clients 04" />
+                <Image src={Clients04.src} width={75} height={56} alt="Clients 04" />
             </div>
             <div className={styles.byClientsItem}>
-                <Image src={Clients05.src} width={448} height={80} alt="Clients 05" />
+                <Image src={Clients05.src} width={93} height={55} alt="Clients 05" />
             </div>
             <div className={styles.byClientsItem}>
-                <Image src={Clients06.src} width={370} height={80} alt="Clients 06" />
+                <Image src={Clients06.src} width={175} height={27} alt="Clients 06" />
             </div>
         </div>
     )

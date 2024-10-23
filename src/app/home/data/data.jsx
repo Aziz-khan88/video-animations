@@ -3,6 +3,7 @@ import Test2 from "media/home/testimonial/2.webp"
 import Test3 from "media/home/testimonial/3.webp"
 import Test4 from "media/home/testimonial/4.webp"
 import Test5 from "media/home/testimonial/5.webp"
+import Test6 from "media/home/testimonial/6.webp"
 import why01 from "media/home/whychoose/why01.webp"
 import why02 from "media/home/whychoose/why02.webp"
 import why03 from "media/home/whychoose/why03.webp"
@@ -46,38 +47,45 @@ export const WhyItems = [
         link: "#"
     },
 
+
 ]
 
 export const ClientsReview = [
     {
         img: Test1.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
+        name: "Mike",
+        job: "Founder and CEO",
         video: "https://player.vimeo.com/progressive_redirect/playback/1021094035/rendition/1080p/file.mp4?loc=external&signature=3d21c21f039f6293607d7e256ef3b46fc19b2a41d117f4b0eaa7a928cb5236e9"
     },
     {
         img: Test2.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
+        name: "Paul",
+        job: "Founder and CEO",
         video: "https://player.vimeo.com/progressive_redirect/playback/1021093451/rendition/1080p/file.mp4?loc=external&signature=8a70b1833a07230ff1b88f4a0442c43a23238edbdf8a56ccda2cbd98b9ad8bdb"
     },
     {
         img: Test3.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
+        name: "Amele",
+        job: "Founder and CEO",
         video: "https://player.vimeo.com/progressive_redirect/playback/1021095894/rendition/1080p/file.mp4?loc=external&signature=15b8f4670ebbca8a73be45f45bf0d936c8f0e9d3cf61422f57e7f4fe8de05d61"
     },
     {
         img: Test4.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
+        name: "Jessica",
+        job: "Founder and CEO",
         video: "https://player.vimeo.com/progressive_redirect/playback/1021095378/rendition/1080p/file.mp4?loc=external&signature=6aaa05733cd2586774c27671d30c8f6b8cee68acb7826c2a1da047b8af44cb3f"
     },
     {
         img: Test5.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
+        name: "Thomas Wright",
+        job: "Founder and CEO",
         video: "https://player.vimeo.com/progressive_redirect/playback/1021092420/rendition/1080p/file.mp4?loc=external&signature=a9ebe941d0e4e18ff6fed2c9b832d32861fdfb7656964f29f4aa9a2f87866145"
+    },
+    {
+        img: Test6.src,
+        name: "John Gray",
+        job: "Founder and CEO",
+        video: "https://player.vimeo.com/progressive_redirect/playback/1021095011/rendition/1080p/file.mp4?loc=external&signature=5ec8f0118ba24b5ba3e9c9e21f1d64826162aa8038ed82aee22744cbb557a3ee"
     },
 ]
 

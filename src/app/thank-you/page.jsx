@@ -4,32 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { ArrowBtn } from '@/src/app/app-constants'
 import Testimonials from '@/src/app/home/testimonials'
 
-const ClientsReview = [
-  {
-    img: Test01.src,
-    name: "Daniel Gonzalez",
-    job: "CTO / Pronftdesign.com",
-    video: "/videos/test.mp4"
-  },
-  {
-    img: Test02.src,
-    name: "Daniel Gonzalez",
-    job: "CTO / Pronftdesign.com",
-    video: "/videos/test.mp4"
-  },
-  {
-    img: Test03.src,
-    name: "Daniel Gonzalez",
-    job: "CTO / Pronftdesign.com",
-    video: "/videos/test.mp4"
-  },
-  {
-    img: Test01.src,
-    name: "Daniel Gonzalez",
-    job: "CTO / Pronftdesign.com",
-    video: "/videos/test.mp4"
-  },
-]
+
 export default function page() {
   return (
     <>

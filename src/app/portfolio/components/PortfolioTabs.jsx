@@ -14,7 +14,9 @@ const tabs = [
     { label: "Hybrid Animation", tag: 'videoAnimationHB' },
     { label: "Motion Graphics", tag: 'videoAnimationMG' },
     { label: "Whiteboard Animation", tag: 'videoAnimationWB' },
-    { label: "Cel Animation", tag: 'videoAnimationCEL' }
+    { label: "Cel Animation", tag: 'videoAnimationCEL' },
+    // { label: "Architectural Visualization", tag: 'videoAnimationAV' },
+    // { label: "Typography Animation", tag: 'videoAnimationTA' }
 ];
 
 const VIMEO_ACCESS_TOKEN = 'edbc480300bb3d020a232b2666a656a1';
@@ -36,8 +38,6 @@ const PortfolioTabs = () => {
     const [loading, setLoading] = useState(false);
 
 
-
-    // Fetch Vimeo videos based on the selected tab
     const fetchVimeoVideos = async (tag) => {
         setLoading(true);
         setVideos([]);
@@ -61,7 +61,6 @@ const PortfolioTabs = () => {
         }
     };
 
-    // Fetch videos when active tab changes
     useEffect(() => {
         const selectedTag = tabs[activeTab].tag;
         fetchVimeoVideos(selectedTag);
@@ -118,11 +117,10 @@ const PortfolioTabs = () => {
                                         {videos.map((video, index) => (
                                             <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]} `}
                                             >
-
                                                 <Image
-                                                    src={video.pictures.sizes[6].link}
+                                                    src={video.pictures.sizes[video.pictures.sizes.length - 1].link}
+                                                    alt={`Video Thumbnail ${index + 1}`}
                                                     fill
-                                                    alt={video.name}
                                                 />
                                                 <div className={styles.bannerContentBox}>
                                                     <div className={styles.bannerHeading}>

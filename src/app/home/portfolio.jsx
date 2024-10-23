@@ -12,15 +12,17 @@ import VideoModal from '@/src/app/home/components/videomodal';
 const OPTIONS = { align: 'center', loop: true };
 
 const caseStudiesList = [
-    { title: "2D Animation", tag: 'videoAnimation2D' },
+    { title: "2D Animation", tag: 'videoAnimation2d' },
     { title: "3D Animation", tag: 'videoAnimation3D' },
     { title: "Hybrid Animation", tag: 'videoAnimationHB' },
     { title: "Motion Graphics", tag: 'videoAnimationMG' },
     { title: "Whiteboard Animation", tag: 'videoAnimationWB' },
-    { title: "Cel Animation", tag: 'videoAnimationCEL' }
+    { title: "Cel Animation", tag: 'videoAnimationCEL' },
+    // { title: "Architectural Visualization", tag: 'videoAnimationAV' },
+    // { title: "Typography Animation", tag: 'videoAnimationTA' }
 ];
 
-const VIMEO_ACCESS_TOKEN = 'edbc480300bb3d020a232b2666a656a1';
+const VIMEO_ACCESS_TOKEN = '487ce35bb2408d9ea6ebad7c234cc57b';
 
 const Portfolio = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
@@ -53,6 +55,7 @@ const Portfolio = () => {
                     Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`
                 }
             });
+            console.log("Fetched videos: ", response.data.data); // Log the full response
             setVideos(response.data.data);
         } catch (error) {
             console.error("Error fetching videos: ", error);
@@ -123,7 +126,7 @@ const Portfolio = () => {
                                                     <div className={styles.embla__slide} key={video.uri}>
                                                         <div className={styles.slideBox}>
                                                             <Image
-                                                                src={video.pictures.sizes[6].link}
+                                                                src={video.pictures.sizes[video.pictures.sizes.length - 1].link}
                                                                 alt={`Video Thumbnail ${index + 1}`}
                                                                 fill
                                                             />

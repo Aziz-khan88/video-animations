@@ -18,32 +18,6 @@ export const BannerData = {
 
 
 
-export const ClientsReview = [
-    {
-        img: Test01.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test02.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test03.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test01.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-]
 
 export const ProcessContent = {
     title: "Process",

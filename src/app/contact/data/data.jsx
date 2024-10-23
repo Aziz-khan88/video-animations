@@ -5,32 +5,6 @@ export const BannerData = {
     video: "https://player.vimeo.com/progressive_redirect/playback/1022023709/rendition/1080p/file.mp4?loc=external&signature=e74f629343c38e1bf336ff6f0aee96311fa23e92c78df4d635707ab9a3a36a25"
 }
 
-export const ClientsReview = [
-    {
-        img: Test01.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test02.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test03.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-    {
-        img: Test01.src,
-        name: "Daniel Gonzalez",
-        job: "CTO / Pronftdesign.com",
-        video: "/videos/test.mp4"
-    },
-]
 
 export const list = [
     {
