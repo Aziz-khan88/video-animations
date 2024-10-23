@@ -1,7 +1,3 @@
-import Test01 from "media/home/testimonial/test01.webp"
-import Test02 from "media/home/testimonial/test02.webp"
-import Test03 from "media/home/testimonial/test03.webp"
-
 export const BannerData = {
     title: (<>
         <span>Let’s</span> Create Something Beyond Ordinary, Our Team Would Love To Hear Your Idea

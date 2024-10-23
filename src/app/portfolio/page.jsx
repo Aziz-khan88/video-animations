@@ -6,9 +6,6 @@ import Testimonials from "@/src/app/home/testimonials";
 import Banner from "@/src/app/portfolio/components/Banner";
 import PortfolioTabs from "@/src/app/portfolio/components/PortfolioTabs";
 
-import Test01 from "media/home/testimonial/test01.webp"
-import Test02 from "media/home/testimonial/test02.webp"
-import Test03 from "media/home/testimonial/test03.webp"
 import { BannerData, list } from "@/src/app/portfolio/data/data"
 
 

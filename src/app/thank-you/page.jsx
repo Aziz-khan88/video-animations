@@ -2,9 +2,6 @@ import styles from '@/styles/thanks.module.scss'
 import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
 import { ArrowBtn } from '@/src/app/app-constants'
-import Test01 from "media/home/testimonial/test01.webp"
-import Test02 from "media/home/testimonial/test02.webp"
-import Test03 from "media/home/testimonial/test03.webp"
 import Testimonials from '@/src/app/home/testimonials'
 
 const ClientsReview = [
