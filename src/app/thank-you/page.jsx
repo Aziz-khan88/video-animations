@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
 import { ArrowBtn } from '@/src/app/app-constants'
 import Testimonials from '@/src/app/home/testimonials'
+import { ClientsReview } from '@/src/app/home/data/data'
 
 
 export default function page() {
