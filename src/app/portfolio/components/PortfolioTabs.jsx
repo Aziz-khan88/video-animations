@@ -19,7 +19,7 @@ const tabs = [
     // { label: "Typography Animation", tag: 'videoAnimationTA' }
 ];
 
-const VIMEO_ACCESS_TOKEN = 'edbc480300bb3d020a232b2666a656a1';
+const VIMEO_ACCESS_TOKEN = '487ce35bb2408d9ea6ebad7c234cc57b';
 
 // Function to limit words in a description
 function limitWords(text, wordLimit) {
