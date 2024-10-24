@@ -36,19 +36,19 @@ import { SocailLinks, subMenuItems } from "./data/data"
 const QuickLinks = [
     {
         name: "Home",
-        url: "#"
+        url: "/"
     },
     {
         name: "Portfolio",
-        url: "#"
+        url: "/portfolio"
     },
     {
         name: "Pricing",
-        url: "#"
+        url: "/pricing"
     },
     {
         name: "Contact Us",
-        url: "#"
+        url: "/contact"
     },
 ]
 

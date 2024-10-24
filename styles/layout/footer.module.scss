@@ -6,13 +6,57 @@
 
     .footerBG {
       display: flex;
-      background: #ffffff;
+      background: #FFFFFF;
       box-shadow: 20px 10px 40px rgba(159, 159, 159, 0.15);
       border-radius: 40px;
       padding: 50px;
 
       .footerFrom {
         flex: 0 0 50%;
+      }
+
+      .footerContent {
+        flex: 0 0 50%;
+
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 52px;
+          line-height: 62px;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+
+        P {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 45px;
+          letter-spacing: -0.165px;
+          margin-bottom: 20px;
+          color: #ED1919;
+        }
+
+        .rotateImg {
+          text-align: center;
+          margin-top: 20px;
+
+          img {
+            animation: rotate 5s linear infinite;
+            height: 180px;
+            width: auto;
+          }
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
       }
     }
   }
@@ -25,15 +69,6 @@
   padding-bottom: 50px;
 
   .footerContent {
-    h6 {
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 16px;
-      letter-spacing: -0.165px;
-      color: #ffffff;
-      margin-bottom: 30px;
-    }
 
     .contactInfo {
       font-size: 16px;
