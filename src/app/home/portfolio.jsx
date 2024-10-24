@@ -12,12 +12,12 @@ import VideoModal from '@/src/app/home/components/videomodal';
 const OPTIONS = { align: 'center', loop: true };
 
 const caseStudiesList = [
-    { title: "2D Animation", tag: 'videoAnimation2d' },
     { title: "3D Animation", tag: 'videoAnimation3D' },
     { title: "Hybrid Animation", tag: 'videoAnimationHB' },
+    { title: "2D Animation", tag: 'videoAnimation2d' },
+    { title: "Cel Animation", tag: 'videoAnimationCEL' },
     { title: "Motion Graphics", tag: 'videoAnimationMG' },
     { title: "Whiteboard Animation", tag: 'videoAnimationWB' },
-    { title: "Cel Animation", tag: 'videoAnimationCEL' },
     // { title: "Architectural Visualization", tag: 'videoAnimationAV' },
     // { title: "Typography Animation", tag: 'videoAnimationTA' }
 ];
@@ -49,7 +49,6 @@ const Portfolio = () => {
             const response = await axios.get(`https://api.vimeo.com/videos`, {
                 params: {
                     query: tag,
-                    per_page: 10
                 },
                 headers: {
                     Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`

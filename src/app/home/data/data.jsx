@@ -180,7 +180,7 @@ export const list = [
         txt: (<p>You can start off by sharing your message, style of video, (references if any). Or if you’ve got the assets ready, we can even polish your project with our awesome animation techniques.</p>)
     },
     {
-        title: "Does Dreamweave Studio focus on corporate video production?",
+        title: "Does Video Animation focus on corporate video production?",
         txt: (<p>Along with producing a variety of animated videos, we also put our focus on corporate videos that are a step ahead of the ordinary ones. Our focus on corporate videos is driven by our passion to challenge our creativity, and come up with something truly new, and remarkable to showcase corporate culture and values.</p>)
     }
 ]
