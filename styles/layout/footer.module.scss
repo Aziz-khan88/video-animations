@@ -72,9 +72,11 @@
         }
       }
     }
+
     .contactAddress {
       margin-bottom: 15px;
       display: flex;
+
       svg {
         margin-right: 10px;
         width: 22px;
@@ -189,6 +191,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .menuItem {
       &:first-child {
         flex: 0 0 25%;
@@ -287,11 +290,9 @@
       .animatedO {
         transform: translateY(-100px);
         opacity: 1;
-        background-image: linear-gradient(
-          106.24deg,
-          #ed1919 25.96%,
-          #ffe100 140.6%
-        );
+        background-image: linear-gradient(106.24deg,
+            #ed1919 25.96%,
+            #ffe100 140.6%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -633,10 +634,12 @@
         }
       }
     }
+
     .footerMenuSec {
       svg {
         max-height: 150px;
       }
+
       .menuItem {
         &:first-child {
           flex: 0 0 25%;
@@ -774,6 +777,7 @@
       svg {
         max-height: 150px;
       }
+
       .menuItem {
         &:first-child {
           flex: 0 0 35%;
@@ -911,6 +915,7 @@
       svg {
         max-height: 130px;
       }
+
       .menuItem {
         &:first-child {
           flex: 0 0 40%;
@@ -1043,13 +1048,13 @@
 
           a {
             font-size: 13px;
-            line-height: 23px;
+            line-height: 18px;
           }
         }
 
         &.serviceslinks {
           li {
-            flex: 0 0 50%;
+            flex: 0 0 100%;
           }
         }
       }
@@ -1059,16 +1064,17 @@
       svg {
         max-height: 130px;
       }
+
       .menuItem {
         &:first-child {
           margin-top: 10px;
-          flex: 0 0 65%;
+          flex: 0 0 100%;
           order: 1;
         }
 
         &:nth-child(2) {
           margin-top: 10px;
-          flex: 0 0 35%;
+          flex: 0 0 100%;
           order: 2;
         }
 
