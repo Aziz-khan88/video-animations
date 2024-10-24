@@ -1,5 +1,5 @@
 
-import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/hybrid-&-cel-animations/data/data";
+import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/cel-animation/data/data";
 
 import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
 
