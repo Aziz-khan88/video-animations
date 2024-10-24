@@ -66,7 +66,7 @@
     backdrop-filter: blur(10px);
     left: 0px;
     top: -100%;
-    padding: 150px 0px 20px;
+    padding: 120px 0px 20px;
     transition: opacity 0.5s ease, transform 0.5s ease;
 
     .mainMainItems {
@@ -122,6 +122,7 @@
 
             svg {
               rotate: -180deg;
+
               path {
                 stroke: #ed1919;
                 transition: 0.3s linear;
@@ -135,7 +136,7 @@
 
           &.active {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: wrap;
             margin-bottom: 20px;
 
@@ -257,7 +258,7 @@
     }
 
     .mainMain {
-      padding: 100px 0px 20px;
+      padding: 80px 0px 20px;
 
       .mainMainItems {
         height: calc(100vh - 200px);
@@ -335,7 +336,7 @@
     }
 
     .mainMain {
-      padding: 100px 0px 20px;
+      padding: 80px 0px 20px;
 
       .mainMainItems {
         height: calc(100vh - 200px);
@@ -413,7 +414,7 @@
     }
 
     .mainMain {
-      padding: 100px 0px 20px;
+      padding: 80px 0px 20px;
 
       .mainMainItems {
         height: calc(100vh - 200px);
@@ -491,7 +492,7 @@
     }
 
     .mainMain {
-      padding: 100px 0px 20px;
+      padding: 80px 0px 20px;
 
       .mainMainItems {
         height: calc(100vh - 200px);
@@ -574,7 +575,7 @@
     }
 
     .mainMain {
-      padding: 100px 0px 20px;
+      padding: 80px 0px 20px;
 
       .mainMainItems {
         height: calc(100vh - 200px);

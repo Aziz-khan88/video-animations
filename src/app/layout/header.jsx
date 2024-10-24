@@ -4,31 +4,10 @@ import { Container, Row, Col } from "react-bootstrap"
 import styles from "@/styles/layout/header.module.scss"
 import { ArrowBtn, ClosedIcon, DefaultLogo, NavIcon, VariantLogo } from "@/src/app/app-constants"
 import { useState, useEffect } from 'react';
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "@/src/app/app-constants"
 import { usePathname } from "next/navigation";
+import { SocailLinks, subMenuItems } from "./data/data"
 
-// Social media links
-const SocailLinks = [
-    { icon: <Instagram />, url: "#" },
-    { icon: <Facebook />, url: "#" },
-    { icon: <Twitter />, url: "#" },
-    { icon: <Linkedin />, url: "#" },
-    { icon: <Youtube />, url: "#" }
-];
 
-// Dynamic submenu items
-const subMenuItems = [
-    { label: "2D Animation", path: "/2d-animation" },
-    { label: "3D Animation", path: "/3d-animation" },
-    { label: "Whiteboard Animation", path: "/whiteboard-animation" },
-    { label: "Motion Graphics", path: "/motion-graphics" },
-    { label: "Video Editing", path: "/video-editing" },
-    { label: "Logo Animation", path: "/logo-animation" },
-    { label: "Architectural Visualization", path: "/architectural-visualization" },
-    { label: "CGI-VFX", path: "/cgi-and-vfx" },
-    { label: "Infographics", path: "/infographics" },
-    { label: "Hybrid & Cel", path: "/hybrid-&-cel-animations" }
-];
 const Header = () => {
     const pathname = usePathname();
     const [showDefault, setShowDefault] = useState(true);
@@ -127,8 +106,8 @@ const Header = () => {
                                         <div className={styles.headerCopyRight}>
                                             <div className={styles.leftLinks}>
                                                 <ul>
-                                                    <li><Link href="#">Terms of Use</Link></li>
-                                                    <li><Link href="#"> Privacy Policy</Link></li>
+                                                    <li><Link href="/terms-and-conditions">Terms of Use</Link></li>
+                                                    <li><Link href="/privacy-policy"> Privacy Policy</Link></li>
                                                 </ul>
                                             </div>
                                             <div className={styles.rightLinks}>
