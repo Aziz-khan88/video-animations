@@ -9,12 +9,12 @@ import axios from "axios";
 
 
 const tabs = [
-    { label: "2D Animation", tag: 'videoAnimation2D' },
     { label: "3D Animation", tag: 'videoAnimation3D' },
     { label: "Hybrid Animation", tag: 'videoAnimationHB' },
+    { label: "2D Animation", tag: 'videoAnimation2D' },
+    { label: "Cel Animation", tag: 'videoAnimationCEL' },
     { label: "Motion Graphics", tag: 'videoAnimationMG' },
     { label: "Whiteboard Animation", tag: 'videoAnimationWB' },
-    { label: "Cel Animation", tag: 'videoAnimationCEL' },
     // { label: "Architectural Visualization", tag: 'videoAnimationAV' },
     // { label: "Typography Animation", tag: 'videoAnimationTA' }
 ];
@@ -45,7 +45,7 @@ const PortfolioTabs = () => {
             const response = await axios.get(`https://api.vimeo.com/videos`, {
                 params: {
                     query: tag,
-                    per_page: 10
+                    per_page: 11
                 },
                 headers: {
                     Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`
