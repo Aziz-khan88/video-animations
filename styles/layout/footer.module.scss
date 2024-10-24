@@ -1,998 +1,1124 @@
 .topFooterSection {
-    background: #F7F8F9;
+  background: #f7f8f9;
 
-    .footerBox {
-        position: relative;
+  .footerBox {
+    position: relative;
 
-        .footerBG {
-            display: flex;
-            background: #FFFFFF;
-            box-shadow: 20px 10px 40px rgba(159, 159, 159, 0.15);
-            border-radius: 40px;
-            padding: 50px;
+    .footerBG {
+      display: flex;
+      background: #ffffff;
+      box-shadow: 20px 10px 40px rgba(159, 159, 159, 0.15);
+      border-radius: 40px;
+      padding: 50px;
 
-            .footerContent {
-                flex: 0 0 50%;
-
-                h3 {
-
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 52px;
-                    line-height: 62px;
-                    color: #000000;
-                    margin-bottom: 20px;
-                }
-
-                P {
-
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 35px;
-                    line-height: 45px;
-                    letter-spacing: -0.165px;
-                    margin-bottom: 20px;
-                    color: #ED1919;
-                }
-
-                .rotateImg {
-                    text-align: center;
-                    margin-top: 20px;
-
-                    img {
-                        animation: rotate 5s linear infinite;
-                        height: 180px;
-                        width: auto;
-                    }
-
-                }
-
-                @keyframes rotate {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-
-                    100% {
-                        transform: rotate(360deg);
-                    }
-                }
-            }
-
-            .footerFrom {
-                flex: 0 0 50%;
-            }
-
-        }
+      .footerFrom {
+        flex: 0 0 50%;
+      }
     }
+  }
 }
 
 .FooterSection {
-    background: #020204;
+  background: #020204;
+  padding-top: 250px;
+  margin-top: -150px;
+  padding-bottom: 50px;
+
+  .footerContent {
+    h6 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 16px;
+      letter-spacing: -0.165px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .contactInfo {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 15px;
+      margin-right: 15px;
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(255, 255, 255, 0.6);
+        transition: 0.3s linear;
+
+        svg {
+          margin-right: 15px;
+          width: 20px;
+          height: auto;
+
+          path {
+            fill: #fff;
+            transition: 0.3s linear;
+          }
+        }
+
+        &:hover {
+          color: #ed1919;
+          transition: 0.3s linear;
+
+          svg {
+            path {
+              fill: #ed1919;
+              transition: 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+    .contactAddress {
+      margin-bottom: 15px;
+      display: flex;
+      svg {
+        margin-right: 10px;
+        width: 22px;
+        height: auto;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: rgb(255, 255, 255, 0.6);
+        transition: 0.3s linear;
+      }
+
+      &:hover {
+        a {
+          color: #ed1919;
+          transition: 0.3s linear;
+        }
+
+        svg {
+          path {
+            fill: #ed1919;
+            transition: 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+
+  .linksItem {
+    margin-top: 30px;
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        a {
+          &:hover {
+            svg {
+              path {
+                fill: #ed1919;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mainlinks {
+    h6 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 16px;
+      letter-spacing: -0.165px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.165px;
+          color: rgb(255, 255, 255, 0.6);
+          transition: 0.3s linear;
+
+          &:hover {
+            color: #ed1919;
+            transition: 0.3s linear;
+          }
+        }
+      }
+
+      &.serviceslinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+          flex: 0 0 50%;
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .footerMenuSec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .menuItem {
+      &:first-child {
+        flex: 0 0 25%;
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        flex: 0 0 15%;
+        order: 2;
+      }
+
+      &:nth-child(3) {
+        flex: 0 0 35%;
+        order: 3;
+      }
+
+      &:last-child {
+        flex: 0 0 25%;
+        order: 4;
+      }
+    }
+  }
+}
+
+.copyRightSection {
+  background: #020204;
+  height: 80px;
+
+  .borderStyle {
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+    .txtCopyRight {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.165px;
+      color: rgb(255, 255, 255, 0.6);
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        margin-left: 20px;
+
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.165px;
+          color: rgb(255, 255, 255, 0.6);
+          transition: 0.3s linear;
+
+          &:hover {
+            color: #ed1919;
+            transition: 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+}
+
+.animationsection {
+  background: #020204;
+  height: 300px;
+  overflow: hidden;
+
+  .animatedTxt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 250px;
+    color: #ffffff;
+    line-height: 266px;
+    height: 230px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    text-align: center;
+
+    .animatedO {
+      display: inline-block;
+      position: relative;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  &.active {
+    .animatedTxt {
+      color: rgb(255, 255, 255, 0.5);
+
+      .animatedO {
+        transform: translateY(-100px);
+        opacity: 1;
+        background-image: linear-gradient(
+          106.24deg,
+          #ed1919 25.96%,
+          #ffe100 140.6%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 50px;
+
+        .footerContent {
+          flex: 0 0 50%;
+
+          h3 {
+            font-size: 45px;
+            line-height: 55px;
+            margin-bottom: 20px;
+          }
+
+          P {
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 20px;
+          }
+
+          .rotateImg {
+            margin-top: 20px;
+          }
+
+          .footerFrom {
+            flex: 0 0 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .FooterSection {
     padding-top: 250px;
     margin-top: -150px;
     padding-bottom: 50px;
 
     .linksItem {
-        margin-top: 30px;
+      margin-top: 30px;
 
-        ul {
-            padding: 0px;
-            margin: 0px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-
-            li {
-                margin-bottom: 10px;
-                margin-right: 20px;
-
-                a {
-                    &:hover {
-                        svg {
-                            path {
-                                fill: #ED1919;
-                            }
-                        }
-                    }
-                }
-            }
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
         }
+      }
     }
 
     .mainlinks {
+      h6 {
+        font-size: 19px;
+        line-height: 16px;
+        margin-bottom: 30px;
+      }
 
-        h6 {
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 16px;
-            letter-spacing: -0.165px;
-            color: #FFFFFF;
-            margin-bottom: 30px;
-
+          a {
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
 
-        ul {
-            padding: 0px;
-            margin: 0px;
-
-            li {
-                margin-bottom: 10px;
-                margin-right: 20px;
-
-                a {
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 24px;
-                    letter-spacing: -0.165px;
-                    color: rgb(255, 255, 255, 0.6);
-                    transition: .3s linear;
-
-                    &:hover {
-                        color: #ED1919;
-                        transition: .3s linear;
-                    }
-
-                }
-            }
-
-            &.serviceslinks {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-
-                li {
-                    flex: 0 0 50%;
-                    margin-right: 0px;
-                }
-            }
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
-
-
+      }
     }
-}
 
-.copyRightSection {
-    background: #020204;
+    .footerMenuSec {
+      .menuItem {
+        &:first-child {
+          flex: 0 0 25%;
+        }
+
+        &:nth-child(2) {
+          flex: 0 0 15%;
+        }
+
+        &:nth-child(3) {
+          flex: 0 0 35%;
+        }
+
+        &:last-child {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }
+
+  .copyRightSection {
     height: 80px;
 
     .borderStyle {
-        border-top: 1px solid rgb(255, 255, 255, 0.20);
-        border-bottom: 1px solid rgb(255, 255, 255, 0.20);
+      .txtCopyRight {
+        font-size: 16px;
+      }
 
-        .txtCopyRight {
+      ul {
+        li {
+          margin-left: 20px;
 
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: -0.165px;
-            color: rgb(255, 255, 255, 0.60);
+          a {
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
-
-        ul {
-
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            flex-wrap: wrap;
-
-            li {
-                margin-left: 20px;
-
-                a {
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 24px;
-                    letter-spacing: -0.165px;
-                    color: rgb(255, 255, 255, 0.6);
-                    transition: .3s linear;
-
-                    &:hover {
-                        color: #ED1919;
-                        transition: .3s linear;
-                    }
-                }
-            }
-        }
-
+      }
     }
+  }
 
-
-}
-
-
-.animationsection {
-    background: #020204;
+  .animationsection {
     height: 300px;
     overflow: hidden;
 
     .animatedTxt {
-
-        font-style: normal;
-        font-weight: 700;
-        font-size: 250px;
-        color: #FFFFFF;
-        line-height: 266px;
-        height: 230px;
-        opacity: 1;
-        transition: opacity 0.5s ease;
-        text-align: center;
-
-        .animatedO {
-            display: inline-block;
-            position: relative;
-            transition: transform 0.5s ease;
-        }
+      font-size: 230px;
+      line-height: 230px;
+      height: 200px;
     }
-
-    &.active {
-
-        .animatedTxt {
-            color: rgb(255, 255, 255, 0.5);
-
-            .animatedO {
-                transform: translateY(-100px);
-                opacity: 1;
-                background-image: linear-gradient(106.24deg, #ED1919 25.96%, #FFE100 140.6%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-
-    }
-
-
+  }
 }
-
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-    .topFooterSection {
-
-        .footerBox {
-            .footerBG {
-                padding: 50px;
-
-                .footerContent {
-                    flex: 0 0 50%;
-
-                    h3 {
-                        font-size: 45px;
-                        line-height: 55px;
-                        margin-bottom: 20px;
-                    }
-
-                    P {
-                        font-size: 32px;
-                        line-height: 42px;
-                        margin-bottom: 20px;
-                    }
-
-                    .rotateImg {
-                        margin-top: 20px;
-
-                    }
-
-                    .footerFrom {
-                        flex: 0 0 50%;
-                    }
-
-                }
-            }
-        }
-    }
-
-    .FooterSection {
-        padding-top: 250px;
-        margin-top: -150px;
-        padding-bottom: 50px;
-
-        .linksItem {
-            margin-top: 30px;
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-                }
-            }
-        }
-
-        .mainlinks {
-
-            h6 {
-                font-size: 19px;
-                line-height: 16px;
-                margin-bottom: 30px;
-
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 24px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
-
-
-        }
-    }
-
-    .copyRightSection {
-        height: 80px;
-
-        .borderStyle {
-
-            .txtCopyRight {
-                font-size: 16px;
-            }
-
-            ul {
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
-        }
-
-    }
-
-    .animationsection {
-        height: 300px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 230px;
-            line-height: 230px;
-            height: 200px;
-        }
-    }
-}
-
 
 @media only screen and (min-width: 1300px) and (max-width: 1399px) {
-    .topFooterSection {
-        .footerBox {
-            .footerBG {
-                padding: 50px;
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 50px;
 
-                .footerContent {
-                    flex: 0 0 50%;
+        .footerContent {
+          flex: 0 0 50%;
 
-                    h3 {
-                        font-size: 42px;
-                        line-height: 52px;
-                        margin-bottom: 20px;
-                    }
+          h3 {
+            font-size: 42px;
+            line-height: 52px;
+            margin-bottom: 20px;
+          }
 
-                    P {
-                        font-size: 30px;
-                        line-height: 40px;
-                        margin-bottom: 20px;
-                    }
+          P {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+          }
 
-                    .rotateImg {
-                        margin-top: 20px;
+          .rotateImg {
+            margin-top: 20px;
+          }
 
-                    }
-
-                    .footerFrom {
-                        flex: 0 0 50%;
-                    }
-
-                }
-            }
+          .footerFrom {
+            flex: 0 0 50%;
+          }
         }
+      }
+    }
+  }
+
+  .FooterSection {
+    padding-top: 250px;
+    margin-top: -150px;
+    padding-bottom: 50px;
+
+    .linksItem {
+      margin-top: 30px;
+
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+      }
     }
 
-    .FooterSection {
-        padding-top: 250px;
-        margin-top: -150px;
-        padding-bottom: 50px;
+    .mainlinks {
+      h6 {
+        font-size: 18px;
+        line-height: 16px;
+        margin-bottom: 30px;
+      }
 
-        .linksItem {
-            margin-top: 30px;
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-                }
-            }
+          a {
+            font-size: 13px;
+            line-height: 23px;
+          }
         }
 
-        .mainlinks {
-
-            h6 {
-                font-size: 18px;
-                line-height: 16px;
-                margin-bottom: 30px;
-
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 23px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
-
-
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
+      }
     }
 
-    .copyRightSection {
-        height: 80px;
-
-        .borderStyle {
-
-            .txtCopyRight {
-                font-size: 15px;
-            }
-
-            ul {
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 14px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    .footerMenuSec {
+      .menuItem {
+        &:first-child {
+          flex: 0 0 25%;
         }
 
-    }
-
-    .animationsection {
-        height: 260px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 210px;
-            line-height: 210px;
-            height: 200px;
+        &:nth-child(2) {
+          flex: 0 0 15%;
         }
+
+        &:nth-child(3) {
+          flex: 0 0 35%;
+        }
+
+        &:last-child {
+          flex: 0 0 25%;
+        }
+      }
     }
+  }
+
+  .copyRightSection {
+    height: 80px;
+
+    .borderStyle {
+      .txtCopyRight {
+        font-size: 15px;
+      }
+
+      ul {
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .animationsection {
+    height: 260px;
+    overflow: hidden;
+
+    .animatedTxt {
+      font-size: 210px;
+      line-height: 210px;
+      height: 200px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1299px) {
-    .topFooterSection {
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 50px;
 
-        .footerBox {
-            .footerBG {
-                padding: 50px;
+        .footerContent {
+          flex: 0 0 50%;
 
-                .footerContent {
-                    flex: 0 0 50%;
+          h3 {
+            font-size: 38px;
+            line-height: 48px;
+            margin-bottom: 20px;
+          }
 
-                    h3 {
-                        font-size: 38px;
-                        line-height: 48px;
-                        margin-bottom: 20px;
-                    }
+          P {
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 20px;
+          }
 
-                    P {
-                        font-size: 25px;
-                        line-height: 35px;
-                        margin-bottom: 20px;
-                    }
+          .rotateImg {
+            margin-top: 20px;
+          }
 
-                    .rotateImg {
-                        margin-top: 20px;
-
-                    }
-
-                    .footerFrom {
-                        flex: 0 0 50%;
-                    }
-
-                }
-            }
+          .footerFrom {
+            flex: 0 0 50%;
+          }
         }
+      }
+    }
+  }
+
+  .FooterSection {
+    padding-top: 250px;
+    margin-top: -150px;
+    padding-bottom: 50px;
+
+    .linksItem {
+      margin-top: 30px;
+
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+      }
     }
 
-    .FooterSection {
-        padding-top: 250px;
-        margin-top: -150px;
-        padding-bottom: 50px;
+    .mainlinks {
+      h6 {
+        font-size: 17px;
+        line-height: 16px;
+        margin-bottom: 30px;
+      }
 
-        .linksItem {
-            margin-top: 30px;
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-                }
-            }
+          a {
+            font-size: 13px;
+            line-height: 23px;
+          }
         }
 
-        .mainlinks {
-
-            h6 {
-                font-size: 17px;
-                line-height: 16px;
-                margin-bottom: 30px;
-
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 23px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
-
-
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
+      }
     }
-
-    .copyRightSection {
-        height: 80px;
-
-        .borderStyle {
-
-            .txtCopyRight {
-                font-size: 13px;
-            }
-
-            ul {
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    .footerMenuSec {
+      svg {
+        max-height: 150px;
+      }
+      .menuItem {
+        &:first-child {
+          flex: 0 0 25%;
         }
 
-    }
-
-    .animationsection {
-        height: 240px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 180px;
-            line-height: 180px;
-            height: 180px;
+        &:nth-child(2) {
+          flex: 0 0 15%;
         }
+
+        &:nth-child(3) {
+          flex: 0 0 35%;
+        }
+
+        &:last-child {
+          flex: 0 0 25%;
+        }
+      }
     }
+  }
+
+  .copyRightSection {
+    height: 80px;
+
+    .borderStyle {
+      .txtCopyRight {
+        font-size: 13px;
+      }
+
+      ul {
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .animationsection {
+    height: 240px;
+    overflow: hidden;
+
+    .animatedTxt {
+      font-size: 180px;
+      line-height: 180px;
+      height: 180px;
+    }
+  }
 }
 
-@media only screen and (min-width: 900px) and (max-width:1099px) {
-    .topFooterSection {
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 50px;
 
-        .footerBox {
-            .footerBG {
-                padding: 50px;
+        .footerContent {
+          flex: 0 0 50%;
 
-                .footerContent {
-                    flex: 0 0 50%;
+          h3 {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 20px;
+          }
 
-                    h3 {
-                        font-size: 35px;
-                        line-height: 45px;
-                        margin-bottom: 20px;
-                    }
+          P {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 20px;
+          }
 
-                    P {
-                        font-size: 22px;
-                        line-height: 32px;
-                        margin-bottom: 20px;
-                    }
+          .rotateImg {
+            margin-top: 20px;
 
-                    .rotateImg {
-                        margin-top: 20px;
-
-                        img {
-                            height: 130px;
-                            width: auto;
-                        }
-
-                    }
-
-                    .footerFrom {
-                        flex: 0 0 50%;
-                    }
-
-                }
+            img {
+              height: 130px;
+              width: auto;
             }
+          }
+
+          .footerFrom {
+            flex: 0 0 50%;
+          }
         }
+      }
+    }
+  }
+
+  .FooterSection {
+    padding-top: 250px;
+    margin-top: -150px;
+    padding-bottom: 50px;
+
+    .linksItem {
+      margin-top: 30px;
+
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+      }
     }
 
-    .FooterSection {
-        padding-top: 250px;
-        margin-top: -150px;
-        padding-bottom: 50px;
+    .mainlinks {
+      h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 30px;
+      }
 
-        .linksItem {
-            margin-top: 30px;
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-                }
-            }
+          a {
+            font-size: 13px;
+            line-height: 23px;
+          }
         }
 
-        .mainlinks {
-
-            h6 {
-                font-size: 16px;
-                line-height: 16px;
-                margin-bottom: 30px;
-
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 23px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
-
-
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
+      }
     }
 
-    .copyRightSection {
-        height: 80px;
-
-        .borderStyle {
-
-            .txtCopyRight {
-                font-size: 13px;
-            }
-
-            ul {
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    .footerMenuSec {
+      svg {
+        max-height: 150px;
+      }
+      .menuItem {
+        &:first-child {
+          flex: 0 0 35%;
         }
 
-    }
-
-    .animationsection {
-        height: 200px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 160px;
-            line-height: 160px;
-            height: 160px;
+        &:nth-child(2) {
+          flex: 0 0 25%;
         }
+
+        &:nth-child(3) {
+          margin-top: 25px;
+          flex: 0 0 100%;
+          order: 4;
+        }
+
+        &:last-child {
+          flex: 0 0 40%;
+          order: 3;
+        }
+      }
     }
+  }
+
+  .copyRightSection {
+    height: 80px;
+
+    .borderStyle {
+      .txtCopyRight {
+        font-size: 13px;
+      }
+
+      ul {
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .animationsection {
+    height: 200px;
+    overflow: hidden;
+
+    .animatedTxt {
+      font-size: 160px;
+      line-height: 160px;
+      height: 160px;
+    }
+  }
 }
 
-@media only screen and (min-width: 600px) and (max-width:899px) {
-    .topFooterSection {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 50px;
 
-        .footerBox {
-            .footerBG {
-                padding: 50px;
+        .footerContent {
+          flex: 0 0 50%;
 
-                .footerContent {
-                    flex: 0 0 50%;
+          h3 {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 20px;
+          }
 
-                    h3 {
-                        font-size: 32px;
-                        line-height: 32px;
-                        margin-bottom: 20px;
-                    }
+          P {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+          }
 
-                    P {
-                        font-size: 20px;
-                        line-height: 30px;
-                        margin-bottom: 20px;
-                    }
+          .rotateImg {
+            margin-top: 20px;
+          }
 
-                    .rotateImg {
-                        margin-top: 20px;
-
-                    }
-
-                    .footerFrom {
-                        flex: 0 0 50%;
-                    }
-
-                }
-            }
+          .footerFrom {
+            flex: 0 0 50%;
+          }
         }
+      }
+    }
+  }
+
+  .FooterSection {
+    padding-top: 250px;
+    margin-top: -150px;
+    padding-bottom: 50px;
+
+    .linksItem {
+      margin-top: 30px;
+
+      ul {
+        margin-bottom: 30px;
+
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+      }
     }
 
-    .FooterSection {
-        padding-top: 250px;
-        margin-top: -150px;
-        padding-bottom: 50px;
+    .mainlinks {
+      h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 30px;
+      }
 
-        .linksItem {
-            margin-top: 30px;
+      ul {
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-            ul {
-                margin-bottom: 30px;
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                }
-            }
+          a {
+            font-size: 13px;
+            line-height: 23px;
+          }
         }
 
-        .mainlinks {
-
-
-            h6 {
-                font-size: 16px;
-                line-height: 16px;
-                margin-bottom: 30px;
-
-            }
-
-            ul {
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 23px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 33.33%;
-                    }
-                }
-            }
-
-
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
+      }
     }
 
-    .copyRightSection {
-        height: 60px;
-
-        .borderStyle {
-
-            .txtCopyRight {
-                font-size: 13px;
-            }
-
-            ul {
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    .footerMenuSec {
+      svg {
+        max-height: 130px;
+      }
+      .menuItem {
+        &:first-child {
+          flex: 0 0 40%;
         }
 
-    }
-
-    .animationsection {
-        height: 140px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 120px;
-            line-height: 120px;
-            height: 120px;
+        &:nth-child(2) {
+          margin-top: 25px;
+          flex: 0 0 30%;
+          order: 3;
         }
+
+        &:nth-child(3) {
+          margin-top: 25px;
+          flex: 0 0 70%;
+          order: 4;
+        }
+
+        &:last-child {
+          flex: 0 0 50%;
+          order: 2;
+        }
+      }
     }
+  }
+
+  .copyRightSection {
+    height: 60px;
+
+    .borderStyle {
+      .txtCopyRight {
+        font-size: 13px;
+      }
+
+      ul {
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .animationsection {
+    height: 140px;
+    overflow: hidden;
+
+    .animatedTxt {
+      font-size: 120px;
+      line-height: 120px;
+      height: 120px;
+    }
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px) {
-    .topFooterSection {
+  .topFooterSection {
+    .footerBox {
+      .footerBG {
+        padding: 25px;
+        flex-wrap: wrap;
 
-        .footerBox {
-            .footerBG {
-                padding: 25px;
-                flex-wrap: wrap;
+        .footerContent {
+          flex: 0 0 100%;
 
-                .footerContent {
-                    flex: 0 0 100%;
+          h3 {
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 20px;
+          }
 
-                    h3 {
-                        font-size: 26px;
-                        line-height: 36px;
-                        margin-bottom: 20px;
-                    }
+          P {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 20px;
+          }
 
-                    P {
-                        font-size: 18px;
-                        line-height: 26px;
-                        margin-bottom: 20px;
-                    }
+          .rotateImg {
+            margin-top: 20px;
+            text-align: right;
 
-                    .rotateImg {
-                        margin-top: 20px;
-                        text-align: right;
-
-                        img {
-                            height: 100px;
-                            width: auto;
-                        }
-
-                    }
-                }
-
-                .footerFrom {
-                    flex: 0 0 100%;
-                }
+            img {
+              height: 100px;
+              width: auto;
             }
+          }
         }
+
+        .footerFrom {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+
+  .FooterSection {
+    padding-top: 200px;
+    margin-top: -150px;
+    padding-bottom: 0px;
+
+    .linksItem {
+      margin-top: 30px;
+
+      ul {
+        margin-bottom: 30px;
+
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+      }
     }
 
-    .FooterSection {
-        padding-top: 200px;
-        margin-top: -150px;
-        padding-bottom: 0px;
+    .mainlinks {
+      h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 20px;
+      }
 
-        .linksItem {
-            margin-top: 30px;
+      ul {
+        margin-bottom: 30px;
 
-            ul {
-                margin-bottom: 30px;
+        li {
+          margin-bottom: 10px;
+          margin-right: 20px;
 
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                }
-            }
+          a {
+            font-size: 13px;
+            line-height: 23px;
+          }
         }
 
-        .mainlinks {
-
-
-            h6 {
-                font-size: 16px;
-                line-height: 16px;
-                margin-bottom: 20px;
-
-            }
-
-            ul {
-                margin-bottom: 30px;
-
-                li {
-                    margin-bottom: 10px;
-                    margin-right: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 23px;
-                    }
-                }
-
-                &.serviceslinks {
-                    li {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
-
-
+        &.serviceslinks {
+          li {
+            flex: 0 0 50%;
+          }
         }
+      }
     }
 
-    .copyRightSection {
-        height: 80px;
-
-        .borderStyle {
-
-
-            .txtCopyRight {
-                font-size: 13px;
-                text-align: center;
-            }
-
-            ul {
-                justify-content: center;
-
-                li {
-                    margin-left: 20px;
-
-                    a {
-                        font-size: 13px;
-                        line-height: 24px;
-                    }
-                }
-            }
-
+    .footerMenuSec {
+      svg {
+        max-height: 130px;
+      }
+      .menuItem {
+        &:first-child {
+          margin-top: 10px;
+          flex: 0 0 65%;
+          order: 1;
         }
 
-    }
-
-    .animationsection {
-        height: 80px;
-        overflow: hidden;
-
-        .animatedTxt {
-            font-size: 60px;
-            line-height: 60px;
-            height: 60px;
+        &:nth-child(2) {
+          margin-top: 10px;
+          flex: 0 0 35%;
+          order: 2;
         }
+
+        &:nth-child(3) {
+          margin-top: 10px;
+          flex: 0 0 100%;
+          order: 3;
+        }
+
+        &:last-child {
+          margin-top: 10px;
+          flex: 0 0 100%;
+          order: 4;
+        }
+      }
     }
+  }
+
+  .copyRightSection {
+    height: 80px;
+
+    .borderStyle {
+      .txtCopyRight {
+        font-size: 13px;
+        text-align: center;
+      }
+
+      ul {
+        justify-content: center;
+
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .animationsection {
+    height: 80px;
+    overflow: hidden;
+
+    .animatedTxt {
+      font-size: 60px;
+      line-height: 60px;
+      height: 60px;
+    }
+  }
 }
