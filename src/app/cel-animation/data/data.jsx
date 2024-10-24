@@ -89,7 +89,7 @@ export const FaqList = [
         title: "Why choose cel animation over digital animation?",
         txt: (
             <p>
-                Cel animation offers a unique, hand-drawn charm that digital animation often lacks. It creates a warm, authentic feel, making the visuals stand out and leaving a memorable impression. It's ideal for brands wanting to convey personality and artistry.
+                Cel animation offers a unique, hand-drawn charm that digital animation often lacks. It creates a warm, authentic feel, making the visuals stand out and leaving a memorable impression. It’s ideal for brands wanting to convey personality and artistry.
             </p>
 
         ),
