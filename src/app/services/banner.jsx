@@ -2,8 +2,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/services/banner.module.scss"
 import Link from 'next/link'
 import { ArrowBtn, FavIcon } from '@/src/app/app-constants'
-import Image from 'next/image'
-import Img1 from "@/public/services/banner/portrait.webp"
 import Head from 'next/head'
 
 const Banner = ({ video, BannerData }) => {
@@ -19,12 +17,16 @@ const Banner = ({ video, BannerData }) => {
                             <div className={styles.bannerContent}>
                                 <h1>{BannerData?.title}</h1>
                                 <p>{BannerData?.desc}</p>
-                                <Link href="" className="readMoreBtn bgColor">Dive in now <ArrowBtn /></Link>
+                                <div className="readMoreBtn" onClick={() => handlePlayClick()}>
+                                    <div>
+                                        <span>Dive in now</span> <ArrowBtn />
+                                    </div>
+                                </div>
                             </div>
                         </Col>
                         <Col md={5} className='mt-md-auto mt-sm-0 ms-auto text-right'>
                             <div className={styles.servicesButton}>
-                                <div className="buttonCommon">
+                                <div className="buttonCommon" onClick={() => handlePlayClick()}>
                                     <Link href="">
                                         <FavIcon />
                                     </Link>

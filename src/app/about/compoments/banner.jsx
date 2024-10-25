@@ -19,7 +19,11 @@ const Banner = ({ BannerData }) => {
                             <div className={styles.bannerContentBox}>
                                 <h1>{BannerData?.title}</h1>
                                 {BannerData?.desc}
-                                <Link href="" className="readMoreBtn">Dive in now <ArrowBtn /></Link>
+                                <div className="readMoreBtn" onClick={() => handlePlayClick()}>
+                                    <div>
+                                        <span>Dive in now</span> <ArrowBtn />
+                                    </div>
+                                </div>
                             </div>
 
                         </Col>

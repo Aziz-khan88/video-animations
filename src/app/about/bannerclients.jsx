@@ -1,6 +1,5 @@
 "use client";
 import { Col, Container, Row } from "react-bootstrap";
-
 import Logo1 from "media/home/clientslogo/logo1.webp";
 import Logo2 from "media/home/clientslogo/logo2.webp";
 import Logo3 from "media/home/clientslogo/logo3.webp";

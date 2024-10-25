@@ -13,7 +13,11 @@ const ImageCta = ({ data }) => {
                     <Col lg-={10} className='m-auto text-center'>
                         <div className={styles.imageContent}>
                             <h2>{data.title}</h2>
-                            <Link href={data.ctaLink} className="readMoreBtn bgColor">{data.ctaText}<ArrowBtn /></Link>
+                            <div className="readMoreBtn" onClick={() => handlePlayClick()}>
+                                <div>
+                                    <span>Dive in now</span> <ArrowBtn />
+                                </div>
+                            </div>
                         </div>
                     </Col>
                 </Row>

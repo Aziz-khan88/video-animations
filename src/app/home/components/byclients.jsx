@@ -16,23 +16,6 @@ import Logo13 from "media/home/clientslogo/logo13.webp";
 import Logo14 from "media/home/clientslogo/logo14.webp";
 import Logo15 from "media/home/clientslogo/logo15.webp";
 
-// const ClientsLogos = [
-//     { logo: Logo1.src },
-//     { logo: Logo2.src },
-//     { logo: Logo3.src },
-//     { logo: Logo4.src },
-//     { logo: Logo5.src },
-//     { logo: Logo6.src },
-//     { logo: Logo7.src },
-//     { logo: Logo8.src },
-//     { logo: Logo9.src },
-//     { logo: Logo10.src },
-//     { logo: Logo11.src },
-//     { logo: Logo12.src },
-//     { logo: Logo13.src },
-//     { logo: Logo14.src },
-//     { logo: Logo15.src },
-// ];
 
 import { Carousel, CarouselItem } from 'react-bootstrap';
 import Image from "next/image";
