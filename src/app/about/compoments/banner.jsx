@@ -1,7 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/about/banner.module.scss"
-import Link from 'next/link'
-import { ArrowBtn } from '@/src/app/app-constants'
+import CommonButton from "@/src/app/home/components/commonbutton"
 import IMG from "media/about/banner.png"
 import Image from 'next/image'
 import Head from 'next/head'
@@ -19,11 +18,7 @@ const Banner = ({ BannerData }) => {
                             <div className={styles.bannerContentBox}>
                                 <h1>{BannerData?.title}</h1>
                                 {BannerData?.desc}
-                                <div className="readMoreBtn" onClick={() => handlePlayClick()}>
-                                    <div>
-                                        <span>Dive in now</span> <ArrowBtn />
-                                    </div>
-                                </div>
+                                <CommonButton />
                             </div>
 
                         </Col>

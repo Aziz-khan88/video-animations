@@ -1,18 +1,14 @@
 "use client"
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/banner.module.scss"
-import Link from "next/link"
-import { ArrowBtn, FavIcon } from "@/src/app/app-constants"
 import Head from "next/head"
-import VideoModal from "./components/videomodal"
-import { useState } from "react"
+import CommonButton from "@/src/app/home/components/commonbutton"
+import RoundBtn from "@/src/app/home/components/roundbtn"
+
+
 
 const Banner = ({ BannerData }) => {
-    const [modalShow, setModalShow] = useState(false);
 
-    const handlePlayClick = () => {
-        setModalShow(true);
-    };
     return (
         <>
             <Head>
@@ -25,19 +21,11 @@ const Banner = ({ BannerData }) => {
                             <div className={styles.bannerContentBox}>
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
+                                    <CommonButton />
 
-                                    <div className="readMoreBtn" onClick={() => handlePlayClick()}>
-                                        <div>
-                                            <span>Dive in now</span> <ArrowBtn />
-                                        </div>
-                                    </div>
                                 </div>
                                 <div className={styles.bannerButton}>
-                                    <div className="buttonCommon">
-                                        <Link href="" onClick={() => handlePlayClick()} >
-                                            <FavIcon />
-                                        </Link>
-                                    </div>
+                                    <RoundBtn />
                                 </div>
                             </div>
                         </Col>
@@ -55,7 +43,7 @@ const Banner = ({ BannerData }) => {
                     <source src={BannerData.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
+
             </section>
         </>
     )

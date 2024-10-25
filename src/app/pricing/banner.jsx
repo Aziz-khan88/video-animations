@@ -1,9 +1,8 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from "@/styles/home/banner.module.scss"
-import Link from 'next/link'
-import { ArrowBtn, FavIcon } from '@/src/app/app-constants'
 import Head from 'next/head'
-
+import CommonButton from "@/src/app/home/components/commonbutton"
+import RoundBtn from "@/src/app/home/components/roundbtn"
 
 const Banner = ({ BannerData }) => {
     return (
@@ -19,18 +18,10 @@ const Banner = ({ BannerData }) => {
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
                                     {BannerData?.desc}
-                                    <div className="readMoreBtn" onClick={() => handlePlayClick()}>
-                                        <div>
-                                            <span>Dive in now</span> <ArrowBtn />
-                                        </div>
-                                    </div>
+                                    <CommonButton />
                                 </div>
                                 <div className={styles.bannerButton}>
-                                    <div className="buttonCommon">
-                                        <Link href="">
-                                            <FavIcon />
-                                        </Link>
-                                    </div>
+                                    <RoundBtn />
                                 </div>
                             </div>
                         </Col>

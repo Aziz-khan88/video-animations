@@ -1,7 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from "@/styles/services/imagecta.module.scss"
-import Link from 'next/link'
-import { ArrowBtn } from '@/src/app/app-constants'
+import CommonButton from "@/src/app/home/components/commonbutton"
 import Image from 'next/image'
 
 
@@ -13,11 +12,7 @@ const ImageCta = ({ data }) => {
                     <Col lg-={10} className='m-auto text-center'>
                         <div className={styles.imageContent}>
                             <h2>{data.title}</h2>
-                            <div className="readMoreBtn" onClick={() => handlePlayClick()}>
-                                <div>
-                                    <span>Dive in now</span> <ArrowBtn />
-                                </div>
-                            </div>
+                            <CommonButton />
                         </div>
                     </Col>
                 </Row>

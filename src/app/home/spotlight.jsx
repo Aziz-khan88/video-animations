@@ -2,8 +2,7 @@
 import { useEffect, useRef } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import styles from "@/styles/home/spotlight.module.scss";
-import Link from "next/link";
-import { ArrowBtn } from "@/src/app/app-constants";
+import CommonButton from "@/src/app/home/components/commonbutton"
 
 const images = [
     { url: "https://player.vimeo.com/progressive_redirect/playback/1011155230/rendition/1080p/file.mp4?loc=external&signature=82e441ce71bd966775154f6d4e16d3a52a00588c3ba71d2a0e605880245ba736" },
@@ -16,7 +15,7 @@ const SpotLight = () => {
 
     useEffect(() => {
         const options = {
-            threshold: 0.5, // Trigger when 50% of the section is visible
+            threshold: 0.5,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -83,11 +82,7 @@ const SpotLight = () => {
                                 </div>
                             ))}
                             <div className={styles.sportlightCTA}>
-                                <div className="readMoreBtn bgColor">
-                                    <div>
-                                        <span>Dive in now</span> <ArrowBtn />
-                                    </div>
-                                </div>
+                                <CommonButton color={true} />
                             </div>
                         </div>
                     </Col>

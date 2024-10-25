@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from "@/styles/home/videocta.module.scss";
-import Link from 'next/link';
-import { ArrowBtn } from '@/src/app/app-constants';
+import CommonButton from "@/src/app/home/components/commonbutton"
+
 
 const VideoCta = () => {
     const videoRef = useRef(null);
@@ -43,11 +43,7 @@ const VideoCta = () => {
                     <Col lg={10} className='m-auto text-center'>
                         <div className={styles.videoContent}>
                             <h2>Make Your Brand Stand Out</h2>
-                            <div className="readMoreBtn">
-                                <div>
-                                    <span>Let’s Discuss</span> <ArrowBtn />
-                                </div>
-                            </div>
+                            <CommonButton />
 
                         </div>
                     </Col>
