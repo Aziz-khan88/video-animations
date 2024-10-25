@@ -115,7 +115,7 @@ export const FaqList = [
         title: "What is the difference between graphic design and motion graphics",
         txt: (
             <p>
-                MGraphic design uses static visuals, while motion graphics bring visuals like text and logos to life through movement.
+                Motion Graphic design uses static visuals, while motion graphics bring visuals like text and logos to life through movement.
             </p>
         ),
     },

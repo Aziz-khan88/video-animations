@@ -15,7 +15,7 @@ import why03 from "media/home/whychoose/why03.webp"
 import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
-    title: "Find Endless Engaging 2d Animations Here That Suit Your Taste.",
+    title: "Find Endless Engaging 2D Animations Here That Suit Your Taste.",
     desc: "Discover a world of attractive 2D animations tailored to your preferences at Video Animation. From humorous shorts to mesmerizing art pieces, a 2D animation company that caters everyone. Explore our vast collections and find your next favorite animated masterpiece.",
     video: "https://player.vimeo.com/progressive_redirect/playback/1021823941/rendition/1080p/file.mp4?loc=external&signature=a44c0ee3eb885a7b95935c6480f4140d16e748efb46839981f3100041645c60b"
 }
@@ -133,7 +133,7 @@ export const FaqList = [
         ),
     },
     {
-        title: "Why is 2d animation service good?",
+        title: "Why is 2D animation service good?",
         txt: (
             <p>
                 2D animation offers unmatched efficiency, affordability and versatility. It’s the ideal choice for businesses who are looking for impactful video content that delivers results.

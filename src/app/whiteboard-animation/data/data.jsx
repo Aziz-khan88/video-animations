@@ -10,7 +10,7 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Transform Ideas into Simple Stories with Whiteboard Animation Services",
+    title: "Transform Ideas Into Simple Stories With Whiteboard Animation Services",
     desc: "Now you can create whiteboard animations and take your brand stories to a whole new level with our whiteboard animation services. From elegant storytelling to beautifully drawn pictures and animations, we can craft a playground of limitless ideas for you and your company. ",
     video: "https://player.vimeo.com/progressive_redirect/playback/1022024033/rendition/1080p/file.mp4?loc=external&signature=3941c10b9a4cba87801ae0d4fa97710743fcb098bd244177e3ba6a1912a22da8"
 }
@@ -24,7 +24,7 @@ export const ProcessContent = {
 
 export const ProcessList = [
     {
-        title: "Concept and Scripting",
+        title: "Concept & Scripting",
         text: "We start by understanding your ideas and creating a script that communicates your message clearly. Our creative team works closely with you to ensure that the script is both engaging and informative, setting the foundation for your whiteboard animation."
     },
     {
@@ -42,7 +42,7 @@ export const ProcessList = [
 ]
 
 export const ImageCtaContent = {
-    title: (<>Partner With the Top-rated Whiteboard<br /> Animation Company </>),
+    title: (<>Partner With The Top-Rated Whiteboard<br /> Animation Company </>),
     ctaLink: "#",
     ctaText: "Let’s Discuss",
     bannerImg: bannerImg

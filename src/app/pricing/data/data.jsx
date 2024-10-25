@@ -1,5 +1,5 @@
 export const BannerData = {
-    title: "Realistic Animations with Best Rates",
+    title: "Realistic Animations With Best Rates",
     desc: (<>
         <p>We believe that each dollar spent by you deserves utmost care and you must receive a strong return to help you achieve your goals.</p>
     </>),

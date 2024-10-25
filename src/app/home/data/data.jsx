@@ -113,7 +113,7 @@ export const slides = [
     {
         title: (<>E-commerce
             <br />
-            & & Retail</>),
+            & Retail</>),
         txt: "Our animations elevate the e-commerce and retail experience by creating eye-catching product visualizations and engaging social media ads. We help businesses capture attention, drive traffic, and increase conversions with visually compelling content. Whether you’re promoting products or creating interactive online experiences, our animation services ensure your brand leaves a lasting impression."
         , url: "#"
     },

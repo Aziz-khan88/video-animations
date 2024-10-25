@@ -9,7 +9,7 @@ const ByNumber = () => {
             </div>
             <div className={styles.byNumberItem}>
                 <div className={styles.byNumberPoints}>500M<span>+</span></div>
-                <h6>Views on our <br />Clients Videos</h6>
+                <h6>Views on Our <br />Clients Videos</h6>
             </div>
             <div className={styles.byNumberItem}>
                 <div className={styles.byNumberPoints}>$11M<span>+</span></div>

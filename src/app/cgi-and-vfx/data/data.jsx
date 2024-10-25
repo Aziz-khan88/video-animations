@@ -9,7 +9,7 @@ import why04 from "media/home/whychoose/why04.webp"
 
 
 export const BannerData = {
-    title: "Rise Above with CGI and VFX Company",
+    title: "Rise Above With CGI And VFX Company",
     desc: "Your ideas and visions are about to transform into a perfectly realistic CGI animation, with the expertise of our exceptional CGI artists. We offer you something that other CGI animation companies do not possess: the best collaborative CGI animation services where your imagination is our top priority. Experience the ultimate taste of VFX with our CGI animation studios.",
     video: "https://player.vimeo.com/progressive_redirect/playback/1022023652/rendition/1080p/file.mp4?loc=external&signature=28b50330aa67b6a7b8718ae8e96f9026c54c571122e4adb24bd444df699cf18d"
 }
@@ -41,7 +41,7 @@ export const ProcessList = [
 ]
 
 export const ImageCtaContent = {
-    title: (<>Animate your world <br /> with CGI Animation and <br /> VFX Animation</>),
+    title: (<>Animate Your World <br /> With CGI Animation And <br /> VFX Animation</>),
     ctaLink: "#",
     ctaText: "Let’s Discuss",
     bannerImg: bannerImg
