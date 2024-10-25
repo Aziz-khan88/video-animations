@@ -114,28 +114,96 @@ body {
     margin-bottom: 10px;
   }
 
-  // Read More Button
+
   .readMoreBtn {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 55px;
-    color: #ffffff;
-    height: 55px;
-    min-width: 210px;
+    height: 50px;
+    min-width: 150px;
+    padding: 0px 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
-    border-radius: 33px;
-    padding: 0px 25px;
+    transition: 0.3s linear;
+    border-radius: 50px;
+    width: 220px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 
     &.bgColor {
-      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+
+      &:hover {
+        transition: 0.3s linear;
+
+        a,
+        div {
+          color: #ed1919;
+        }
+      }
     }
 
-    svg {
-      margin-left: 20px;
+    &::before {
+      content: "";
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      border-radius: 64px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      border-radius: 50px;
+      z-index: -1;
+      transition: 0.3s linear;
+    }
+
+    a,
+    div {
+      color: #fff;
+      font-size: 16px;
+      line-height: normal;
+      font-weight: 700;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+
+      span {
+        margin-right: 15px;
+      }
+
+      svg {
+        width: 25px;
+        height: auto;
+      }
+    }
+
+    &:hover {
+      transition: 0.3s linear;
+
+      &::before {
+        content: "";
+        background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+        border-radius: 64px;
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border-radius: 50px;
+        z-index: -1;
+        transition: 0.3s linear;
+      }
+
+      a,
+      div {
+        color: #fff;
+
+        svg {
+          position: absolute;
+          right: 12px;
+        }
+      }
     }
   }
 
@@ -147,6 +215,7 @@ body {
     height: 110px;
     border-radius: 100%;
     position: relative;
+    animation: swingNew 2s infinite ease-in-out;
 
     a,
     div {
@@ -198,12 +267,29 @@ body {
     }
 
     &:hover {
+      animation: none;
       background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
 
       a,
       div {
         transition: transform 0.4s ease-in-out;
-        transform: rotate(-95deg);
+        transform: rotate(-90deg);
+      }
+    }
+
+    @keyframes swingNew {
+
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(-90deg);
+        background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      }
+
+      100% {
+        transform: rotate(0deg);
       }
     }
   }
@@ -275,17 +361,48 @@ body {
       line-height: 30px;
     }
 
-    .readMoreBtn {
-      font-size: 18px;
-      line-height: 50px;
-      height: 50px;
-      min-width: 200px;
-      padding: 0px 20px;
+    // .readMoreBtn {
+    //   font-size: 18px;
+    //   line-height: 50px;
+    //   height: 50px;
+    //   min-width: 200px;
+    //   padding: 0px 20px;
 
-      svg {
-        margin-left: 20px;
-        width: 26px;
-        height: auto;
+    //   svg {
+    //     margin-left: 20px;
+    //     width: 26px;
+    //     height: auto;
+    //   }
+    // }
+    .readMoreBtn {
+      height: 50px;
+      padding: 0px 20px;
+      width: 220px;
+
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 50px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
       }
     }
 
@@ -365,16 +482,34 @@ body {
     }
 
     .readMoreBtn {
-      font-size: 17px;
-      line-height: 45px;
-      height: 45px;
-      min-width: 200px;
+      height: 50px;
       padding: 0px 20px;
+      width: 220px;
 
-      svg {
-        margin-left: 18px;
-        width: 24px;
-        height: auto;
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 50px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
       }
     }
 
@@ -454,16 +589,34 @@ body {
     }
 
     .readMoreBtn {
-      font-size: 16px;
-      line-height: 42px;
-      height: 42px;
-      min-width: 170px;
+      height: 45px;
       padding: 0px 20px;
+      width: 200px;
 
-      svg {
-        margin-left: 15px;
-        width: 22px;
-        height: auto;
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 45px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
       }
     }
 
@@ -543,16 +696,34 @@ body {
     }
 
     .readMoreBtn {
-      font-size: 15px;
-      line-height: 40px;
-      height: 40px;
-      min-width: 170px;
+      height: 42px;
       padding: 0px 20px;
+      width: 200px;
 
-      svg {
-        margin-left: 15px;
-        width: 20px;
-        height: auto;
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 20px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 42px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
       }
     }
 
@@ -634,16 +805,34 @@ body {
     }
 
     .readMoreBtn {
-      font-size: 15px;
-      line-height: 40px;
-      height: 40px;
-      min-width: 170px;
-      padding: 0px 20px;
+      height: 38px;
+      padding: 0px 10px;
+      width: 180px;
 
-      svg {
-        margin-left: 15px;
-        width: 20px;
-        height: auto;
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 17px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 38px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
       }
     }
 
@@ -725,16 +914,34 @@ body {
     }
 
     .readMoreBtn {
-      font-size: 14px;
-      line-height: 40px;
-      height: 40px;
-      min-width: 150px;
-      padding: 0px 20px;
+      height: 38px;
+      padding: 0px 10px;
+      width: 180px;
 
-      svg {
-        margin-left: 12px;
-        width: 18px;
-        height: auto;
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 17px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 38px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
       }
     }
 

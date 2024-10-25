@@ -17,7 +17,12 @@ const Banner = ({ BannerData }) => {
                             <div className={styles.bannerContentBox}>
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
-                                    <Link href="" className="readMoreBtn">Dive in now <ArrowBtn /></Link>
+
+                                    <div className="readMoreBtn">
+                                        <div>
+                                            <span>Dive in now</span> <ArrowBtn />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className={styles.bannerButton}>
                                     <div className="buttonCommon">

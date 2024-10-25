@@ -25,7 +25,6 @@ const Banner = ({ BannerData }) => {
                                         <Link href="">
                                             <FavIcon />
                                         </Link>
-                                        <span>Show Reel</span>
                                     </div>
                                 </div>
                             </div>

@@ -25,12 +25,12 @@ const SpotLight = () => {
                 const video = videoRefs.current[index];
 
                 if (entry.isIntersecting) {
-                    video?.play(); // Play video if the section is in view
+                    video?.play();
                 } else {
-                    video?.pause(); // Pause video if the section is out of view
+                    video?.pause();
                 }
             });
-        }, options); // Pass the options to the observer
+        }, options);
 
         videoRefs.current.forEach((video) => {
             if (video) {
@@ -68,7 +68,7 @@ const SpotLight = () => {
                             {images.map((item, index) => (
                                 <div key={index} className={styles.imageBox}>
                                     <video
-                                        ref={(el) => (videoRefs.current[index] = el)} // Assign each video to the ref array
+                                        ref={(el) => (videoRefs.current[index] = el)}
                                         data-index={index}
                                         autoPlay
                                         muted
@@ -83,9 +83,11 @@ const SpotLight = () => {
                                 </div>
                             ))}
                             <div className={styles.sportlightCTA}>
-                                <Link href="#" className="readMoreBtn bgColor">
-                                    Let’s Discuss <ArrowBtn />
-                                </Link>
+                                <div className="readMoreBtn bgColor">
+                                    <div>
+                                        <span>Dive in now</span> <ArrowBtn />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </Col>

@@ -7,10 +7,12 @@ import styles from "@/styles/home/whychoose.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowBtn } from "@/src/app/app-constants";
 import Link from "next/link";
+import Autoplay from 'embla-carousel-autoplay'
+
 
 const WhyChooes = (props) => {
     const { slides, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()]);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames(), Autoplay()]);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState([]);
 

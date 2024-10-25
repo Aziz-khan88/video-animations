@@ -43,7 +43,12 @@ const VideoCta = () => {
                     <Col lg={10} className='m-auto text-center'>
                         <div className={styles.videoContent}>
                             <h2>Make Your Brand Stand Out</h2>
-                            <Link href="#" className="readMoreBtn bgColor">Let’s Discuss <ArrowBtn /></Link>
+                            <div className="readMoreBtn">
+                                <div>
+                                    <span>Let’s Discuss</span> <ArrowBtn />
+                                </div>
+                            </div>
+
                         </div>
                     </Col>
                 </Row>

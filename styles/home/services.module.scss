@@ -155,7 +155,7 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
     .serviceSection {
-        height: 100vh;
+        height: 800px;
 
         &::before {
             width: 40%;
@@ -174,7 +174,7 @@
                 max-width: 430px;
 
                 .serviceItem {
-                    height: 65px;
+                    height: 85px;
 
                     h4 {
                         font-size: 20px;
@@ -220,7 +220,7 @@
 
 @media only screen and (min-width: 1300px) and (max-width: 1399px) {
     .serviceSection {
-        height: 100vh;
+        height: 700px;
 
         &::before {
             width: 40%;
@@ -239,7 +239,7 @@
                 max-width: 430px;
 
                 .serviceItem {
-                    height: 55px;
+                    height: 75px;
 
                     h4 {
                         font-size: 20px;
@@ -251,7 +251,7 @@
                     }
 
                     &.active {
-                        height: 130px;
+                        height: 150px;
                         padding-right: 20px;
 
                         h4 {
@@ -287,7 +287,7 @@
 
 @media only screen and (min-width: 1100px) and (max-width: 1299px) {
     .serviceSection {
-        height: 100vh;
+        height: 700px;
 
         &::before {
             width: 45%;
@@ -306,7 +306,7 @@
                 max-width: 380px;
 
                 .serviceItem {
-                    height: 55px;
+                    height: 75px;
 
                     h4 {
                         font-size: 18px;
@@ -319,7 +319,7 @@
                     }
 
                     &.active {
-                        height: 110px;
+                        height: 150px;
                         padding-right: 20px;
 
                         h4 {
@@ -350,7 +350,7 @@
 
 @media only screen and (min-width: 900px) and (max-width:1099px) {
     .serviceSection {
-        height: 100vh;
+        height: 650px;
 
         &::before {
             width: 45%;
@@ -371,7 +371,7 @@
                 max-width: 350px;
 
                 .serviceItem {
-                    height: 45px;
+                    height: 70px;
 
                     h4 {
                         font-size: 18px;
@@ -388,7 +388,7 @@
                     }
 
                     &.active {
-                        height: 130px;
+                        height: 150px;
                         padding-right: 20px;
 
                         h4 {
@@ -420,7 +420,7 @@
 
 @media only screen and (min-width: 600px) and (max-width:899px) {
     .serviceSection {
-        height: 100vh;
+        height: 650px;
 
         &::before {
             width: 55%;
@@ -439,7 +439,7 @@
                 max-width: 350px;
 
                 .serviceItem {
-                    height: 50px;
+                    height: 70px;
 
                     h4 {
                         font-size: 18px;
@@ -457,7 +457,7 @@
                     }
 
                     &.active {
-                        height: 130px;
+                        height: 150px;
                         padding-right: 20px;
 
                         h4 {

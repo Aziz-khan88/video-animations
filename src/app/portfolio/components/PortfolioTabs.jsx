@@ -21,13 +21,12 @@ const tabs = [
 
 const VIMEO_ACCESS_TOKEN = '487ce35bb2408d9ea6ebad7c234cc57b';
 
-// Function to limit words in a description
 function limitWords(text, wordLimit) {
-    const words = text.split(' ');
-    if (words.length > wordLimit) {
-        return words.slice(0, wordLimit).join(' ') + '...';
-    }
-    return text;
+    if (typeof text !== "string" || !text.trim()) return "";
+    const words = text.split(" ");
+    return words.length > wordLimit
+        ? words.slice(0, wordLimit).join(" ") + "..."
+        : text;
 }
 
 const PortfolioTabs = () => {
