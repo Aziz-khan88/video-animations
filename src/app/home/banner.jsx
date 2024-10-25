@@ -1,10 +1,18 @@
+"use client"
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/banner.module.scss"
 import Link from "next/link"
 import { ArrowBtn, FavIcon } from "@/src/app/app-constants"
 import Head from "next/head"
+import VideoModal from "./components/videomodal"
+import { useState } from "react"
 
 const Banner = ({ BannerData }) => {
+    const [modalShow, setModalShow] = useState(false);
+
+    const handlePlayClick = () => {
+        setModalShow(true);
+    };
     return (
         <>
             <Head>
@@ -18,7 +26,7 @@ const Banner = ({ BannerData }) => {
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
 
-                                    <div className="readMoreBtn">
+                                    <div className="readMoreBtn" onClick={() => handlePlayClick()}>
                                         <div>
                                             <span>Dive in now</span> <ArrowBtn />
                                         </div>
@@ -26,7 +34,7 @@ const Banner = ({ BannerData }) => {
                                 </div>
                                 <div className={styles.bannerButton}>
                                     <div className="buttonCommon">
-                                        <Link href="">
+                                        <Link href="" onClick={() => handlePlayClick()} >
                                             <FavIcon />
                                         </Link>
                                     </div>
@@ -47,6 +55,7 @@ const Banner = ({ BannerData }) => {
                     <source src={BannerData.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
             </section>
         </>
     )

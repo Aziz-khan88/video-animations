@@ -3,7 +3,7 @@
             margin-bottom: 30px;
 
             input {
-              
+
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px;
@@ -19,7 +19,7 @@
 
             textarea {
                 height: 120px;
-              
+
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px;
@@ -36,7 +36,7 @@
         .inputsButton {
             button {
                 background: linear-gradient(106.24deg, #ED1919 25.96%, #FFE100 140.6%);
-              
+
                 font-style: normal;
                 font-weight: 500;
                 font-size: 20px;
@@ -53,6 +53,22 @@
 
                 svg {
                     margin-left: 15px;
+                }
+            }
+        }
+
+        &.popupstyle {
+            .inputsFiled {
+                margin-bottom: 15px;
+
+                input,
+                textarea {
+                    padding-left: 10px;
+                    background-color: rgba(255, 255, 255, 0.24);
+                    backdrop-filter: blur(26px) brightness(1.2);
+                    -webkit-backdrop-filter: blur(26px) brightness(1.2);
+                    color: #fff;
+                    border: 0;
                 }
             }
         }

@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { FavIcon } from '@/src/app/app-constants';
 import axios from 'axios';
 import VideoModal from '@/src/app/home/components/videomodal';
+import Autoplay from 'embla-carousel-autoplay'
 
 const OPTIONS = { align: 'center', loop: true };
 
@@ -25,7 +26,7 @@ const caseStudiesList = [
 const VIMEO_ACCESS_TOKEN = '487ce35bb2408d9ea6ebad7c234cc57b';
 
 const Portfolio = () => {
-    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay()]);
     const [activeTab, setActiveTab] = useState(0);
     const [videos, setVideos] = useState([]);
     const [videoID, setVideoID] = useState("");

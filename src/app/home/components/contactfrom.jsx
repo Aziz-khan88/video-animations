@@ -6,7 +6,7 @@ import styles from "@/styles/home/components/contactfrom.module.scss"
 import { ArrowBtn } from "@/src/app/app-constants"
 import { Form } from "react-bootstrap"
 
-const ContactFrom = ({ contact }) => {
+const ContactFrom = ({ contact, popup }) => {
 
     const [ip, setIP] = useState('');
     const [pagenewurl, setPagenewurl] = useState('');
@@ -102,7 +102,7 @@ const ContactFrom = ({ contact }) => {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <div className={`${styles.contactFrom} ${contact ? styles.contactPage : ''}`}>
+            <div className={`${styles.contactFrom} ${popup ? styles.popupstyle : ''} ${contact ? styles.contactPage : ''}`}>
                 <div className={styles.inputsFiled}>
                     <input type="text" name="name" placeholder="Full Name" required />
                 </div>

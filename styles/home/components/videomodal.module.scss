@@ -29,6 +29,7 @@
     top: -12px;
     right: -12px;
     cursor: pointer;
+
     svg {
       circle {
         fill: rgb(255, 255, 255);
@@ -39,6 +40,31 @@
       }
     }
   }
+}
+
+.popupContact {
+  padding: 50px;
+  border-radius: 6px;
+  background: #000;
+  position: relative;
+
+  .closedBtn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    cursor: pointer;
+
+    svg {
+      circle {
+        fill: rgb(255, 255, 255);
+      }
+
+      path {
+        fill: #000;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -52,6 +78,11 @@
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .popupContact {
+    padding: 30px;
+
+  }
+
   .videoPopup {
     height: 500px;
   }
@@ -62,6 +93,10 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  .popupContact {
+    padding: 28px;
+  }
+
   .videoPopup {
     height: 450px;
   }
@@ -72,6 +107,10 @@
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  .popupContact {
+    padding: 28px;
+  }
+
   .videoPopup {
     height: 420px;
   }
@@ -93,12 +132,17 @@
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .popupContact {
+    padding: 25px;
+  }
+
   .videoPopup {
     height: 365px;
   }
 
   .iframePopup {
     height: 365px;
+
     .closedBtn {
       top: -10px;
       right: -10px;
@@ -113,6 +157,10 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
+  .popupContact {
+    padding: 15px;
+  }
+
   .videoPopup {
     height: 310px;
     padding: 0;
@@ -136,6 +184,10 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px) {
+  .popupContact {
+    padding: 15px;
+  }
+
   .videoPopup {
     height: 230px;
     padding: 0px;

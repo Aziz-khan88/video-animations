@@ -1,6 +1,9 @@
 import { Col, Modal, Row } from "react-bootstrap"
 import styles from "@/styles/home/components/videomodal.module.scss"
 import { ClosedBtn } from "@/src/app/app-constants"
+import ContactFrom from "./contactfrom"
+import Image from "next/image"
+import IMG from "media/services/banner/portrait.webp"
 
 const VideoModal = (props) => {
     const { iframeUrl, onHide } = props
@@ -12,7 +15,7 @@ const VideoModal = (props) => {
             className="videoModal"
             centered
         >
-            <div className={styles.iframePopup}>
+            {iframeUrl ? (<div className={styles.iframePopup}>
                 <iframe
                     src={`https://player.vimeo.com/video/${iframeUrl}?autoplay=1&controls=0&loop=1`}
                     width="100%"
@@ -23,7 +26,32 @@ const VideoModal = (props) => {
                 </iframe>
                 <div className={styles.closedBtn} onClick={onHide}><ClosedBtn /></div>
             </div>
+            ) : (
 
+                <div className={styles.popupContact}>
+                    <div className={styles.closedBtn} onClick={onHide}>
+                        <ClosedBtn />
+                    </div>
+                    <Row>
+
+                        <Col md={6} className="m-auto">
+                            <div className={styles.popupForm}>
+                                <h3 className="textGradient">Amazing Discounts</h3>
+                                <p>On Video Animation Services</p>
+
+                                <ContactFrom popup={true} />
+                            </div>
+                        </Col>
+                        <Col md={6} className="m-auto d-none d-md-block">
+                            <div className={`${styles.popupImg} text-center`}>
+                                <Image src={IMG.src} alt='Video Animation' width={260} height={400} />
+                            </div>
+                        </Col>
+                    </Row>
+
+                </div>
+
+            )}
         </Modal >
     )
 }
