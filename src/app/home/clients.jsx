@@ -15,6 +15,11 @@ import Logo12 from "media/home/clientslogo/logo12.webp";
 import Logo13 from "media/home/clientslogo/logo13.webp";
 import Logo14 from "media/home/clientslogo/logo14.webp";
 import Logo15 from "media/home/clientslogo/logo15.webp";
+import Logo16 from "media/home/clientslogo/logo16.webp";
+import Logo17 from "media/home/clientslogo/logo17.webp";
+import Logo18 from "media/home/clientslogo/logo18.webp";
+import Logo19 from "media/home/clientslogo/logo19.webp";
+import Logo20 from "media/home/clientslogo/logo20.webp";
 
 
 import Image from "next/image";
@@ -38,6 +43,11 @@ const ClientsLogos = [
     { logo: Logo13.src },
     { logo: Logo14.src },
     { logo: Logo15.src },
+    { logo: Logo16.src },
+    { logo: Logo17.src },
+    { logo: Logo18.src },
+    { logo: Logo19.src },
+    { logo: Logo20.src },
 ];
 
 
