@@ -44,17 +44,20 @@ const PortfolioTabs = () => {
             const response = await axios.get(`https://api.vimeo.com/videos`, {
                 params: {
                     query: tag,
-                    per_page: 11
+                    per_page: 19
                 },
                 headers: {
                     Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`
                 }
             });
+            let videoList = response.data.data
+            if (response.data.data.length < 10) {
+                videoList = response.data.data.slice(0, 10);
+            }
 
-            setVideos(response.data.data);
+            setVideos(videoList);
         } catch (error) {
             console.error("Error fetching videos: ", error);
-            console.log(error)
         } finally {
             setLoading(false);
         }
@@ -74,6 +77,22 @@ const PortfolioTabs = () => {
         setModalShow(true);
         setVideoID(id);
     };
+
+    const getVideoCountToRender = (count) => {
+        if (count >= 2 && count <= 4) return 2;
+        if (count >= 5 && count <= 6) return 5;
+        if (count === 7) return 7;
+        if (count >= 8 && count <= 10) return 8;
+        if (count >= 11 && count <= 12) return 11;
+        if (count === 13) return 13;
+        if (count >= 14 && count <= 16) return 14;
+        if (count >= 17 && count <= 18) return 17;
+        if (count > 18) return 19;
+        return 0; // Default case (no videos)
+    };
+
+    const videosToRender = getVideoCountToRender(videos.length);
+    const videosToDisplay = videos.slice(0, videosToRender); // Get the correct number of videos to display
 
     return (
         <section className={`${styles.portfolioSection} pt-100 `}>
@@ -112,8 +131,7 @@ const PortfolioTabs = () => {
                                 <div className={`${styles.portfolio}`}>
                                     <div className={`${styles.gridContainer}`}>
 
-
-                                        {videos.map((video, index) => (
+                                        {/* {videos.map((video, index) => (
                                             <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]} `}
                                             >
                                                 <Image
@@ -135,8 +153,34 @@ const PortfolioTabs = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        ))}
+                                        ))} */}
 
+                                        {videosToDisplay.length > 0 ? (
+                                            videosToDisplay.map((video, index) => (
+                                                <div key={index} className={`${styles.imageBox} ${styles[`image${index + 1}`]}`}>
+                                                    <Image
+                                                        src={video.pictures.sizes[video.pictures.sizes.length - 1].link}
+                                                        alt={`Video Thumbnail ${index + 1}`}
+                                                        fill
+                                                    />
+                                                    <div className={styles.bannerContentBox}>
+                                                        <div className={styles.bannerHeading}>
+                                                            <div className={styles.title}>{video.name}</div>
+                                                            <p>{limitWords(video.description, 15)}</p>
+                                                        </div>
+                                                        <div className={styles.bannerButton} onClick={() => handlePlayClick(video.uri.split('/').pop())}>
+                                                            <div className={`${styles.buttonSmall} buttonCommon`}>
+                                                                <div>
+                                                                    <FavIcon />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ))
+                                        ) : (
+                                            <p>No videos to display.</p>
+                                        )}
 
 
                                     </div>

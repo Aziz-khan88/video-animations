@@ -17,7 +17,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Find Endless Engaging 2D Animations Here That Suit Your Taste.",
     desc: "Discover a world of attractive 2D animations tailored to your preferences at Video Animation. From humorous shorts to mesmerizing art pieces, a 2D animation company that caters everyone. Explore our vast collections and find your next favorite animated masterpiece.",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1021823941/rendition/1080p/file.mp4?loc=external&signature=a44c0ee3eb885a7b95935c6480f4140d16e748efb46839981f3100041645c60b"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1021823941/rendition/1080p/file.mp4?loc=external&signature=a44c0ee3eb885a7b95935c6480f4140d16e748efb46839981f3100041645c60b",
+    videoId: "1021823941"
 }
 
 

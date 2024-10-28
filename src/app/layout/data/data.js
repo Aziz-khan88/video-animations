@@ -1,12 +1,14 @@
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "@/src/app/app-constants"
+import { Facebook, Linkedin, Pinterest, Tiktok, Twitter, Vimeo, Youtube } from "@/src/app/app-constants"
 
 // Social media links
 export const SocailLinks = [
-    { icon: <Instagram />, url: "#" },
-    { icon: <Facebook />, url: "#" },
-    { icon: <Twitter />, url: "#" },
-    { icon: <Linkedin />, url: "#" },
-    { icon: <Youtube />, url: "#" }
+    { icon: <Pinterest />, url: "https://www.pinterest.com/animationvideous/" },
+    { icon: <Tiktok />, url: "https://www.tiktok.com/@videoanimationus?lang=en" },
+    { icon: <Facebook />, url: "https://www.facebook.com/videoanimationus" },
+    { icon: <Twitter />, url: "https://x.com/vid_animationus" },
+    { icon: <Linkedin />, url: "https://www.linkedin.com/company/video-animation-us" },
+    { icon: <Youtube />, url: "https://www.youtube.com/@VideoAnimationStudio" },
+    { icon: <Vimeo />, url: "https://vimeo.com/videoanimationus" }
 ];
 
 // Dynamic submenu items

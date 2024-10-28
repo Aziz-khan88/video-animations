@@ -4,7 +4,8 @@ export const BannerData = {
         <p>At Video Animation Company, we’re passionate about turning your ideas into visually stunning animations that tell your brand’s unique story. From custom 2D and 3D animations to eye-catching visuals, we create videos that not only captivate but also build a deep connection with your audience. Your brand deserves more than just static content – it deserves breathtaking animations that elevate your message, inspire engagement, and drive results.</p>
         <p>Our team of skilled animators brings your vision to life with creativity and precision, making sure your brand stands out in today’s competitive market. Let us help you turn your vision into a reality that leaves a lasting impact.</p>
     </>),
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023518/rendition/1080p/file.mp4?loc=external&signature=f9723bf81f68c7eb777e5568f191ad02b34ccf5bd31daf8cc9193c5c66e4c2c0"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023518/rendition/1080p/file.mp4?loc=external&signature=f9723bf81f68c7eb777e5568f191ad02b34ccf5bd31daf8cc9193c5c66e4c2c0",
+    videoId: "1022023518"
 }
 
 export const list = [

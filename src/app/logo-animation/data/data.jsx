@@ -12,7 +12,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Animate Your Logo With The Best Animation Agency",
     desc: "Your company logo is something that enhances your brand's personality, a visually appealing logo creates a lasting impression on the audience and helps in showcasing the right identity of your business. With the help of our logo animation services, your business gets a new makeover that would create an unforgettable image of your brand.",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023844/rendition/1080p/file.mp4?loc=external&signature=9821f9f3f5425bb7db6f2b6b89e9ccc8ba0d51ff39d016b6ec3e4444d4d8c626"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023844/rendition/1080p/file.mp4?loc=external&signature=9821f9f3f5425bb7db6f2b6b89e9ccc8ba0d51ff39d016b6ec3e4444d4d8c626",
+    videoId: "1022023844"
 }
 
 

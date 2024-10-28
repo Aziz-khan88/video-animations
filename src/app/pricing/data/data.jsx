@@ -3,7 +3,8 @@ export const BannerData = {
     desc: (<>
         <p>We believe that each dollar spent by you deserves utmost care and you must receive a strong return to help you achieve your goals.</p>
     </>),
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023934/rendition/1080p/file.mp4?loc=external&signature=29f4b26feca6c4bc8670dcd462fa8044740897ad5d66c7cf08cfc78bee7d20d7"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023934/rendition/1080p/file.mp4?loc=external&signature=29f4b26feca6c4bc8670dcd462fa8044740897ad5d66c7cf08cfc78bee7d20d7",
+    videoId: "1022023934"
 }
 
 export const list = [

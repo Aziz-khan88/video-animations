@@ -11,7 +11,8 @@ import why04 from "media/home/whychoose/why04.webp"
 
 export const BannerData = {
     title: "Video Animation Studio To Help You Drive Results With Passion",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022063281/rendition/1080p/file.mp4?loc=external&signature=50d67cebafebe3b086a9c953e561b209e339856cae392d3fea3a2bbf44b43d3a"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022063281/rendition/1080p/file.mp4?loc=external&signature=50d67cebafebe3b086a9c953e561b209e339856cae392d3fea3a2bbf44b43d3a",
+    videoId: "1022063281"
 }
 
 export const WhyOption = { align: 'center', loop: true }

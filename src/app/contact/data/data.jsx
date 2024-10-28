@@ -2,7 +2,8 @@ export const BannerData = {
     title: (<>
         <span>Let’s</span> Create Something Beyond Ordinary, Our Team Would Love To Hear Your Idea
     </>),
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023709/rendition/1080p/file.mp4?loc=external&signature=e74f629343c38e1bf336ff6f0aee96311fa23e92c78df4d635707ab9a3a36a25"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023709/rendition/1080p/file.mp4?loc=external&signature=e74f629343c38e1bf336ff6f0aee96311fa23e92c78df4d635707ab9a3a36a25",
+    videoId: "1022023709"
 }
 
 

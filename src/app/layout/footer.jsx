@@ -140,7 +140,7 @@ const Footer = () => {
                                         <ul>
                                             {SocailLinks.map((item, index) => (
                                                 <li key={index}>
-                                                    <Link href={item.url}>{item.icon}</Link>
+                                                    <Link href={item.url} target="_blank">{item.icon}</Link>
                                                 </li>
                                             ))}
                                         </ul>

@@ -39,6 +39,7 @@ const Banner = ({ BannerData }) => {
                     aria-label="Background video"
                     className={styles.bannerVideo}
                     loading="eager"
+                    poster={`https://vumbnail.com/${BannerData.videoId}.jpg`}
                 >
                     <source src={BannerData.video} type="video/mp4" />
                     Your browser does not support the video tag.

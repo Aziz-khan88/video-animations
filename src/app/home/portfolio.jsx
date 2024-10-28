@@ -55,7 +55,6 @@ const Portfolio = () => {
                     Authorization: `Bearer ${VIMEO_ACCESS_TOKEN}`
                 }
             });
-            console.log("Fetched videos: ", response.data.data); // Log the full response
             setVideos(response.data.data);
         } catch (error) {
             console.error("Error fetching videos: ", error);

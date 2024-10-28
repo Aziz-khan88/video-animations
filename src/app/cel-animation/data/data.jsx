@@ -12,7 +12,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Tell Engaging Stories With Our Hand-Drawn Cel Animation Services",
     desc: "Our cel animation services are just what you need! We create stunning, hand-drawn animations that engage viewers and elevate your brand, leaving a lasting impression and building trust with your audience.",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023605/rendition/1080p/file.mp4?loc=external&signature=608c68c99f6b66e42aa661b73e7a14bcf26b2ea7ae5b52b1ae625ecc3965246c"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023605/rendition/1080p/file.mp4?loc=external&signature=608c68c99f6b66e42aa661b73e7a14bcf26b2ea7ae5b52b1ae625ecc3965246c",
+    videoId: "1022023605"
 }
 
 

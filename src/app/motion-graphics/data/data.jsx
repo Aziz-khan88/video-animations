@@ -12,7 +12,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Smooth & Highly Engaging Motion Graphics Design",
     desc: "Are you looking for exquisite motion graphics animation for your website, promotional videos, and social media content? We specialize in creating the most eye-catching, smooth, and informative animated motion graphics. With the help of our experts, you can transform your ideas into attractive animated motion graphics.",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023885/rendition/1080p/file.mp4?loc=external&signature=d8d79b2b5fe7009e6b9ebc6e361d0fd2a5d6fea3649702491612d624d4c1b14d"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023885/rendition/1080p/file.mp4?loc=external&signature=d8d79b2b5fe7009e6b9ebc6e361d0fd2a5d6fea3649702491612d624d4c1b14d",
+    videoId: "1022023885"
 }
 
 

@@ -12,7 +12,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Connect With Your Audience with Best Hybrid Animation",
     desc: "Looking for ways to increase traffic to your website and capture your audience's attention? We’ve got just the thing for you! Our hybrid animation services will make your videos exceptionally engaging, helping you win more attention and trust in your brand.",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023731/rendition/1080p/file.mp4?loc=external&signature=c3232b91ee2ece397f163f6bd1b81ae8c7ed468ed8d41d9790d767e07aa276f7"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023731/rendition/1080p/file.mp4?loc=external&signature=c3232b91ee2ece397f163f6bd1b81ae8c7ed468ed8d41d9790d767e07aa276f7",
+    videoId: "1022023731"
 }
 
 

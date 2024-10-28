@@ -12,7 +12,8 @@ import why04 from "media/home/whychoose/why04.webp"
 export const BannerData = {
     title: "Interactive Infographic Designs For Your Website",
     desc: "Are you looking for infographic designs that tell an exciting story about your product and get your audience’s attention instantly? Then don’t look further, we’ve got the most magnificent and interactive infographic design ideas for you!",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022023652/rendition/1080p/file.mp4?loc=external&signature=28b50330aa67b6a7b8718ae8e96f9026c54c571122e4adb24bd444df699cf18d"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1022023652/rendition/1080p/file.mp4?loc=external&signature=28b50330aa67b6a7b8718ae8e96f9026c54c571122e4adb24bd444df699cf18d",
+    videoId: "1022023652"
 }
 
 

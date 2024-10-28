@@ -1,3 +1,4 @@
+"use client"
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/banner.module.scss"
 import Link from "next/link"
@@ -29,11 +30,14 @@ const Banner = ({ BannerData }) => {
                         </Col>
                     </Row>
                 </Container>
-                <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerVideo}>
+                <video autoPlay muted loop preload="auto" aria-label="Background video" className={styles.bannerVideo}
+                    poster={`https://vumbnail.com/${BannerData.videoId}.jpg`}
+
+                >
                     <source src={BannerData.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-            </section>
+            </section >
         </>
 
     )
