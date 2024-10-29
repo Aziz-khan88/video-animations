@@ -37,7 +37,6 @@
                         width: 100%;
                         position: relative;
                         background: #000;
-                        object-fit: cover;
 
                         &::after {
                             content: '';
@@ -62,6 +61,7 @@
 
                         img {
                             border-radius: 20px;
+                            object-fit: cover;
                         }
 
                         .testimonialContent {
