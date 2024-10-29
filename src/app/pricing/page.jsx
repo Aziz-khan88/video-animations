@@ -1,4 +1,4 @@
-import { ClientsReview } from "@/src/app/home/data/data";
+import { ClientsLogos, ClientsReview } from "@/src/app/home/data/data";
 import { BannerData, list } from "@/src/app/pricing/data/data";
 
 import Banner from "@/src/app/pricing/banner";
@@ -15,7 +15,7 @@ export default function Pricing() {
     <>
       <Banner video={true} BannerData={BannerData} />
       <Packages />
-      <Clients />
+      <Clients ClientsLogos={ClientsLogos} />
       <Contentsection />
       <Testimonials slides={ClientsReview} />
       <Faqs data={list} />

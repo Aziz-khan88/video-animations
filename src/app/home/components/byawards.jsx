@@ -1,36 +1,97 @@
-import Award01 from "media/home/awards/award01.webp"
-import Award02 from "media/home/awards/award02.webp"
-import Award03 from "media/home/awards/award03.webp"
-import Award04 from "media/home/awards/award04.webp"
-import Award05 from "media/home/awards/award05.webp"
-import Award06 from "media/home/awards/award06.webp"
+import Award01 from "media/home/awards/1.webp"
+import Award02 from "media/home/awards/2.webp"
+import Award03 from "media/home/awards/3.webp"
+import Award04 from "media/home/awards/4.webp"
+import Award05 from "media/home/awards/5.webp"
+import Award06 from "media/home/awards/6.webp"
+import Award07 from "media/home/awards/7.webp"
+import Award08 from "media/home/awards/8.webp"
+import Award09 from "media/home/awards/9.webp"
+import Award10 from "media/home/awards/10.webp"
+import Award11 from "media/home/awards/11.webp"
+import Award12 from "media/home/awards/12.webp"
+import Award13 from "media/home/awards/13.webp"
+import Award14 from "media/home/awards/14.webp"
+import Award15 from "media/home/awards/15.webp"
+import Award16 from "media/home/awards/16.webp"
 import styles from "@/styles/home/components/awards.module.scss";
 import Image from "next/image"
+import { Carousel, CarouselItem } from 'react-bootstrap';
 
 
 
 const ByAwards = () => {
     return (
-        <div className={styles.byAwardBox}>
-            <div className={styles.byAwardItem}>
-                <Image src={Award01.src} width={317} height={162} alt="Award 01" />
-            </div>
-            <div className={styles.byAwardItem}>
-                <Image src={Award02.src} width={234} height={152} alt="Award 02" />
-            </div>
-            <div className={styles.byAwardItem}>
-                <Image src={Award03.src} width={346} height={200} alt="Award 03" />
-            </div>
-            <div className={styles.byAwardItem}>
-                <Image src={Award04.src} width={248} height={160} alt="Award 04" />
-            </div>
-            <div className={styles.byAwardItem}>
-                <Image src={Award05.src} width={372} height={200} alt="Award 05" />
-            </div>
-            <div className={styles.byAwardItem}>
-                <Image src={Award06.src} width={300} height={138} alt="Award 06" />
-            </div>
-        </div>
+
+        <Carousel interval={2000} fade={true} controls={false} indicators={false}>
+            <CarouselItem>
+                <div className={styles.byAwardBox}>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award01.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award02.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award03.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award04.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award05.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award06.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div className={styles.byAwardBox}>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award07.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award08.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award09.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award10.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award11.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award12.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div className={styles.byAwardBox}>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award13.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award14.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award15.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award16.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award01.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                    <div className={styles.byAwardItem}>
+                        <Image src={Award02.src} width={316} height={165} alt="Award logo" />
+                    </div>
+                </div>
+            </CarouselItem>
+
+        </Carousel>
     )
 }
 

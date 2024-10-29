@@ -1,5 +1,4 @@
 import styles from "@/styles/home/components/clients.module.scss";
-import { ClientLogo01, ClientLogo02, ClientLogo03, ClientLogo04, ClientLogo05, ClientLogo06 } from "@/src/app/app-constants"
 import Logo1 from "media/home/clientslogo/logo1.webp";
 import Logo2 from "media/home/clientslogo/logo2.webp";
 import Logo3 from "media/home/clientslogo/logo3.webp";
@@ -15,6 +14,9 @@ import Logo12 from "media/home/clientslogo/logo12.webp";
 import Logo13 from "media/home/clientslogo/logo13.webp";
 import Logo14 from "media/home/clientslogo/logo14.webp";
 import Logo15 from "media/home/clientslogo/logo15.webp";
+import Logo16 from "media/home/clientslogo/logo16.webp";
+import Logo17 from "media/home/clientslogo/logo17.webp";
+import Logo18 from "media/home/clientslogo/logo18.webp";
 
 
 import { Carousel, CarouselItem } from 'react-bootstrap';
@@ -22,29 +24,7 @@ import Image from "next/image";
 
 const ByClients = () => {
     return (
-        <Carousel interval={3000} fade={true} controls={false} indicators={false}>
-            <Carousel.Item>
-                <div className={styles.byClientsBox}>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo01 />
-                    </div>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo02 />
-                    </div>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo03 />
-                    </div>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo04 />
-                    </div>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo05 />
-                    </div>
-                    <div className={styles.byClientsItem}>
-                        <ClientLogo06 />
-                    </div>
-                </div>
-            </Carousel.Item>
+        <Carousel interval={2000} fade={true} controls={false} indicators={false}>
             <CarouselItem>
                 <div className={styles.byClientsBox}>
                     <div className={styles.byClientsItem}>
@@ -86,6 +66,28 @@ const ByClients = () => {
                     </div>
                     <div className={styles.byClientsItem}>
                         <Image src={Logo12.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div className={styles.byClientsBox}>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo13.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo14.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo15.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo16.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo17.src} alt={`Client Logo`} width={316} height={165} />
+                    </div>
+                    <div className={styles.byClientsItem}>
+                        <Image src={Logo18.src} alt={`Client Logo`} width={316} height={165} />
                     </div>
                 </div>
             </CarouselItem>
