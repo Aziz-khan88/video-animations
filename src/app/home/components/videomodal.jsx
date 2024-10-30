@@ -4,6 +4,8 @@ import { ClosedBtn } from "@/src/app/app-constants"
 import ContactFrom from "./contactfrom"
 import Image from "next/image"
 import IMG from "media/services/banner/portrait.webp"
+import RoundBtn from "@/src/app/home/components/roundbtn"
+import ContactRoundBtn from "./contactroundbtn"
 
 const VideoModal = (props) => {
     const { iframeUrl, onHide } = props
@@ -44,7 +46,7 @@ const VideoModal = (props) => {
                         </Col>
                         <Col md={6} className="m-auto d-none d-md-block">
                             <div className={`${styles.popupImg} text-center`}>
-                                <Image src={IMG.src} alt='Video Animation' width={260} height={400} />
+                                <ContactRoundBtn popup={true} />
                             </div>
                         </Col>
                     </Row>

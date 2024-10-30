@@ -8,6 +8,7 @@ import { Facebook, FavLogo, Instagram, Linkedin, Twitter, Youtube, FooterPhone, 
 import Link from "next/link"
 import { useEffect, useState } from "react";
 import { SocailLinks, subMenuItems } from "./data/data"
+import ContactRoundBtn from "../home/components/contactroundbtn"
 
 
 // const SocailLinks = [
@@ -135,7 +136,8 @@ const Footer = () => {
                         <Col md={12}>
                             <div className={styles.footerMenuSec}>
                                 <div className={styles.menuItem}>
-                                    <FavLogo />
+                                    {/* <FavLogo /> */}
+                                    <ContactRoundBtn footerIcn={true} />
                                     <div className={styles.linksItem}>
                                         <ul>
                                             {SocailLinks.map((item, index) => (

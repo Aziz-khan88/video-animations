@@ -217,6 +217,29 @@ body {
     position: relative;
     animation: swingNew 2s infinite ease-in-out;
 
+    &.footerActive {
+      width: 180px;
+      height: 180px;
+
+      a,
+      div {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    &.popupActive {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+
+      a,
+      div {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
     a,
     div {
       height: 110px;
@@ -624,6 +647,18 @@ body {
       width: 80px;
       height: 80px;
 
+      &.popupActive {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+
+        a,
+        div {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
       a,
       div {
         height: 80px;
@@ -730,6 +765,18 @@ body {
     .buttonCommon {
       width: 70px;
       height: 70px;
+
+      &.popupActive {
+        width: 170px;
+        height: 170px;
+        margin: auto;
+
+        a,
+        div {
+          width: 170px;
+          height: 170px;
+        }
+      }
 
       a,
       div {
@@ -840,6 +887,18 @@ body {
       width: 65px;
       height: 65px;
 
+      &.popupActive {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+
+        a,
+        div {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
       a,
       div {
         height: 65px;
@@ -948,6 +1007,18 @@ body {
     .buttonCommon {
       width: 50px;
       height: 50px;
+
+      &.popupActive {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+
+        a,
+        div {
+          width: 150px;
+          height: 150px;
+        }
+      }
 
       a,
       div {
