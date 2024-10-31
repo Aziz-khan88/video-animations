@@ -87,10 +87,11 @@
           margin-right: 15px;
           width: 20px;
           height: auto;
+          transition: 0.3s linear;
 
           path {
-            fill: #fff;
-            transition: 0.3s linear;
+            fill: rgb(255, 255, 255, 0.6);
+
           }
         }
 
@@ -99,9 +100,11 @@
           transition: 0.3s linear;
 
           svg {
+            transition: 0.3s linear;
+
             path {
               fill: #ed1919;
-              transition: 0.3s linear;
+
             }
           }
         }
@@ -116,9 +119,10 @@
         margin-right: 10px;
         width: 22px;
         height: auto;
+        transition: 0.3s linear;
 
         path {
-          fill: #fff;
+          fill: rgb(255, 255, 255, 0.6);
         }
       }
 
@@ -132,12 +136,16 @@
       }
 
       &:hover {
+        transition: 0.3s linear;
+
         a {
           color: #ed1919;
           transition: 0.3s linear;
         }
 
         svg {
+          transition: 0.3s linear;
+
           path {
             fill: #ed1919;
             transition: 0.3s linear;
@@ -162,8 +170,19 @@
         margin-right: 20px;
 
         a {
+          svg {
+            height: 23px;
+            width: auto;
+
+            path {
+              fill: rgb(255, 255, 255, 0.6);
+            }
+          }
+
           &:hover {
             svg {
+
+
               path {
                 fill: #ed1919;
               }
@@ -229,6 +248,13 @@
     flex-wrap: wrap;
 
     .menuItem {
+      &.FooterLogo {
+        svg {
+          height: 190px;
+          width: auto;
+        }
+      }
+
       &:first-child {
         flex: 0 0 25%;
         order: 1;
@@ -260,39 +286,70 @@
     border-top: 1px solid rgb(255, 255, 255, 0.2);
     border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 
-    .txtCopyRight {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: -0.165px;
-      color: rgb(255, 255, 255, 0.6);
-    }
-
-    ul {
+    .CopyRightBox {
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-wrap: wrap;
 
-      li {
-        margin-left: 20px;
+      .txtCopyRight {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.165px;
+        color: rgb(255, 255, 255, 0.6);
+      }
 
-        a {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
-          letter-spacing: -0.165px;
-          color: rgb(255, 255, 255, 0.6);
-          transition: 0.3s linear;
+      .CopyRightLinks {
+        border-left: 1px solid rgb(255, 255, 255, 0.2);
+        margin-left: 10px;
 
-          &:hover {
-            color: #ed1919;
-            transition: 0.3s linear;
+
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: wrap;
+
+          li {
+            margin-left: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+              content: '';
+              background: rgba(255, 255, 255, 0.6);
+              width: 5px;
+              height: 5px;
+              display: inline-block;
+              border-radius: 100%;
+            }
+
+            a {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: -0.165px;
+              color: rgb(255, 255, 255, 0.6);
+              transition: 0.3s linear;
+              padding-left: 10px;
+
+              &:hover {
+                color: #ed1919;
+                transition: 0.3s linear;
+              }
+            }
+
+            &:first-child {
+              &::before {
+                display: none;
+              }
+            }
           }
         }
       }
     }
+
   }
 }
 
@@ -684,25 +741,29 @@
     }
 
     .footerMenuSec {
-      svg {
-        max-height: 150px;
-      }
-
       .menuItem {
+        &.FooterLogo {
+          svg {
+            height: 120px;
+            width: auto;
+          }
+        }
+
         &:first-child {
           flex: 0 0 25%;
         }
 
         &:nth-child(2) {
-          flex: 0 0 15%;
+          flex: 0 0 0;
+          display: none;
         }
 
         &:nth-child(3) {
-          flex: 0 0 35%;
+          flex: 0 0 45%;
         }
 
         &:last-child {
-          flex: 0 0 25%;
+          flex: 0 0 30%;
         }
       }
     }
@@ -712,20 +773,23 @@
     height: 80px;
 
     .borderStyle {
-      .txtCopyRight {
-        font-size: 13px;
-      }
+      .CopyRightBox {
 
-      ul {
-        li {
-          margin-left: 20px;
+        .txtCopyRight {
+          font-size: 13px;
+        }
 
-          a {
-            font-size: 13px;
-            line-height: 24px;
+        .CopyRightLinks {
+          ul {
+            li {
+              a {
+                font-size: 13px;
+              }
+            }
           }
         }
       }
+
     }
   }
 
@@ -828,51 +892,65 @@
     }
 
     .footerMenuSec {
-      svg {
-        max-height: 150px;
-      }
 
       .menuItem {
+        &.FooterLogo {
+          svg {
+            height: 170px;
+            width: auto;
+          }
+        }
+
         &:first-child {
-          flex: 0 0 35%;
+          flex: 0 0 30%;
         }
 
         &:nth-child(2) {
-          flex: 0 0 25%;
+          flex: 0 0 30%;
+          order: 3;
+          margin-top: 30px;
         }
 
         &:nth-child(3) {
-          margin-top: 25px;
-          flex: 0 0 100%;
-          order: 4;
+          flex: 0 0 60%;
+          order: 2;
         }
 
         &:last-child {
-          flex: 0 0 40%;
-          order: 3;
+          margin-top: 30px;
+          flex: 0 0 60%;
+          order: 4;
         }
       }
     }
   }
 
   .copyRightSection {
-    height: 80px;
+    height: 60px;
 
     .borderStyle {
-      .txtCopyRight {
-        font-size: 13px;
-      }
+      .CopyRightBox {
 
-      ul {
-        li {
-          margin-left: 20px;
+        .txtCopyRight {
+          font-size: 12px;
+        }
 
-          a {
-            font-size: 13px;
-            line-height: 24px;
+        .CopyRightLinks {
+          ul {
+            li {
+              margin-left: 5px;
+
+              a {
+                padding-left: 5px;
+                font-size: 12px;
+              }
+
+
+            }
           }
         }
       }
+
     }
   }
 
@@ -972,30 +1050,34 @@
     }
 
     .footerMenuSec {
-      svg {
-        max-height: 130px;
-      }
 
       .menuItem {
+        &.FooterLogo {
+          svg {
+            height: 170px;
+            width: auto;
+          }
+        }
+
         &:first-child {
-          flex: 0 0 40%;
+          flex: 0 0 30%;
         }
 
         &:nth-child(2) {
-          margin-top: 25px;
           flex: 0 0 30%;
           order: 3;
+          margin-top: 30px;
         }
 
         &:nth-child(3) {
-          margin-top: 25px;
-          flex: 0 0 70%;
-          order: 4;
+          flex: 0 0 60%;
+          order: 2;
         }
 
         &:last-child {
-          flex: 0 0 50%;
-          order: 2;
+          margin-top: 30px;
+          flex: 0 0 60%;
+          order: 4;
         }
       }
     }
@@ -1005,20 +1087,37 @@
     height: 60px;
 
     .borderStyle {
-      .txtCopyRight {
-        font-size: 13px;
-      }
+      .CopyRightBox {
+        flex-wrap: wrap;
 
-      ul {
-        li {
-          margin-left: 20px;
+        .txtCopyRight {
+          font-size: 12px;
+        }
 
-          a {
-            font-size: 13px;
-            line-height: 24px;
+        .CopyRightLinks {
+          border-left: 0px;
+          margin-left: 0px;
+
+          ul {
+            li {
+              margin-right: 10px;
+              margin-left: 0px;
+
+              a {
+                padding-left: 10px;
+                font-size: 12px;
+              }
+
+              &:first-child {
+                &::before {
+                  display: block;
+                }
+              }
+            }
           }
         }
       }
+
     }
   }
 
@@ -1080,10 +1179,10 @@
     padding-bottom: 0px;
 
     .linksItem {
-      margin-top: 30px;
+      margin-top: 20px;
 
       ul {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         li {
           margin-bottom: 10px;
@@ -1127,11 +1226,16 @@
     }
 
     .footerMenuSec {
-      svg {
-        max-height: 130px;
-      }
+
 
       .menuItem {
+        &.FooterLogo {
+          svg {
+            height: 150px;
+            width: auto;
+          }
+        }
+
         &:first-child {
           margin-top: 10px;
           flex: 0 0 100%;
@@ -1160,26 +1264,41 @@
   }
 
   .copyRightSection {
-    height: 80px;
+    height: 120px;
+    padding: 10px 0px;
 
     .borderStyle {
-      .txtCopyRight {
-        font-size: 13px;
-        text-align: center;
-      }
+      .CopyRightBox {
+        flex-wrap: wrap;
 
-      ul {
-        justify-content: center;
+        .txtCopyRight {
+          font-size: 12px;
+        }
 
-        li {
-          margin-left: 20px;
+        .CopyRightLinks {
+          border-left: 0px;
+          margin-left: 0px;
 
-          a {
-            font-size: 13px;
-            line-height: 24px;
+          ul {
+            li {
+              margin-right: 10px;
+              margin-left: 0px;
+
+              a {
+                padding-left: 10px;
+                font-size: 12px;
+              }
+
+              &:first-child {
+                &::before {
+                  display: block;
+                }
+              }
+            }
           }
         }
       }
+
     }
   }
 

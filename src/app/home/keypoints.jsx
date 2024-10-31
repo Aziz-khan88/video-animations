@@ -5,6 +5,7 @@ import styles from "@/styles/home/keypoints.module.scss";
 import ByNumber from "@/src/app/home/components/bynumber";
 import ByAwards from "@/src/app/home/components/byawards";
 import ByClients from "@/src/app/home/components/byclients";
+import ByPartner from "@/src/app/home/components/bypartner";
 
 const keyPointsData = [
     {
@@ -18,6 +19,11 @@ const keyPointsData = [
     {
         title: "Our Clients",
         content: <ByClients />,
+    }
+    ,
+    {
+        title: "Our Partners",
+        content: <ByPartner />,
     }
 ];
 

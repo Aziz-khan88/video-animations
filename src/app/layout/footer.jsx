@@ -4,35 +4,11 @@ import styles from "@/styles/layout/footer.module.scss"
 import ContactFrom from "@/src/app/home/components/contactfrom"
 import Image from "next/image"
 import IMG from "media/home/rotateImg.webp"
-import { Facebook, FavLogo, Instagram, Linkedin, Twitter, Youtube, FooterPhone, FooterEmail, FooterWeb, FooterPin } from "@/src/app/app-constants"
+import { FavLogo, FooterPhone, FooterEmail, FooterPin } from "@/src/app/app-constants"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 import { SocailLinks, subMenuItems } from "./data/data"
-import ContactRoundBtn from "../home/components/contactroundbtn"
-
-
-// const SocailLinks = [
-//     {
-//         icon: <Instagram />,
-//         url: "#"
-//     },
-//     {
-//         icon: <Facebook />,
-//         url: "#"
-//     },
-//     {
-//         icon: <Twitter />,
-//         url: "#"
-//     },
-//     {
-//         icon: <Linkedin />,
-//         url: "#"
-//     },
-//     {
-//         icon: <Youtube />,
-//         url: "#"
-//     },
-// ]
+import PaymentImg from "media/home/paymentImg.webp"
 
 const QuickLinks = [
     {
@@ -53,50 +29,6 @@ const QuickLinks = [
     },
 ]
 
-// const SocailLinks = [
-//     {
-//         name: "3D Animation",
-//         url: "#"
-//     },
-//     {
-//         name: "2D Animation",
-//         url: "#"
-//     },
-
-//     {
-//         name: "Motion Graphics",
-//         url: "#"
-//     },
-//     {
-//         name: "Whiteboard Animation",
-//         url: "#"
-//     },
-//     {
-//         name: "Video Editing",
-//         url: "#"
-//     },
-//     {
-//         name: "Logo Animation",
-//         url: "#"
-//     },
-
-//     {
-//         name: "CGI - VFX",
-//         url: "#"
-//     },
-//     {
-//         name: "Infographics",
-//         url: "#"
-//     },
-//     {
-//         name: "Hybrid & Cel",
-//         url: "#"
-//     },
-//     {
-//         name: "Architectural Visualization",
-//         url: "#"
-//     },
-// ]
 
 
 const Footer = () => {
@@ -135,18 +67,10 @@ const Footer = () => {
                     <Row>
                         <Col md={12}>
                             <div className={styles.footerMenuSec}>
-                                <div className={styles.menuItem}>
-                                    {/* <FavLogo /> */}
-                                    <ContactRoundBtn footerIcn={true} />
-                                    <div className={styles.linksItem}>
-                                        <ul>
-                                            {SocailLinks.map((item, index) => (
-                                                <li key={index}>
-                                                    <Link href={item.url} target="_blank">{item.icon}</Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
+                                <div className={`${styles.menuItem} ${styles.FooterLogo}`}>
+                                    {/* <ContactRoundBtn footerIcn={true} />*/}
+                                    <FavLogo />
+
                                 </div>
 
                                 <div className={styles.menuItem}>
@@ -210,6 +134,15 @@ const Footer = () => {
                                                 </a>
                                             </div>
                                         </div>
+                                        <div className={styles.linksItem}>
+                                            <ul>
+                                                {SocailLinks.map((item, index) => (
+                                                    <li key={index}>
+                                                        <Link href={item.url} target="_blank">{item.icon}</Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -220,14 +153,20 @@ const Footer = () => {
             <section className={styles.copyRightSection}>
                 <Container className="h-100">
                     <Row className={`${styles.borderStyle} h-100`} >
-                        <Col sm={6} className="my-auto">
-                            <div className={styles.txtCopyRight}>© Copyright 2024 - Video Animation </div>
+                        <Col sm={6} md={6} className="my-auto">
+                            <div className={styles.CopyRightBox}>
+                                <div className={styles.txtCopyRight}>© Copyright 2024 - Video Animation </div>
+                                <div className={styles.CopyRightLinks}>
+                                    <ul>
+                                        <li><Link href="/terms-and-conditions">Terms of Use</Link></li>
+                                        <li><Link href="/privacy-policy"> Privacy Policy</Link></li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </Col>
-                        <Col sm={6} className="my-auto">
-                            <ul>
-                                <li><Link href="/terms-and-conditions">Terms of Use</Link></li>
-                                <li><Link href="/privacy-policy"> Privacy Policy</Link></li>
-                            </ul>
+                        <Col sm={6} md={6} className="my-auto text-end">
+                            <Image src={PaymentImg.src} alt="Payment Image" width={550} height={40} />
                         </Col>
                     </Row>
                 </Container>

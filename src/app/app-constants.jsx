@@ -440,8 +440,6 @@ export function FavLogo() {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="219"
-            height="143"
             fill="none"
             viewBox="0 0 219 143"
         >

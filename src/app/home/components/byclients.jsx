@@ -24,70 +24,70 @@ import Image from "next/image";
 
 const ByClients = () => {
     return (
-        <Carousel interval={2000} fade={true} controls={false} indicators={false}>
+        <Carousel interval={1500} fade={true} controls={false} indicators={false}>
             <CarouselItem>
                 <div className={styles.byClientsBox}>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo1.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo1.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo2.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo2.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo3.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo3.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo4.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo4.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo5.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo5.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo6.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo6.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                 </div>
             </CarouselItem>
             <CarouselItem>
                 <div className={styles.byClientsBox}>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo7.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo7.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo8.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo8.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo9.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo9.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo10.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo10.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo11.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo11.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo12.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo12.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                 </div>
             </CarouselItem>
             <CarouselItem>
                 <div className={styles.byClientsBox}>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo13.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo13.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo14.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo14.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo15.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo15.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo16.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo16.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo17.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo17.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                     <div className={styles.byClientsItem}>
-                        <Image src={Logo18.src} alt={`Client Logo`} width={316} height={165} />
+                        <Image src={Logo18.src} alt={`Client Logo`} width={192} height={100} />
                     </div>
                 </div>
             </CarouselItem>

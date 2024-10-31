@@ -4,14 +4,13 @@ import Image from 'next/image';
 import { Row, Col, Container } from "react-bootstrap";
 import styles from "@/styles/home/portfolio.module.scss";
 import useEmblaCarousel from 'embla-carousel-react';
-import Link from 'next/link';
 import { FavIcon } from '@/src/app/app-constants';
 import axios from 'axios';
 import VideoModal from '@/src/app/home/components/videomodal';
 import Autoplay from 'embla-carousel-autoplay'
 
 const OPTIONS = { align: 'center', loop: true };
-
+const autoplayOptions = { delay: 2000 };
 const caseStudiesList = [
     { title: "3D Animation", tag: 'videoAnimation3D' },
     { title: "Hybrid Animation", tag: 'videoAnimationHB' },
@@ -26,7 +25,7 @@ const caseStudiesList = [
 const VIMEO_ACCESS_TOKEN = '487ce35bb2408d9ea6ebad7c234cc57b';
 
 const Portfolio = () => {
-    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay()]);
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay(autoplayOptions)]);
     const [activeTab, setActiveTab] = useState(0);
     const [videos, setVideos] = useState([]);
     const [videoID, setVideoID] = useState("");
