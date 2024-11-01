@@ -37,9 +37,8 @@ const Industries = ({ slides, options }) => {
                                         loop
                                         preload="auto"
                                         aria-label="Background video"
-                                        className={styles.bannerVideo}
                                         loading="eager"
-                                        poster={`https://vumbnail.com/${item.videoId}.jpg`}
+                                    // poster={`https://vumbnail.com/${item.videoId}.jpg`}
                                     >
                                         <source src={item.videoUrl} type="video/mp4" />
                                         Your browser does not support the video tag.
