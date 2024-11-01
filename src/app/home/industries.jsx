@@ -8,7 +8,7 @@ import { ArrowBtn } from "@/src/app/app-constants"
 
 
 const Industries = ({ slides, options }) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [emblaRef] = useEmblaCarousel(options);
 
     return (
         <section className={`${styles.industriesSection} p-100`}>

@@ -1,34 +1,35 @@
 "use client";
 import { Col, Container, Row } from "react-bootstrap";
-
-
 import Image from "next/image";
 import styles from "@/styles/home/clients.module.scss";
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 
-
-
-
 const Clients = ({ ClientsLogos }) => {
     const [emblaRefClients] = useEmblaCarousel(
-        { loop: true },
+        { loop: true, dragFree: true, draggable: true },
         [
             AutoScroll({
-                delay: 3000,
+                delay: 0,
                 speed: 2,
                 playOnInit: true,
+                stopOnMouseEnter: false,
+                stopOnInteraction: false,
+                restartDelay: 0,
             })
         ]
     );
 
     const [emblaRefFramework] = useEmblaCarousel(
-        { loop: true, direction: 'rtl' },
+        { loop: true, direction: 'rtl', dragFree: true, draggable: true },
         [
             AutoScroll({
-                delay: 3000,
+                delay: 0,
                 speed: 2,
                 playOnInit: true,
+                stopOnMouseEnter: false,
+                stopOnInteraction: false,
+                restartDelay: 0,
             })
         ]
     );
@@ -39,7 +40,7 @@ const Clients = ({ ClientsLogos }) => {
                 <Row>
                     <Col md={6}>
                         <h2>Clients</h2>
-                        <p>Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide. </p>
+                        <p>Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide.</p>
                     </Col>
                 </Row>
                 <Row>
