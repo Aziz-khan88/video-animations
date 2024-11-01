@@ -54,8 +54,8 @@ export const ClientsLogos = [
 
 export const BannerData = {
     title: "Video Animation Studio To Help You Drive Results With Passion",
-    video: "https://player.vimeo.com/progressive_redirect/playback/1022063281/rendition/1080p/file.mp4?loc=external&signature=50d67cebafebe3b086a9c953e561b209e339856cae392d3fea3a2bbf44b43d3a",
-    videoId: "1022063281"
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+    videoId: "1025440805"
 }
 
 export const WhyOption = { align: 'center', loop: true }

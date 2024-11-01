@@ -56,8 +56,9 @@ const VideoCta = () => {
                 preload="auto"
                 aria-label="Background video"
                 className={styles.bannerVideo}
+                poster="https://vumbnail.com/1025457379.jpg"
             >
-                <source src='/videos/makeAnimation.mp4' type="video/mp4" />
+                <source src='https://player.vimeo.com/progressive_redirect/playback/1025457379/rendition/1080p/file.mp4?loc=external&signature=397f7a59dff74cb2be9faf71d1d3357ac050b51a5bb456a46dcefdb9dc97c2ea' type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </section>
