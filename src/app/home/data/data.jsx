@@ -138,37 +138,54 @@ export const options = { loop: true, align: 'start', dragFree: true, draggable: 
 export const slides = [
     {
         title: "Software",
-        txt: "We simplify complex software and technology solutions through engaging animations. Our videos highlight key features, product functionality, and user benefits, making it easier for customers to understand and adopt your software. Whether it’s an explainer video or a product showcase, our animations help boost user engagement and drive sales by making your technology accessible and appealing."
-        , url: "#"
+        txt: "We simplify complex software and technology solutions through engaging animations. Our videos highlight key features, product functionality, and user benefits, making it easier for customers to understand and adopt your software. Whether it’s an explainer video or a product showcase, our animations help boost user engagement and drive sales by making your technology accessible and appealing.",
+        videoId: "1025532630",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025532630/rendition/480p/file.mp4?loc=external&signature=8438c250ad564894639e86c5d3e9b3b22e26ffb1f85e30749e5981ad6a38528d"
+
     },
     {
         title: (<>Education
             <br />
             & Training</>),
-        txt: "Our animation services in education make learning engaging and effective. We develop interactive explainer videos, tutorials, and training materials for students of all ages. From simplifying complex concepts to making training more accessible, our animations transform the learning experience, ensuring that educational content is both fun and memorable for learners."
-        , url: "#"
+        txt: "Our animation services in education make learning engaging and effective. We develop interactive explainer videos, tutorials, and training materials for students of all ages. From simplifying complex concepts to making training more accessible, our animations transform the learning experience, ensuring that educational content is both fun and memorable for learners.",
+        videoId: "1025532022",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025532022/rendition/480p/file.mp4?loc=external&signature=0a267e54b829ac37b03ae21ed0262a638cf1ebce2b8d465b3324839eb8aac056"
+
     },
     {
         title: "Healthcare",
-        txt: "In the healthcare industry, our animations bring clarity to complex medical topics. We create engaging educational videos that explain medical techniques, demonstrate new treatments, and help patients understand health procedures. Our videos are designed to be informative and approachable, helping healthcare providers communicate effectively and patients make informed decisions about their care."
-        , url: "#"
+        txt: "In the healthcare industry, our animations bring clarity to complex medical topics. We create engaging educational videos that explain medical techniques, demonstrate new treatments, and help patients understand health procedures. Our videos are designed to be informative and approachable, helping healthcare providers communicate effectively and patients make informed decisions about their care.",
+        videoId: "1025531305",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025531305/rendition/480p/file.mp4?loc=external&signature=60280a7d7d17b23eb5434fa8be5d30094d589d4e88186bbdc04a306409c40192"
     },
     {
         title: (<>E-commerce
             <br />
             & Retail</>),
-        txt: "Our animations elevate the e-commerce and retail experience by creating eye-catching product visualizations and engaging social media ads. We help businesses capture attention, drive traffic, and increase conversions with visually compelling content. Whether you’re promoting products or creating interactive online experiences, our animation services ensure your brand leaves a lasting impression."
-        , url: "#"
+        txt: "Our animations elevate the e-commerce and retail experience by creating eye-catching product visualizations and engaging social media ads. We help businesses capture attention, drive traffic, and increase conversions with visually compelling content. Whether you’re promoting products or creating interactive online experiences, our animation services ensure your brand leaves a lasting impression.",
+        videoId: "1025530851",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025530851/rendition/480p/file.mp4?loc=external&signature=c6d426498b2ce9bc4255047b7144991e0d4ef3e52589333673752b686bcba5fd"
+
     },
     {
         title: "Advertising",
-        txt: "Our animated video commercials help businesses captivate audiences and boost brand awareness. With dynamic motion graphics and engaging storytelling, we ensure your ads stand out in a crowded market. Our animations are designed to grab attention and deliver memorable messages that connect with your target audience, helping you increase brand visibility and engagement."
-        , url: "#"
+        txt: "Our animated video commercials help businesses captivate audiences and boost brand awareness. With dynamic motion graphics and engaging storytelling, we ensure your ads stand out in a crowded market. Our animations are designed to grab attention and deliver memorable messages that connect with your target audience, helping you increase brand visibility and engagement.",
+        videoId: "1025530344",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025530344/rendition/480p/file.mp4?loc=external&signature=91f5c3bcfd1921d1e03420a7ddc2a87d47a9da3bb5714dfeb20e8f0ecc8060d2"
+
     },
     {
         title: "Engineering",
-        txt: "For the engineering sector, our animations simplify complex technical concepts and showcase intricate product designs. We help engineers communicate their ideas visually, making training materials and product explanations more accessible. Our animations are ideal for explaining technical processes or showcasing innovative designs, ensuring your audience understands even the most detailed aspects of your work."
-        , url: "#"
+        txt: "For the engineering sector, our animations simplify complex technical concepts and showcase intricate product designs. We help engineers communicate their ideas visually, making training materials and product explanations more accessible. Our animations are ideal for explaining technical processes or showcasing innovative designs, ensuring your audience understands even the most detailed aspects of your work.",
+        videoId: "1025516852",
+        url: "",
+        videoUrl: "https://player.vimeo.com/progressive_redirect/playback/1025516852/rendition/480p/file.mp4?loc=external&signature=632bd52d8b96c06d6c0b935518e1b6fa108812b3e74d01b45aa12149e50348d7"
+
     }
 ]
 

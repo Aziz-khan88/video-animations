@@ -35,6 +35,7 @@
           min-width: 0;
           padding-left: 0px;
           height: 708px;
+          position: relative;
 
           .industriesBox {
             width: 439px;
@@ -47,14 +48,33 @@
             padding: 30px;
             transition: background 0.4s ease;
 
+            &::before {
+              content: '';
+              background: rgb(0, 0, 0, 0.4);
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              height: 100%;
+              width: 100%;
+              z-index: 2;
+            }
+
+            video {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+            }
+
             h3 {
-            
+              z-index: 4;
               font-style: normal;
               font-weight: 600;
               font-size: 46px;
               line-height: 56px;
               letter-spacing: -0.165px;
-              color: #000000;
+              color: #fff;
               transform: rotate(-90deg);
               width: 100%;
               height: 100%;
@@ -62,8 +82,7 @@
               justify-content: center;
               align-items: center;
               transition: transform 0.4s ease, margin-bottom 0.4s ease;
-
-
+              position: relative;
             }
 
             p,
@@ -76,11 +95,17 @@
             &:hover {
               background: #fff;
 
+              &::before,
+              video {
+                display: none;
+              }
+
               h3 {
                 transform: rotate(0deg);
                 height: auto;
                 justify-content: flex-start;
                 margin-bottom: 50px;
+                color: #000;
 
                 a {
                   display: none;

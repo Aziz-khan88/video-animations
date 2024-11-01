@@ -31,6 +31,20 @@ const Industries = ({ slides, options }) => {
                                     </h3>
                                     <p>{item.txt}</p>
                                     <Link href={item.url}><ArrowBtn /></Link>
+                                    <video
+                                        autoPlay
+                                        muted
+                                        loop
+                                        preload="auto"
+                                        aria-label="Background video"
+                                        className={styles.bannerVideo}
+                                        loading="eager"
+                                        poster={`https://vumbnail.com/${item.videoId}.jpg`}
+                                    >
+                                        <source src={item.videoUrl} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+
                                 </div>
                             </div>
                         ))}
