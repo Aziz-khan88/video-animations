@@ -8,6 +8,7 @@ import why01 from "media/home/whychoose/why01.webp"
 import why02 from "media/home/whychoose/why02.webp"
 import why03 from "media/home/whychoose/why03.webp"
 import why04 from "media/home/whychoose/why04.webp"
+import why05 from "media/home/whychoose/why05.webp"
 import Logo1 from "media/home/clientslogo/logo1.webp";
 import Logo2 from "media/home/clientslogo/logo2.webp";
 import Logo3 from "media/home/clientslogo/logo3.webp";
@@ -85,7 +86,7 @@ export const WhyItems = [
         link: "#"
     },
     {
-        Img: why02.src,
+        Img: why05.src,
         title: "Client-Centric Approach",
         txt: "Our goal is to exceed expectations by delivering animations that align perfectly with your brand and resonate with your audience.",
         link: "#"
