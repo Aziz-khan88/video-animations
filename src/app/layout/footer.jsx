@@ -9,6 +9,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 import { SocailLinks, subMenuItems } from "./data/data"
 import PaymentImg from "media/home/paymentImg.webp"
+import Head from "next/head"
 
 const QuickLinks = [
     {
@@ -42,6 +43,9 @@ const Footer = () => {
     }, []);
     return (
         <>
+            <Head>
+                <link rel="preload" href="https://player.vimeo.com/progressive_redirect/playback/1025562046/rendition/540p/file.mp4?loc=external&signature=2b1f66327223317b633d13487ab29b223334cb06b19e65fcc8b6b7a1522f6fe7" as="video" type="video/mp4" />
+            </Head>
             <section className={styles.topFooterSection}>
                 <Container className={styles.footerBox}>
                     <Row>
@@ -69,7 +73,18 @@ const Footer = () => {
                             <div className={styles.footerMenuSec}>
                                 <div className={`${styles.menuItem} ${styles.FooterLogo}`}>
                                     {/* <ContactRoundBtn footerIcn={true} />*/}
-                                    <FavLogo />
+                                    {/* <FavLogo /> */}
+                                    <video
+                                        autoPlay
+                                        muted
+                                        loop
+                                        preload="auto"
+                                        aria-label="Background video"
+                                        loading="eager"
+                                    >
+                                        <source src="https://player.vimeo.com/progressive_redirect/playback/1025562046/rendition/540p/file.mp4?loc=external&signature=2b1f66327223317b633d13487ab29b223334cb06b19e65fcc8b6b7a1522f6fe7" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
 
                                 </div>
 

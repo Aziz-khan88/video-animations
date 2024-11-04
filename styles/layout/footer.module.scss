@@ -249,6 +249,11 @@
 
     .menuItem {
       &.FooterLogo {
+        video {
+          width: 100%;
+          height: auto;
+        }
+
         svg {
           height: 190px;
           width: auto;

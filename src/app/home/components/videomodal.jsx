@@ -2,10 +2,12 @@ import { Col, Modal, Row } from "react-bootstrap"
 import styles from "@/styles/home/components/videomodal.module.scss"
 import { ClosedBtn } from "@/src/app/app-constants"
 import ContactFrom from "./contactfrom"
+import Head from "next/head"
 
 const VideoModal = (props) => {
     const { iframeUrl, onHide } = props
     return (
+
         <Modal
             {...props}
             size="lg"
@@ -25,45 +27,49 @@ const VideoModal = (props) => {
                 <div className={styles.closedBtn} onClick={onHide}><ClosedBtn /></div>
             </div>
             ) : (
+                <>
+                    <Head>
+                        <link rel="preload" href="https://player.vimeo.com/progressive_redirect/playback/1025562046/rendition/540p/file.mp4?loc=external&signature=2b1f66327223317b633d13487ab29b223334cb06b19e65fcc8b6b7a1522f6fe7" as="video" type="video/mp4" />
+                    </Head>
+                    <div className={styles.popupContact}>
+                        <div className={styles.closedBtn} onClick={onHide}>
+                            <ClosedBtn />
+                        </div>
+                        <Row>
 
-                <div className={styles.popupContact}>
-                    <div className={styles.closedBtn} onClick={onHide}>
-                        <ClosedBtn />
-                    </div>
-                    <Row>
+                            <Col md={6} className="m-auto">
+                                <div className={styles.popupForm}>
+                                    <h3 className="textGradient">Amazing Discounts</h3>
+                                    <p>On Video Animation Services</p>
 
-                        <Col md={6} className="m-auto">
-                            <div className={styles.popupForm}>
-                                <h3 className="textGradient">Amazing Discounts</h3>
-                                <p>On Video Animation Services</p>
-
-                                <ContactFrom popup={true} />
-                            </div>
-                        </Col>
-                        <Col md={6} className="m-auto d-none d-md-block ">
-                            {/* <div className={`${styles.popupImg} text-center`}>
+                                    <ContactFrom popup={true} />
+                                </div>
+                            </Col>
+                            <Col md={6} className="m-auto d-none d-md-block ">
+                                {/* <div className={`${styles.popupImg} text-center`}>
                                 <ContactRoundBtn popup={true} />
                             </div> */}
-                            <div className={`${styles.popupImg} text-center`}>
-                                <video
-                                    autoPlay
-                                    muted
-                                    loop
-                                    preload="auto"
-                                    aria-label="Background video"
-                                    loading="eager"
-                                >
-                                    <source src="https://player.vimeo.com/progressive_redirect/playback/1025535096/rendition/540p/file.mp4?loc=external&signature=9edb8ffe09b85da9210f15e744ac61855e83e4f4488d72b0ce77b28ed7ca852c" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </Col>
-                    </Row>
+                                <div className={`${styles.popupImg} text-center`}>
+                                    <video
+                                        autoPlay
+                                        muted
+                                        loop
+                                        preload="auto"
+                                        aria-label="Background video"
+                                        loading="eager"
+                                    >
+                                        <source src="https://player.vimeo.com/progressive_redirect/playback/1025562046/rendition/540p/file.mp4?loc=external&signature=2b1f66327223317b633d13487ab29b223334cb06b19e65fcc8b6b7a1522f6fe7" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </Col>
+                        </Row>
 
-                </div>
-
+                    </div>
+                </>
             )}
-        </Modal >
+        </Modal>
+
     )
 }
 
