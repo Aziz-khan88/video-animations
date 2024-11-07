@@ -17,6 +17,12 @@ const poppins = Poppins({
 export const metadata = {
   title: "Professional Video Animation Company",
   description: "Transform your ideas into stunning animations with our video animation company. We deliver high-quality, engaging content tailored to your needs.",
+  //===== Google Varification =====
+  verification: {
+    other: {
+      "google-site-verification": ['btqt1QyuPBr3EkUgOcgoKk46tz6ZrUfJ53kiCjQj7fA'],
+    },
+  },
   //===== No-Index =====
   robots: {
     index: false,
