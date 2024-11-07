@@ -1,4 +1,4 @@
-import { BannerData, list, slides, options, ClientsReview, WhyItems, WhyOption, ClientsLogos } from "@/src/app/home/data/data";
+import { BannerData, list, slides, ClientsReview, WhyItems, WhyOption, ClientsLogos } from "@/src/app/home/data/data";
 
 import Banner from "@/src/app/home/banner";
 import KeyPoints from "@/src/app/home/keypoints";
@@ -24,7 +24,7 @@ export default function Home() {
       <WhyChooes slides={WhyItems} options={WhyOption} />
       <VideoCta />
       <Clients ClientsLogos={ClientsLogos} />
-      <Industries slides={slides} options={options} />
+      <Industries slides={slides} />
       <Faqs data={list} />
     </>
   );

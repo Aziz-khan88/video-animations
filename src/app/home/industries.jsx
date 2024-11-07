@@ -2,13 +2,25 @@
 import { Col, Container, Row } from "react-bootstrap"
 import styles from "@/styles/home/industries.module.scss"
 import useEmblaCarousel from 'embla-carousel-react'
+import AutoScroll from 'embla-carousel-auto-scroll';
 import Link from "next/link"
 import { ArrowBtn } from "@/src/app/app-constants"
 
 
 
-const Industries = ({ slides, options }) => {
-    const [emblaRef] = useEmblaCarousel(options);
+const Industries = ({ slides }) => {
+    const [emblaRef] = useEmblaCarousel(
+        { loop: true, align: 'start', dragFree: true, skipSnaps: true, containScroll: "keepSnaps" },
+        [
+            AutoScroll({
+                delay: 0,
+                speed: 2,
+                playOnInit: true,
+                stopOnMouseEnter: false,
+                stopOnInteraction: false,
+                restartDelay: 0,
+            })
+        ]);
 
     return (
         <section className={`${styles.industriesSection} p-100`}>
@@ -38,7 +50,6 @@ const Industries = ({ slides, options }) => {
                                         preload="auto"
                                         aria-label="Background video"
                                         loading="eager"
-                                    // poster={`https://vumbnail.com/${item.videoId}.jpg`}
                                     >
                                         <source src={item.videoUrl} type="video/mp4" />
                                         Your browser does not support the video tag.

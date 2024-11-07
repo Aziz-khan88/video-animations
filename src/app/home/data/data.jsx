@@ -134,7 +134,6 @@ export const ClientsReview = [
     },
 ]
 
-export const options = { loop: true, align: 'start', dragFree: true, draggable: true }
 
 export const slides = [
     {
