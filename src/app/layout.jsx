@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@/src/app/globals.scss";
 import Header from "@/src/app/layout/header";
 import Footer from "@/src/app/layout/footer";
+import Scripts from "./Scripts";
 
 
 const poppins = Poppins({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Scripts />
         <Header />
         {children}
         <Footer />
