@@ -16,7 +16,7 @@ const CommonButton = ({ color }) => {
                 <div>
                     <span>Dive in now</span> <ArrowBtn />
                 </div>
-            </div >
+            </div>
         </>
 
 
