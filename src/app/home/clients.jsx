@@ -34,6 +34,9 @@ const Clients = ({ ClientsLogos }) => {
         ]
     );
 
+    const ascendingLogos = [...ClientsLogos].sort((a, b) => a.logo.localeCompare(b.logo));
+    const descendingLogos = [...ClientsLogos].sort((a, b) => b.logo.localeCompare(a.logo));
+
     return (
         <section className={`${styles.clientsSection} p-100`}>
             <Container>
@@ -45,11 +48,12 @@ const Clients = ({ ClientsLogos }) => {
                 </Row>
                 <Row>
                     <Col md={12} className="m-auto">
+                        {/* Ascending order carousel */}
                         <div className={styles.embla}>
                             <div className={styles.embla__viewport} ref={emblaRefClients}>
                                 <div className={styles.embla__container}>
-                                    {ClientsLogos.map((item, index) => (
-                                        <div className={styles.embla__slide} key={`client-${index}`}>
+                                    {ascendingLogos.map((item, index) => (
+                                        <div className={styles.embla__slide} key={`client-asc-${index}`}>
                                             <div className={styles.imgBox}>
                                                 <Image src={item.logo} alt={`Client Logo ${index + 1}`} width={316} height={165} />
                                             </div>
@@ -58,11 +62,13 @@ const Clients = ({ ClientsLogos }) => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Descending order carousel */}
                         <div className={styles.embla} dir="rtl">
                             <div className={styles.embla__viewport} ref={emblaRefFramework}>
                                 <div className={styles.embla__container}>
-                                    {ClientsLogos.map((item, index) => (
-                                        <div className={styles.embla__slide} key={`framework-${index}`}>
+                                    {descendingLogos.map((item, index) => (
+                                        <div className={styles.embla__slide} key={`framework-desc-${index}`}>
                                             <div className={styles.imgBox}>
                                                 <Image src={item.logo} alt={`Framework Logo ${index + 1}`} width={316} height={165} />
                                             </div>
