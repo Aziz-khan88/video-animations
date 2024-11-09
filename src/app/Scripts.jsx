@@ -1,4 +1,5 @@
 "use client";
+import Script from 'next/script';
 import { useEffect } from 'react';
 
 const Scripts = () => {
@@ -54,7 +55,16 @@ const Scripts = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    return null;
+    return (
+        <>
+            <Script>
+                {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/B05OCOOZ2aUDEJ6S8boo'});`}
+            </Script>
+            <Script>
+                {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/-cBLCMe7q54ZEJ6S8boo'});`}
+            </Script>
+        </>
+    );
 };
 
 export default Scripts;
