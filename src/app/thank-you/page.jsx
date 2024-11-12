@@ -21,7 +21,7 @@ export default function page() {
           `
         }
       </Script>
-      <Script>
+      <Script id="gtagCode3">
         {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/wwg4CN6ysqQZEJ6S8boo'});`}
       </Script>
 
