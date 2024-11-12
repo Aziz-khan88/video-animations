@@ -42,6 +42,18 @@ const WhyChooes = (props) => {
     };
 
     const currentSlide = slides[selectedIndex];
+
+    const handleChat = () => {
+        if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('event', 'conversion', {
+                'send_to': 'AW-10860906782/uExNCM3Tq54ZEJ6S8boo'
+            });
+        }
+        if (typeof window !== 'undefined' && window.LC_API) {
+            window.LC_API.open_chat_window();
+        }
+    };
+
     return (
         <section className={`${styles.whyChooesSection} p-100`}>
             <Container>
@@ -84,9 +96,9 @@ const WhyChooes = (props) => {
                             <div className={styles.whyChooesBox}>
                                 <h5>{currentSlide.title}</h5>
                                 <p>{currentSlide.txt}</p>
-                                <Link href={currentSlide.link} className="">
+                                <a className="cursor-pointer" onClick={() => handleChat()}>
                                     Let’s Discuss <ArrowBtn />
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </Col>

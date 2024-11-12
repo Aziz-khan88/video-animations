@@ -1,7 +1,7 @@
 
 import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/logo-animation/data/data";
 
-import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
+import { slides, options, ClientsReview, WhyItems, WhyOption, ClientsLogos } from "@/src/app/home/data/data";
 
 import BannerClients from "@/src/app/about/bannerclients";
 import Banner from "@/src/app/services/banner";
@@ -22,7 +22,7 @@ export default function Page() {
     return (
         <>
             <Banner BannerData={BannerData} />
-            <BannerClients />
+            <BannerClients ClientsLogos={ClientsLogos} />
             <Portfolio />
             <KeyPoints />
             <Process data={ProcessContent} list={ProcessList} />

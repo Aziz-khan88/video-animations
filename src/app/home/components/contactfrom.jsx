@@ -86,12 +86,24 @@ const ContactFrom = ({ contact, popup }) => {
                 "JSON": JSONdata,
             });
 
-            await fetch("https://sheetdb.io/api/v1/wszr7rrbz3wsj", {
+            // Send data to the server or API
+            const response = await fetch("https://sheetdb.io/api/v1/wszr7rrbz3wsj", {
                 method: "POST",
                 body: bodyContent,
                 headers: headersList
             });
-            window.location.href = '/thank-you';
+
+            if (response.ok) {
+                // Track Google Ads conversion event
+                if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'conversion', {
+                        'send_to': 'AW-10860906782/Qr8TCIHC26QZEJ6S8boo'
+                    });
+                }
+                window.location.href = '/thank-you';
+            } else {
+                throw new Error('Failed to submit form.');
+            }
 
         } catch (error) {
             console.error('Error during form submission:', error);
@@ -101,7 +113,7 @@ const ContactFrom = ({ contact, popup }) => {
     };
 
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form>
             <div className={`${styles.contactFrom} ${popup ? styles.popupstyle : ''} ${contact ? styles.contactPage : ''}`}>
                 <div className={styles.inputsFiled}>
                     <input type="text" name="name" placeholder="Full Name" required />
@@ -116,7 +128,7 @@ const ContactFrom = ({ contact, popup }) => {
                     <textarea name="comment" placeholder="Description"></textarea>
                 </div>
                 <div className={styles.inputsButton}>
-                    <button type="submit" disabled={isDisabled}>{formStatus} <ArrowBtn /></button>
+                    <button type="submit" disabled={isDisabled} onSubmit={handleSubmit}>{formStatus} <ArrowBtn /></button>
                 </div>
             </div>
         </Form>
